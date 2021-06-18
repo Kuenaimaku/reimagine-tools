@@ -127,7 +127,7 @@ export default {
     },
     modifier(){
       let modifier = 1;
-      var r = (modifier + parseInt(this.options.incense) + (this.options.gearXpBoost / 100)) * this.options.happyHour;
+      var r = modifier + parseInt(this.options.incense) + (this.options.gearXpBoost / 100);
       return r;
     },
     pluralize(){

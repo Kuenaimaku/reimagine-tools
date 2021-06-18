@@ -24,9 +24,6 @@
     <o-field label="Gear XP Boosts">
       <o-input type="number" min=0 v-model="options.gearXpBoost" id="xpboost" icon-right="percent"></o-input>
     </o-field>
-    <o-field label="Happy Hour">
-      <o-switch v-model="options.happyHour" true-value=2 false-value=1></o-switch>
-    </o-field>
     <o-field label="Sort Table by Apples">
       <o-switch v-model="options.sort"></o-switch>
     </o-field>
