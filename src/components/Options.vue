@@ -31,8 +31,6 @@
       <o-switch v-model="options.sort"></o-switch>
     </o-field>
     <o-button @click="reset" icon-left="refresh">Reset Options</o-button>
-
-    {{messages}}
   </div>
 </template>
 
