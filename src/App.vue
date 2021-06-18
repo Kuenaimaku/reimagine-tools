@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Navbar></Navbar>
     <section class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
@@ -23,7 +24,7 @@
         <div class="column is-one-quarter">
           <div class="container">
             <div class="content">
-              <h1>Options</h1>
+              <h1>Input</h1>
             </div>
             <Options :options="this.options"></Options>
           </div>
@@ -31,7 +32,7 @@
         <div class="column">
           <div class="container">
             <div class="content">
-              <h1>Results</h1>
+              <h1>Summary</h1>
               <h3>{{Number(apples).toLocaleString()}} {{pluralize}} required to level from {{options.start}} to {{options.end}}</h3>
               <h3>{{Number(experience).toLocaleString()}} experience in total</h3>
             </div>
@@ -77,12 +78,14 @@ import dataService from "./services/dataService";
 
 import Options from './components/Options.vue'
 import Dungeon from './components/Dungeon.vue'
+import Navbar from './components/Navbar.vue'
 
 export default {
   name: "App",
   components: {
     Options,
-    Dungeon
+    Dungeon,
+    Navbar
   },
   data() {
     return {
