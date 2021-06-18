@@ -33,8 +33,8 @@
           <div class="container">
             <div class="content">
               <h1>Summary</h1>
-              <h3>{{Number(apples).toLocaleString()}} {{pluralize}} required to level from {{options.start}} to {{options.end}}</h3>
-              <h3>{{Number(experience).toLocaleString()}} experience in total</h3>
+              <h3><span style="color:gold">{{Number(apples).toLocaleString()}} <o-icon pack="mdi" icon="food-apple"> </o-icon></span> {{pluralize}} required to level from {{options.start}} to {{options.end}}</h3>
+              <h4><span style="color:gold">{{Number(experience).toLocaleString()}}</span> experience in total</h4>
             </div>
             <table class="table is-hoverable is-striped is-fullwidth">
               <thead>
