@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="container">
+          <div class="container" v-if="validation">
             <div class="content">
               <h1>Summary</h1>
               <h3><span style="color:gold">{{Number(apples).toLocaleString()}} <o-icon pack="mdi" icon="food-apple"> </o-icon></span> {{pluralize}} required to level from {{options.start}} to {{options.end}}</h3>
@@ -53,6 +53,12 @@
                 />
               </tbody>
             </table>
+          </div>
+          <div class="container" v-else>
+            <div class="content">
+              <h1>Summary</h1>
+              <h3><span style="color:red">{{Number(1/0).toLocaleString()}} <o-icon pack="mdi" icon="food-apple"> </o-icon></span> {{pluralize}}. You broke it.</h3>
+            </div>
           </div>
         </div>
       </div></div>
@@ -93,7 +99,6 @@ export default {
       levels:{},
       dungeons:[],
       experience: 0,
-      sort:"x",
     };
   },
   created(){
@@ -142,6 +147,11 @@ export default {
       }
       return this.dungeons.sort((a, b) => b.quantity - a.quantity)
     },
+    validation(){
+      if(isNaN(this.apples)){ return false};
+      if(this.options.gearXpBoost < 0){return false};
+      return this.options.start < this.options.end;
+    }
   },
   methods: {
       reset(){

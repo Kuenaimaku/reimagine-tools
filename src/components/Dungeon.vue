@@ -1,7 +1,7 @@
 <template>
   <tr>
     <th>{{dungeon.name}}</th>
-    <td>{{Number(dungeon.quantity).toLocaleString()}}</td>
+    <td>{{Number(dungeon.quantity* modifier).toLocaleString()}}</td>
     <td>{{Number(runs).toLocaleString()}}</td>
   </tr>
 </template>
@@ -25,8 +25,11 @@ export default {
     return {};
   },
   computed:{
+    modifier(){
+      return this.$parent.options.talisman ? 1.2 : 1;
+    },
     runs(){
-      return Math.ceil(this.apples / this.dungeon.quantity)
+      return Math.ceil(this.apples / (this.dungeon.quantity * this.modifier))
     }
   }
 };
