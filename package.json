@@ -1,0 +1,22 @@
+{
+  "name": "apple-calculator",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@oruga-ui/oruga-next": "^0.4.2",
+    "bulma": "^0.9.2",
+    "lodash": "^4.17.21",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@mdi/font": "^5.9.55",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "sass": "^1.32.8",
+    "vite": "^2.3.7"
+  }
+}
