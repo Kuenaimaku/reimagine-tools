@@ -14,15 +14,15 @@
     </div>
     <o-field label="Incense">
       <o-select v-model="options.incense" class="is-fullwidth">
-        <option value="1">No Incense</option>
-        <option value="2">x2</option>
-        <option value="5">x5</option>
-        <option value="10">x10</option>
-        <option value="2010">x2010</option>
+        <option value=0>No Incense</option>
+        <option value=1>x2</option>
+        <option value=4>x5</option>
+        <option value=9>x10</option>
+        <option value=2010>x2010</option>
       </o-select>
     </o-field>
     <o-field label="Gear XP Boosts">
-      <o-input type="number" min=100 v-model="options.gearXpBoost" id="xpboost" icon-right="percent"></o-input>
+      <o-input type="number" min=0 v-model="options.gearXpBoost" id="xpboost" icon-right="percent"></o-input>
     </o-field>
     <o-field label="Happy Hour">
       <o-switch v-model="options.happyHour" true-value=2 false-value=1></o-switch>

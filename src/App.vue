@@ -127,7 +127,8 @@ export default {
     },
     modifier(){
       let modifier = 1;
-      return modifier * this.options.incense * this.options.happyHour * (this.options.gearXpBoost / 100);
+      var r = (modifier + parseInt(this.options.incense) + (this.options.gearXpBoost / 100)) * this.options.happyHour;
+      return r;
     },
     pluralize(){
       if (this.apples == 1)
