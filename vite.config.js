@@ -7,7 +7,5 @@ export default defineConfig({
 })
 
 module.exports = {
-  build:{
-    base: 'apple-calculator'
-  }
+    base: '/apple-calculator/'
 }
