@@ -5,3 +5,9 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()]
 })
+
+module.exports = {
+  build:{
+    base: 'apple-calculator'
+  }
+}
