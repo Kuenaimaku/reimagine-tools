@@ -25,7 +25,15 @@
         <p>Calculate the number of Golden Apples needed to reach a level, and how many dungeon runs that means.</p>
         <h2>Expertise Textbook Calculator <router-link to="/books"><o-icon pack="mdi" class="icon has-text-info" icon="link"/>Link</router-link></h2>
         <p>Find out how many Expertise Textbooks it will take to reach a certain Class/Rank.</p>
+        <hr/>
+        <p>I am not affiliated with the ReIMAGINE team. I just want to make planning easier.</p>
       </div>
     </section>
 	</div>
 </template>
+
+<style scoped>
+hr {
+  background-color: #333;
+}
+</style>
