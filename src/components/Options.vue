@@ -18,7 +18,7 @@
         <option value=1>x2</option>
         <option value=4>x5</option>
         <option value=9>x10</option>
-        <option value=2010>x2010</option>
+        <option value=20.10>x2010</option>
       </o-select>
     </o-field>
     <o-field label="Gear XP Boosts" :message="messages.xp" :variant="messages.xp ? 'danger' : ''">
