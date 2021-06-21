@@ -1,8 +1,18 @@
 {
-	"start":1,
-	"end":99,
-	"incense": 0,
-	"gearXpBoost": 0,
-	"sort": false,
-	"talisman": false
+	"apple":{
+		"start":1,
+		"end":99,
+		"incense": 0,
+		"gearXpBoost": 0,
+		"sort": false,
+		"talisman": false
+	},
+	"book":{
+		"startClass": 0,
+		"startRank": 0,
+		"endClass": 9,
+		"endRank": 0,
+		"incense": 0,
+		"gearXpBoost": 0
+	}
 }
