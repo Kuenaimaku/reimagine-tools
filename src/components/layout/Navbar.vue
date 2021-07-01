@@ -5,6 +5,7 @@
 				<router-link to="/" class="navbar-item">Home</router-link>
 				<router-link to="/apples" class="navbar-item"><o-icon pack="mdi" class="icon has-text-warning" icon="food-apple"/><span class="is-hidden-touch">Golden Apples</span><span class="is-hidden-widescreen is-hidden-desktop-only">Apples</span></router-link>
 				<router-link to="/books" class="navbar-item"><o-icon pack="mdi" class="icon has-text-info" icon="book-open-page-variant"/><span class="is-hidden-touch">Expertise Textbooks</span><span class="is-hidden-widescreen is-hidden-desktop-only">Books</span></router-link>
+				<router-link to="/expertise" class="navbar-item"><o-icon pack="mdi" class="icon has-text-success" icon="arm-flex"/><span>Expertise</span></router-link>
 			</div>
 		</div>
 	</nav>

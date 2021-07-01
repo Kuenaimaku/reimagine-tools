@@ -100,33 +100,1376 @@
 		"98": 565795254492
 	},
 	"dungeons": [
-		{"name":"Cathedral (Dungeon)", "apples":1000},
-		{"name":"Celu Tower Bronze", "apples":15},
-		{"name":"Celu Tower Silver", "apples":250},
-		{"name":"Celu Tower Gold" , "apples":2450},
-		{"name":"Ichigaya Camp Bronze", "apples":5},
-		{"name":"Ichigaya Camp Silver", "apples":80},
-		{"name":"Ichigaya Camp Gold", "apples":340},
-		{"name":"Nakano Ruins Bronze", "apples":25},
-		{"name":"Nakano Ruins Silver", "apples":340},
-		{"name":"Nakano Ruins Gold (False)", "apples":3000},
-		{"name":"Nakano Ruins Gold (True Xuan Wu)", "apples":3600},
-		{"name":"Shibuya Quartz Bronze", "apples":20},
-		{"name":"Shibuya Quartz Silver", "apples":80},
-		{"name":"Shibuya Quartz Gold", "apples":250},
-		{"name":"Shinagawa Catacombs Bronze", "apples":25},
-		{"name":"Shinagawa Catacombs Gold", "apples":200},
-		{"name":"Suginami Tunnels Bronze", "apples":15},
-		{"name":"Suginami Tunnels Silver", "apples":210},
-		{"name":"Suginami Tunnels Gold", "apples":950},
-		{"name":"TMG Building (False)", "apples":250},
-		{"name":"Ueno Mirage Bronze", "apples":20},
-		{"name":"Ueno Mirage Silver", "apples":350},
-		{"name":"Ueno Mirage Gold", "apples":3000},
-		{"name":"Zhu Que Bronze", "apples":20},
-		{"name":"Zhu Que Gold (Susano-O)", "apples":1520},
-		{"name":"Zhu Que Gold (Amaterasu M)", "apples":1520},
-		{"name":"Zhu Que Gold (Amaterasu F)", "apples":2660}
-		
-	]
+		{
+			"name": "Cathedral (Dungeon)",
+			"apples": 1000
+		},
+		{
+			"name": "Celu Tower Bronze",
+			"apples": 15
+		},
+		{
+			"name": "Celu Tower Silver",
+			"apples": 250
+		},
+		{
+			"name": "Celu Tower Gold",
+			"apples": 2450
+		},
+		{
+			"name": "Ichigaya Camp Bronze",
+			"apples": 5
+		},
+		{
+			"name": "Ichigaya Camp Silver",
+			"apples": 80
+		},
+		{
+			"name": "Ichigaya Camp Gold",
+			"apples": 340
+		},
+		{
+			"name": "Nakano Ruins Bronze",
+			"apples": 25
+		},
+		{
+			"name": "Nakano Ruins Silver",
+			"apples": 340
+		},
+		{
+			"name": "Nakano Ruins Gold (False)",
+			"apples": 3000
+		},
+		{
+			"name": "Nakano Ruins Gold (True Xuan Wu)",
+			"apples": 3600
+		},
+		{
+			"name": "Shibuya Quartz Bronze",
+			"apples": 20
+		},
+		{
+			"name": "Shibuya Quartz Silver",
+			"apples": 80
+		},
+		{
+			"name": "Shibuya Quartz Gold",
+			"apples": 250
+		},
+		{
+			"name": "Shinagawa Catacombs Bronze",
+			"apples": 25
+		},
+		{
+			"name": "Shinagawa Catacombs Gold",
+			"apples": 200
+		},
+		{
+			"name": "Suginami Tunnels Bronze",
+			"apples": 15
+		},
+		{
+			"name": "Suginami Tunnels Silver",
+			"apples": 210
+		},
+		{
+			"name": "Suginami Tunnels Gold",
+			"apples": 950
+		},
+		{
+			"name": "TMG Building (False)",
+			"apples": 250
+		},
+		{
+			"name": "Ueno Mirage Bronze",
+			"apples": 20
+		},
+		{
+			"name": "Ueno Mirage Silver",
+			"apples": 350
+		},
+		{
+			"name": "Ueno Mirage Gold",
+			"apples": 3000
+		},
+		{
+			"name": "Zhu Que Bronze",
+			"apples": 20
+		},
+		{
+			"name": "Zhu Que Gold (Susano-O)",
+			"apples": 1520
+		},
+		{
+			"name": "Zhu Que Gold (Amaterasu M)",
+			"apples": 1520
+		},
+		{
+			"name": "Zhu Que Gold (Amaterasu F)",
+			"apples": 2660
+		}
+	],
+	"expertise": {
+		"attack": {
+			"name": "Attack",
+			"queryParam": "ea",
+			"value": 0,
+			"max": 9000,
+			"tooltip": "Effects 'Rampage' by 20%",
+			"skills": [
+				{
+					"name": "Basic Attack",
+					"rank": 0,
+					"slug": "attack-01",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Attack",
+					"stack": 1,
+					"cost": null,
+					"desc": "Normal attack using Close-Range weapons."
+				},
+				{
+					"name": "Strength UP 1",
+					"rank": 500,
+					"slug": "attack-02",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Strength. (Strength +3)"
+				},
+				{
+					"name": "Master's Stance",
+					"rank": 1000,
+					"slug": "attack-03",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Attacks hit the enemy's vitals. Increases Critical by 40. Decreases Lng-R by 10, and MP regeneration by 1."
+				},
+				{
+					"name": "Sword Maniac",
+					"rank": 2000,
+					"slug": "attack-04",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Close-Range fighting technique. Passive skill that increases Cls-R ATK. (Cls-R +3)"
+				},
+				{
+					"name": "Strength UP 2",
+					"rank": 2500,
+					"slug": "attack-05",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Strength. (Strength +3)"
+				},
+				{
+					"name": "Strength UP 3",
+					"rank": 4500,
+					"slug": "attack-06",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Strength. (Strength +3)"
+				},
+				{
+					"name": "Combo Attack",
+					"rank": 5000,
+					"slug": "attack-07",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Attack",
+					"stack": 1,
+					"cost": null,
+					"desc": "Normal attack using Close-Range weapons."
+				},
+				{
+					"name": "Strength UP 4",
+					"rank": 6500,
+					"slug": "attack-08",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Strength. (Strength +3)"
+				},
+				{
+					"name": "Armor Break",
+					"rank": 7000,
+					"slug": "attack-09",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Attack",
+					"stack": 1,
+					"cost": "1% HP",
+					"desc": "Knock off your enemies' armor with heavy attacks, making your next attack stronger.\n(Each hit has a chance to land a debuff. Debuff has a chance to decrease target's Blunt, Charge, and/or Slash resistance by 10%)"
+				},
+				{
+					"name": "Heavy Attack",
+					"rank": 8000,
+					"slug": "attack-10",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Attack",
+					"stack": 1,
+					"cost": "1% HP",
+					"desc": "A heavier attack than usual."
+				},
+				{
+					"name": "Strength UP 5",
+					"rank": 8500,
+					"slug": "attack-11",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Strength. (Strength +3)"
+				},
+				{
+					"name": "Gatling Strike",
+					"rank": 9000,
+					"slug": "attack-12",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Attack",
+					"stack": 1,
+					"cost": null,
+					"desc": "Delivers a series of blows that make up for their individual weakness in number."
+				}
+			]
+		},
+		"spin": {
+			"name": "Spin",
+			"queryParam": "eb",
+			"value": 0,
+			"max": 7000,
+			"tooltip": "Effects 'Rampage' by 20%",
+			"skills": [
+				{
+					"name": "Dragon Sweep",
+					"rank": 0,
+					"slug": "spin-01",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Spin",
+					"stack": 1,
+					"cost": "5% HP",
+					"desc": "Sweeps like a dragon tail mowing down foes. Inflicts damage to all enemies in the vicinity based on weapons damage stats."
+				},
+				{
+					"name": "Crescent Slash",
+					"rank": 1000,
+					"slug": "spin-02",
+					"type": "Active",
+					"affinity": "Force",
+					"action": "Spin",
+					"stack": 1,
+					"cost": "7% HP",
+					"desc": "Slashes enemies with crescent blades and inflicts all enemies in front of users Force-based damage."
+				},
+				{
+					"name": "Tail of the Dragon",
+					"rank": 1000,
+					"slug": "spin-03",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Spin",
+					"stack": 1,
+					"cost": "8% HP",
+					"desc": "Whips enemy with the tail of the Dragon and inflicts all enemies in around the user with Weapon-based damage."
+				},
+				{
+					"name": "Max HP UP",
+					"rank": 2500,
+					"slug": "spin-04",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Max HP. (HP +30, HP Regen + 2)"
+				},
+				{
+					"name": "Shadowy Spiral Wave",
+					"rank": 3000,
+					"slug": "spin-05",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Spin",
+					"stack": 1,
+					"cost": "8% HP",
+					"desc": "Slashes at surrounding enemies feet, stopping their movement. Deals varying damage to all enemeies in area, depending on weapon."
+				},
+				{
+					"name": "Max HP UP",
+					"rank": 4500,
+					"slug": "spin-06",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Max HP. (HP +30, HP Regen + 2)"
+				},
+				{
+					"name": "Giant Swing",
+					"rank": 5000,
+					"slug": "spin-07",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Spin",
+					"stack": 2,
+					"cost": "5% HP",
+					"desc": "Using centrifugal force, perform two rotating attacks that damages any nearby enemies. Inflicts Weapon-based damage on enemies."
+				},
+				{
+					"name": "Three Step Crescent Moon",
+					"rank": 7000,
+					"slug": "spin-08",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Spin",
+					"stack": 3,
+					"cost": "3% HP",
+					"desc": "Crescent energy is released 3 times in a row. Deals varying damage to enemies in front of the user, depending on weapon type."
+				},
+				{
+					"name": "Maelstrom",
+					"rank": 7000,
+					"slug": "spin-09",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Spin",
+					"stack": 1,
+					"cost": "10% HP",
+					"desc": "A smashing attack powerful enough to fell a group of trees with one blow. Inflicts weapon-based damage on all enemies in the area."
+				}
+			]
+		},
+		"rush": {
+			"name": "Rush",
+			"queryParam": "ec",
+			"value": 0,
+			"max": 7000,
+			"tooltip": "Effects 'Rampage' by 20%\nEffects 'Magic Fist' by 30%",
+			"skills": [
+				{
+					"name": "Vulcan Hit",
+					"rank": 0,
+					"slug": "rush-01",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rush",
+					"stack": 1,
+					"cost": "5% HP",
+					"desc": "A hit that threatens to break their defense. Deals varying damage to one enemy, depending on weapon type."
+				},
+				{
+					"name": "Asura Charge",
+					"rank": 1000,
+					"slug": "rush-02",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rush",
+					"stack": 1,
+					"cost": "7% HP",
+					"desc": "Charges like Asura and barrages an enemy with weapon-based damage in a rain of carnage."
+				},
+				{
+					"name": "Heaven's Gate",
+					"rank": 1000,
+					"slug": "rush-03",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rush",
+					"stack": 1,
+					"cost": "2% HP",
+					"desc": "Jumps and attacks from the air with fists and inflicts the enemy with damage based on the weapon."
+				},
+				{
+					"name": "Max HP UP",
+					"rank": 2500,
+					"slug": "rush-04",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Max HP. (HP +30, HP Regen + 2)"
+				},
+				{
+					"name": "Self-Explosion",
+					"rank": 3000,
+					"slug": "rush-05",
+					"type": "Active",
+					"affinity": "Self-explosion",
+					"action": "Rush",
+					"stack": 1,
+					"cost": "100% HP",
+					"desc": "Put your heart and soul into a big blow. Although user dies, all enemies in a straight line receive suicide based damage according to their HP."
+				},
+				{
+					"name": "Max HP UP",
+					"rank": 4500,
+					"slug": "rush-06",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Max HP. (HP +30, HP Regen + 2)"
+				},
+				{
+					"name": "Tyrannical Jaw",
+					"rank": 5000,
+					"slug": "rush-07",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rush",
+					"stack": 2,
+					"cost": "4% HP",
+					"desc": "Break your foe's defense, then deliver a blow from behind. Deals varying damage to one enemy, depending on weapon type."
+				},
+				{
+					"name": "Blade of the King Beast",
+					"rank": 7000,
+					"slug": "rush-08",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rush",
+					"stack": 6,
+					"cost": "2% HP",
+					"desc": "An attack of quite violent brutality, like a wild beast armed with a sword. Although weak in impact, blows can be delivered in rapid succession. Delivers weapon-based damage to a single enemy."
+				},
+				{
+					"name": "Large Cut",
+					"rank": 7000,
+					"slug": "rush-09",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rush",
+					"stack": 1,
+					"cost": "10% HP",
+					"desc": "An attack that puts your entire body and soul into a single blow. Delivers weapon-based damage to a single enemy."
+				}
+			]
+		},
+		"shot": {
+			"name": "Shot",
+			"queryParam": "ed",
+			"value": 0,
+			"max": 9000,
+			"tooltip": "Effects 'Magic Bullet' by 30%\nEffects 'Sharpshooter' by 40%",
+			"skills": [
+				{
+					"name": "Range Shot",
+					"rank": 0,
+					"slug": "shot-01",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "1 Bullet",
+					"desc": "Normal attack using projectile weapon."
+				},
+				{
+					"name": "Speed UP 1",
+					"rank": 500,
+					"slug": "shot-02",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Speed. (Speed +3)"
+				},
+				{
+					"name": "13 Snipe",
+					"rank": 1000,
+					"slug": "shot-03",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Sniping. Increases Critical by 40. Decreases CLS-R by 10, and MP regeneration by 1."
+				},
+				{
+					"name": "Gun Maniac",
+					"rank": 2000,
+					"slug": "shot-04",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Shooting skill learned through training. Passive skill that raises LNG-R ATK. (Long-Range +3)"
+				},
+				{
+					"name": "Speed UP 2",
+					"rank": 2500,
+					"slug": "shot-05",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Speed. (Speed +3)"
+				},
+				{
+					"name": "Speed UP 3",
+					"rank": 4500,
+					"slug": "shot-06",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Speed. (Speed +3)"
+				},
+				{
+					"name": "Long-Range Shot",
+					"rank": 5000,
+					"slug": "shot-07",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "1 Bullet",
+					"desc": "Aim accurately, and hit a distant target."
+				},
+				{
+					"name": "Speed UP 4",
+					"rank": 6500,
+					"slug": "shot-08",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Speed. (Speed +3)"
+				},
+				{
+					"name": null,
+					"rank": 7000,
+					"slug": "shot-09",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "1 Bullet",
+					"desc": "Fire a shot that creates a vacuum behind it. All enemies between the user and the target are damaged. (Type Line AoE)"
+				},
+				{
+					"name": "Speed UP 5",
+					"rank": 8500,
+					"slug": "shot-10",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive skill that increases Speed. (Speed +3)"
+				},
+				{
+					"name": "Heartbreaker",
+					"rank": 9000,
+					"slug": "shot-11",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "8 MP, 1 Bullet",
+					"desc": "Aims for your enemy's vitals, momentarily lowering their long-range defense."
+				}
+			]
+		},
+		"rapid": {
+			"name": "Rapid",
+			"queryParam": "ee",
+			"value": 0,
+			"max": 8000,
+			"tooltip": "Effects 'Support Bullet' by 20%",
+			"skills": [
+				{
+					"name": "Trigger Happy",
+					"rank": 0,
+					"slug": "rapid-01",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rapid",
+					"stack": 3,
+					"cost": "2 MP, 1 Bullet",
+					"desc": "Enables 3 rapid shots to the enemy. Deals damage based on weapon type."
+				},
+				{
+					"name": "Magnificent 7",
+					"rank": 1000,
+					"slug": "rapid-02",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rapid",
+					"stack": 7,
+					"cost": "1 MP, 1 Bullet",
+					"desc": "Firing faster than human sight. Can be fired 7 times in succession. Special attack that deals fixed damage."
+				},
+				{
+					"name": "Eraser",
+					"rank": 1000,
+					"slug": "rapid-03",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rapid",
+					"stack": 6,
+					"cost": "2 MP, 1 Bullet",
+					"desc": "Enables 6 rapid shots to the enemy through intense concentration. Weapon-based damage."
+				},
+				{
+					"name": "Max MP UP",
+					"rank": 2500,
+					"slug": "rapid-04",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Max MP. (MAX MP +15, MP Regen + 1)"
+				},
+				{
+					"name": "Viper Scope",
+					"rank": 3000,
+					"slug": "rapid-05",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rapid",
+					"stack": 4,
+					"cost": "2 MP, 1 Bullet",
+					"desc": "Aims for the gaps in the enemy's armor, and increase the damage of follow-up projectile, pierce, and shot attacks. Weapon-based damage."
+				},
+				{
+					"name": "Max MP UP",
+					"rank": 4500,
+					"slug": "rapid-06",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Max MP. (MAX MP +15, MP Regen + 1)"
+				},
+				{
+					"name": "Bullet-ridden Pit",
+					"rank": 5000,
+					"slug": "rapid-07",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rapid",
+					"stack": 10,
+					"cost": "1 MP, 2 Bullets",
+					"desc": "Fills your enemy with holes through random fire. Varying damage to one enemy. Shot range is short."
+				},
+				{
+					"name": "Heavy Sonic Trigger",
+					"rank": 7000,
+					"slug": "rapid-08",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rapid",
+					"stack": 14,
+					"cost": "1 MP, 2 Bullets",
+					"desc": "After every shot, a countdown to the gallows. High knockback."
+				},
+				{
+					"name": "Qi Shot",
+					"rank": 7000,
+					"slug": "rapid-09",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rapid",
+					"stack": 8,
+					"cost": "2 MP, 4 Magnetite",
+					"desc": "Gather bio-energy and fire a shot without bullets. Deals varying damage to one enemy depending on weapon type."
+				},
+				{
+					"name": "Blast Trigger",
+					"rank": 8000,
+					"slug": "rapid-10",
+					"type": "Active",
+					"affinity": "Weapon-based",
+					"action": "Rapid",
+					"stack": 7,
+					"cost": "4 MP, 1 Bullet",
+					"desc": "Enables 7 chain attacks on a target. Deals a good amount of weapon-based damage to one enemy."
+				}
+			]
+		},
+		"guard": {
+			"name": "Guard",
+			"queryParam": "ef",
+			"value": 0,
+			"max": 9000,
+			"tooltip": null,
+			"skills": [
+				{
+					"name": "Basic Guard",
+					"rank": 0,
+					"slug": "guard-01",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Guard",
+					"stack": null,
+					"cost": "1 MP",
+					"desc": "The user stands in a defensive stance, decreasing Attack and Spin damage. Slows enemies' attack recovery."
+				},
+				{
+					"name": "Vitality UP 1",
+					"rank": 500,
+					"slug": "guard-02",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "A Passive skill that increases Vitality. (Vitality +3)"
+				},
+				{
+					"name": "Smite Guard",
+					"rank": 1000,
+					"slug": "guard-03",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Guard",
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "The user stands in an Anti-Demon stance, decreasing Attack and Spin damage. Slows enemies' attack recovery even longer."
+				},
+				{
+					"name": "Stun Guard",
+					"rank": 1000,
+					"slug": "guard-04",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Guard",
+					"stack": null,
+					"cost": "2 MP",
+					"desc": "The user stands in a defensive stance, decreasing Attack and Spin damage, and inflicts a Stun effect."
+				},
+				{
+					"name": "Exceed Guard",
+					"rank": 1500,
+					"slug": "guard-05",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "A switch skill which can switch between on and off. The most powerful guard available. Activating which accuracy will reduce incanation time, however the critical attack will decrease. (Incantation -50%, Critical -20)"
+				},
+				{
+					"name": "Vitality UP 2",
+					"rank": 2500,
+					"slug": "guard-06",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "A Passive skill that increases Vitality. (Vitality +3)"
+				},
+				{
+					"name": "Power Guard",
+					"rank": 3000,
+					"slug": "guard-07",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Guard",
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "The user guards, decreasing Attack and Spin damage. Force enemies back with all your might."
+				},
+				{
+					"name": "Vitality UP 3",
+					"rank": 4500,
+					"slug": "guard-08",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "A Passive skill that increases Vitality. (Vitality +3)"
+				},
+				{
+					"name": "Whither Guard",
+					"rank": 5000,
+					"slug": "guard-09",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Guard",
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "The user guards, decreasing Attack and Spin damage. Damage of follow-up close-range skills are raised."
+				},
+				{
+					"name": "Vitality UP 4",
+					"rank": 6500,
+					"slug": "guard-10",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "A Passive skill that increases Vitality. (Vitality +3)"
+				},
+				{
+					"name": "Resolution Guard",
+					"rank": 7000,
+					"slug": "guard-11",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Guard",
+					"stack": null,
+					"cost": "4 MP",
+					"desc": "The Player gets into a Guard stance, but is unable to reduce Attack and Spin damage. However, the Player becomes able to blow the opponent away through sheer willpower."
+				},
+				{
+					"name": "Vitality UP 5",
+					"rank": 8500,
+					"slug": "guard-12",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "A Passive skill that increases Vitality. (Vitality +3)"
+				},
+				{
+					"name": "Speed Block",
+					"rank": 9000,
+					"slug": "guard-13",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Guard",
+					"stack": null,
+					"cost": "5 MP",
+					"desc": "The Player immediately gets into a Guard stance that can reduce Attack and Spin damage. The opponent will recover easily, but with lowered defense."
+				}
+			]
+		},
+		"counter": {
+			"name": "Counter",
+			"queryParam": "eg",
+			"value": 0,
+			"max": 9000,
+			"tooltip": null,
+			"skills": [
+				{
+					"name": "Tetra Counter",
+					"rank": 0,
+					"slug": "counter-01",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Counter",
+					"stack": null,
+					"cost": null,
+					"desc": "he user prepares a Counter, and responds to Attack and Rush with Counter damage."
+				},
+				{
+					"name": "Sword Slap",
+					"rank": 500,
+					"slug": "counter-02",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Counter",
+					"stack": null,
+					"cost": null,
+					"desc": "The user prepares a Counter, and responds to Attack and Rush with no effect on Friendship level."
+				},
+				{
+					"name": "Poison Counter",
+					"rank": 1000,
+					"slug": "counter-03",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Counter",
+					"stack": null,
+					"cost": null,
+					"desc": "The user prepares a Counter, and responds to Attack and Rush with Counter damage and Poison effect."
+				},
+				{
+					"name": "Bind Counter",
+					"rank": 1000,
+					"slug": "counter-04",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Counter",
+					"stack": null,
+					"cost": null,
+					"desc": "The user prepares a Counter, and responds to Attack and Rush with Counter damage and Bind effect."
+				},
+				{
+					"name": "Counter Zwei",
+					"rank": 2000,
+					"slug": "counter-05",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "A switch skill which can switch between on and off. The most powerful counter available. Activating with accuracy will reduce incantation time, however the user's critical attack will also decrease. (Incantation -50%, Critical -20)"
+				},
+				{
+					"name": "Vampire Counter",
+					"rank": 3000,
+					"slug": "counter-06",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Counter",
+					"stack": null,
+					"cost": "5% HP",
+					"desc": "User goes into a Counter stance, counters Attack and Rush. Deals damage to both the enemy's HP and MP. (Absorbs 1/2th of damage as MP. If MP damage is less than 2, you will only absorb 1 MP.)"
+				},
+				{
+					"name": "In-Fight Counter",
+					"rank": 5000,
+					"slug": "counter-07",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Counter",
+					"stack": null,
+					"cost": null,
+					"desc": "The user prepares a Counter, and responds to Attack and Rush with Counter damage, but the enemy is not knocked back. Follow-up attacks are possible."
+				},
+				{
+					"name": "Strikeback (Bash)",
+					"rank": 7000,
+					"slug": "counter-08",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Counter",
+					"stack": null,
+					"cost": null,
+					"desc": "The user gets into a Counter stance that can deliver tremendous damage when countering an Attack or Rush move. Damages surrounding enemies."
+				},
+				{
+					"name": "Strikeback (Soul)",
+					"rank": 7500,
+					"slug": "counter-09",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Counter",
+					"stack": null,
+					"cost": null,
+					"desc": "The user gets into a Counter stance that can severely deplete the opponent's MP when countering an Attack or Rush move. Damages surrounding enemies."
+				},
+				{
+					"name": "Strikeback (World)",
+					"rank": 9000,
+					"slug": "counter-10",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Counter",
+					"stack": null,
+					"cost": null,
+					"desc": "The user gets into a Counter stance that can deliver tremendous damage when countering an Attack or Rush move. Damages surrounding enemies. (Larger range than Strikeback (Bash))"
+				}
+			]
+		},
+		"dodge": {
+			"name": "Dodge",
+			"queryParam": "eh",
+			"value": 0,
+			"max": 9000,
+			"tooltip": null,
+			"skills": [
+				{
+					"name": "Basic Dodge",
+					"rank": 0,
+					"slug": "dodge-01",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Dodge",
+					"stack": null,
+					"cost": "1 MP",
+					"desc": "The user gets into a Dodge stance that nulls Shot and Rapid damage."
+				},
+				{
+					"name": "Luck UP 1",
+					"rank": 500,
+					"slug": "dodge-02",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Luck. (Luck +3)"
+				},
+				{
+					"name": "Pyro Dodge",
+					"rank": 1000,
+					"slug": "dodge-03",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Dodge",
+					"stack": null,
+					"cost": "2 MP",
+					"desc": "The user gets into a Dodge stance that nulls Shot and Rapid damage, and hits enemies with a fire-based effect."
+				},
+				{
+					"name": "Stun Dodge",
+					"rank": 1000,
+					"slug": "dodge-04",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Dodge",
+					"stack": null,
+					"cost": "2 MP",
+					"desc": "The user gets into a Dodge stance that nulls Shot and Rapid damage, and hits enemies with a Stun effect."
+				},
+				{
+					"name": "Luck UP 2",
+					"rank": 2500,
+					"slug": "dodge-05",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Luck. (Luck +3)"
+				},
+				{
+					"name": "Dodge Drain",
+					"rank": 3000,
+					"slug": "dodge-06",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Dodge",
+					"stack": null,
+					"cost": "1 MP",
+					"desc": "The user gets into a Dodge stance that nulls Shot and Rapid damage. Steals MP from enemies."
+				},
+				{
+					"name": "Luck UP 3",
+					"rank": 4500,
+					"slug": "dodge-07",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Luck. (Luck +3)"
+				},
+				{
+					"name": "Petra Dodge",
+					"rank": 5000,
+					"slug": "dodge-08",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Dodge",
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "The user gets into a Dodge stance that nulls Shot and Rapid damage, and hits enemies with a Stone effect."
+				},
+				{
+					"name": "Luck UP 4",
+					"rank": 6500,
+					"slug": "dodge-09",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Luck. (Luck +3)"
+				},
+				{
+					"name": "Dodge (Shot Failure)",
+					"rank": 7000,
+					"slug": "dodge-10",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Dodge",
+					"stack": null,
+					"cost": "2 MP",
+					"desc": "The Player gets into a Dodge stance that nulls Shot and Rapid damage while reducing Long-Range and Spell damage inflicted by the opponent."
+				},
+				{
+					"name": "Dodge (Grace of Feather)",
+					"rank": 7000,
+					"slug": "dodge-11",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Dodge",
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "The Player becomes light as a feather and can swiftly get into Dodge stance that nulls Shot and Rapid damage, and reduces the elemental resistances of the opponent."
+				},
+				{
+					"name": "Luck UP 5",
+					"rank": 8000,
+					"slug": "dodge-12",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases Luck. (Luck +3)"
+				},
+				{
+					"name": "Ultrasonic Dodge",
+					"rank": 9000,
+					"slug": "dodge-13",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Dodge",
+					"stack": null,
+					"cost": "5 MP",
+					"desc": "The Player becomes unbelievably nimble and can almost immediately get into a Dodge stance that nulls Shot and Rapid damage."
+				}
+			]
+		},
+		"curativeMagic": {
+			"name": "Curative Magic",
+			"queryParam": "ei",
+			"value": 0,
+			"max": 10000,
+			"tooltip": "Effects 'Enhancement' by 30%",
+			"skills": []
+		},
+		"destructionMagic": {
+			"name": "Destruction Magic",
+			"queryParam": "ej",
+			"value": 0,
+			"max": 10000,
+			"tooltip": "Effects 'Curse of the Wretched' by 10%\nEffects 'Magic Fist' by 30%",
+			"skills": []
+		},
+		"supportMagic": {
+			"name": "Support Magic",
+			"queryParam": "ek",
+			"value": 0,
+			"max": 8000,
+			"tooltip": "Effects 'Enhancement' by 40%\nEffects 'Support Bullet' by 40%",
+			"skills": []
+		},
+		"curseMagic": {
+			"name": "Curse Magic",
+			"queryParam": "el",
+			"value": 0,
+			"max": 8000,
+			"tooltip": "Effects 'Curse of the Wretched' by 50%\nEffects 'Magic Bullet' by 10%",
+			"skills": []
+		},
+		"talk": {
+			"name": "Talk",
+			"queryParam": "em",
+			"value": 0,
+			"max": 2000,
+			"tooltip": null,
+			"skills": []
+		},
+		"threaten": {
+			"name": "Threaten",
+			"queryParam": "en",
+			"value": 0,
+			"max": 2000,
+			"tooltip": null,
+			"skills": []
+		},
+		"taunt": {
+			"name": "Taunt",
+			"queryParam": "eo",
+			"value": 0,
+			"max": 2000,
+			"tooltip": null,
+			"skills": []
+		},
+		"summon": {
+			"name": "Summon",
+			"queryParam": "ep",
+			"value": 0,
+			"max": 9000,
+			"tooltip": null,
+			"skills": []
+		},
+		"occultism": {
+			"name": "Occultism",
+			"queryParam": "eq",
+			"value": 0,
+			"max": 7000,
+			"tooltip": "Effects 'Synthesis' by 40%",
+			"skills": []
+		},
+		"fusion": {
+			"name": "Fusion",
+			"queryParam": "er",
+			"value": 0,
+			"max": 10000,
+			"tooltip": null,
+			"skills": []
+		},
+		"demonology": {
+			"name": "Demonology",
+			"queryParam": "es",
+			"value": 0,
+			"max": 7000,
+			"tooltip": "Effects 'Miitama Demon Growth Science' by 60%\nEffects 'Sharpshooter' by 40%\nEffects 'Synthesis' by 40%",
+			"skills": []
+		},
+		"weaponKnowledge": {
+			"name": "Weapon Knowledge",
+			"queryParam": "et",
+			"value": 0,
+			"max": 9000,
+			"tooltip": "Effects 'Retaliation' by 40%\nEffects 'Swordsmith' by 20%\nEffects 'Synthesis' by 20%\nUsed in 'Spiritual Mixing' Mechanic",
+			"skills": []
+		},
+		"survivalTechniques": {
+			"name": "Survival Techniques",
+			"queryParam": "eu",
+			"value": 0,
+			"max": 7000,
+			"tooltip": "Effects 'Retaliation' by 40%\nUsed in 'Spiritual Mixing' Mechanic",
+			"skills": []
+		},
+		"psychology": {
+			"name": "Psychology",
+			"queryParam": "ev",
+			"value": 0,
+			"max": 10000,
+			"tooltip": "Effects 'Miitama Demon Growth Science' by 40%",
+			"skills": []
+		},
+		"medicalSciences": {
+			"name": "Medical Sciences",
+			"queryParam": "ew",
+			"value": 0,
+			"max": 6000,
+			"tooltip": "Effects 'Craftsmanship' by 20%",
+			"skills": []
+		},
+		"crushingTechnique": {
+			"name": "Crushing Technique",
+			"queryParam": "ex",
+			"value": 0,
+			"max": 10000,
+			"tooltip": "Effects 'Conditions of Melee Combat' by 40%\nEffects 'Conditions of Ranged Combat' by 40%\nEffects 'Conditions of Magic Combat' by 40%",
+			"skills": []
+		},
+		"mineralogy": {
+			"name": "Mineralogy",
+			"queryParam": "ey",
+			"value": 0,
+			"max": 10000,
+			"tooltip": "Effects 'Synthesis' by 10%",
+			"skills": []
+		},
+		"biology": {
+			"name": "Biology",
+			"queryParam": "ez",
+			"value": 0,
+			"max": 7000,
+			"tooltip": null,
+			"skills": []
+		},
+		"mechanicalEngineering": {
+			"name": "Mechanical Engineering",
+			"queryParam": "eaa",
+			"value": 0,
+			"max": 0,
+			"tooltip": null,
+			"skills": []
+		},
+		"informationEngineering": {
+			"name": "Information Engineering",
+			"queryParam": "eab",
+			"value": 0,
+			"max": 0,
+			"tooltip": null,
+			"skills": []
+		},
+		"blades": {
+			"name": "Blades",
+			"queryParam": "eac",
+			"value": 0,
+			"max": 7200,
+			"tooltip": "Effects 'Swordsmith' by 80%\nUsed in 'Spiritual Mixing' Mechanic",
+			"skills": []
+		},
+		"sketching": {
+			"name": "Sketching",
+			"queryParam": "ead",
+			"value": 0,
+			"max": 8000,
+			"tooltip": "Effects 'Craftsmanship' by 20%",
+			"skills": []
+		},
+		"creation": {
+			"name": "Creation",
+			"queryParam": "eae",
+			"value": 0,
+			"max": 5000,
+			"tooltip": "Effects 'Craftsmanship' by 60%",
+			"skills": []
+		},
+		"crafts": {
+			"name": "Crafts",
+			"queryParam": "eaf",
+			"value": 0,
+			"max": 7200,
+			"tooltip": "Effects 'Arms Maker' by 80%\nUsed in 'Spiritual Mixing' Mechanic",
+			"skills": []
+		},
+		"firearmsKnowledge": {
+			"name": "Firearms Knowledge",
+			"queryParam": "eag",
+			"value": 0,
+			"max": 0,
+			"tooltip": null,
+			"skills": []
+		},
+		"gunKnowledge": {
+			"name": "Gun Knowledge",
+			"queryParam": "eah",
+			"value": 0,
+			"max": 9000,
+			"tooltip": "Effects 'Magic Bullet' by 40%\nEffects 'Sharpshooter' by 20%\nUsed in 'Spiritual Mixing' Mechanic",
+			"skills": []
+		},
+		"pursuit": {
+			"name": "Pursuit",
+			"queryParam": "eai",
+			"value": 0,
+			"max": 9000,
+			"tooltip": "Effects 'Rampage' by 40%",
+			"skills": []
+		},
+		"magicControl": {
+			"name": "Magic Control",
+			"queryParam": "eaj",
+			"value": 0,
+			"max": 9000,
+			"tooltip": "Effects 'Conditions of Magic Combat' by 40%\nEffects 'Curse of the Wretched' by 20%\nEffects 'Magic Bullet' by 20%\nEffects 'Magic Fist' by 40%",
+			"skills": []
+		},
+		"bless": {
+			"name": "Bless",
+			"queryParam": "eak",
+			"value": 0,
+			"max": 9000,
+			"tooltip": "Effects 'Curse of the Wretched' by 20%\nEffects 'Enhancement' by 30%\nEffects 'Support Bullet' by 40%",
+			"skills": []
+		}
+	}
 }
