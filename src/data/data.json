@@ -1245,7 +1245,184 @@
 			"value": 0,
 			"max": 10000,
 			"tooltip": "Effects 'Enhancement' by 30%",
-			"skills": []
+			"skills": [
+				{
+					"name": "Dia",
+					"rank": 100,
+					"slug": "curative-01",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "7 MP",
+					"desc": "Curative magic for an ally's HP."
+				},
+				{
+					"name": "Posmundi",
+					"rank": 500,
+					"slug": "curative-02",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "5 MP",
+					"desc": "Removes Poison and Plague effects from nearby allies."
+				},
+				{
+					"name": "Media",
+					"rank": 1000,
+					"slug": "curative-03",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "12 MP",
+					"desc": "Curative magic for the HP for an ally in your vicinity."
+				},
+				{
+					"name": "Charmdi",
+					"rank": 1400,
+					"slug": "curative-04",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "5 MP",
+					"desc": "Removes Happy, Charm, Panic and Berserk from nearby allies."
+				},
+				{
+					"name": "Paraladi",
+					"rank": 1700,
+					"slug": "curative-05",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "5 MP",
+					"desc": "Removes Paralyze affects from nearby allies."
+				},
+				{
+					"name": "Patra",
+					"rank": 2000,
+					"slug": "curative-06",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "5 MP",
+					"desc": "Removes Bind, Sleep and Blind from nearby allies."
+				},
+				{
+					"name": "Closedi",
+					"rank": 2500,
+					"slug": "curative-07",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "5 MP",
+					"desc": "Removes Mute and Freeze effects from nearby allies."
+				},
+				{
+					"name": "Diarama",
+					"rank": 3000,
+					"slug": "curative-08",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Curative magic for an ally's HP."
+				},
+				{
+					"name": "Recarm",
+					"rank": 4000,
+					"slug": "curative-09",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "20 MP",
+					"desc": "Resurrects a dead ally with 25% of their MAX HP restored."
+				},
+				{
+					"name": "Mediarama",
+					"rank": 5000,
+					"slug": "curative-10",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "17 MP",
+					"desc": "Curative magic for the HP for an ally in your vicinity."
+				},
+				{
+					"name": "Petradi",
+					"rank": 5500,
+					"slug": "curative-11",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "5 MP",
+					"desc": "Removes Stone effects from nearby allies."
+				},
+				{
+					"name": "Etnadi",
+					"rank": 6500,
+					"slug": "curative-12",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "5 MP",
+					"desc": "Removes Amnesia effects from nearby allies."
+				},
+				{
+					"name": "Diarahan",
+					"rank": 7000,
+					"slug": "curative-13",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "18 MP",
+					"desc": "Curative magic for an ally's HP."
+				},
+				{
+					"name": "Recarmdora",
+					"rank": 8000,
+					"slug": "curative-14",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "20 MP",
+					"desc": "Although user dies, resurrects all dead ally in vicinity with 40% of their MAX HP restored."
+				},
+				{
+					"name": "Mediarahan",
+					"rank": 9000,
+					"slug": "curative-15",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "26 MP",
+					"desc": "Curative magic for the HP for an ally in your vicinity."
+				},
+				{
+					"name": "Samarecarm",
+					"rank": 10000,
+					"slug": "curative-16",
+					"type": "Active",
+					"affinity": "Curative",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "30 MP",
+					"desc": "Resurrects a dead ally with 50% of their MAX HP restored."
+				}
+			]
 		},
 		"destructionMagic": {
 			"name": "Destruction Magic",
@@ -1253,7 +1430,503 @@
 			"value": 0,
 			"max": 10000,
 			"tooltip": "Effects 'Curse of the Wretched' by 10%\nEffects 'Magic Fist' by 30%",
-			"skills": []
+			"skills": [
+				{
+					"name": "Agi",
+					"rank": 0,
+					"slug": "destruction-01",
+					"type": "Active",
+					"affinity": "Fire",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "8 MP",
+					"desc": "Launches a burst of fire at an enemy, inflicting Fire-based damage and Burn effect."
+				},
+				{
+					"name": "Bufu",
+					"rank": 100,
+					"slug": "destruction-02",
+					"type": "Active",
+					"affinity": "Ice",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "7 MP",
+					"desc": "Hurls clusters of ice at an enemy, inflicting Ice-based damage and Freeze effect."
+				},
+				{
+					"name": "Zio",
+					"rank": 100,
+					"slug": "destruction-03",
+					"type": "Active",
+					"affinity": "Electric",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "9 MP",
+					"desc": "Launches a bullet of electrical energy at an enemy, inflicting Electric-based damage and Shock effect."
+				},
+				{
+					"name": "Zan",
+					"rank": 500,
+					"slug": "destruction-04",
+					"type": "Active",
+					"affinity": "Force",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Delivers a shockwave at an enemy, inflicting Force-based damage and Stun effect."
+				},
+				{
+					"name": "Maragi",
+					"rank": 1000,
+					"slug": "destruction-05",
+					"type": "Active",
+					"affinity": "Fire",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Launches countless firebursts at all enemies in range, inflicting Fire-based damage and Burn effect."
+				},
+				{
+					"name": "Mabufu",
+					"rank": 1000,
+					"slug": "destruction-06",
+					"type": "Active",
+					"affinity": "Ice",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "9 MP",
+					"desc": "Pours a rain of hail at all enemies in range, inflicting Ice-based damage and Freeze effect."
+				},
+				{
+					"name": "Mazio",
+					"rank": 1000,
+					"slug": "destruction-07",
+					"type": "Active",
+					"affinity": "Electric",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "11 MP",
+					"desc": "Discharges electricity suddenly, inflicting all enemies in range with Electric-based damage and Shock effect."
+				},
+				{
+					"name": "Mazan",
+					"rank": 1500,
+					"slug": "destruction-08",
+					"type": "Active",
+					"affinity": "Force",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "12 MP",
+					"desc": "Delivers huge shockwave at all enemies in range, inflicting Force-based damage and Stun effect."
+				},
+				{
+					"name": "Agi Accel",
+					"rank": 1700,
+					"slug": "destruction-09",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "2 MP",
+					"desc": "Fire up to 2 Agi shots with only spell cast. However, the MP cost is 1.2 times that of a normal Agi."
+				},
+				{
+					"name": "Bufu Accel",
+					"rank": 1700,
+					"slug": "destruction-10",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "2 MP",
+					"desc": "Fire up to 2 Bufu shots with only one spell cast. However, the MP is 1.2 times that of a normal Bufu."
+				},
+				{
+					"name": "Agilao",
+					"rank": 2000,
+					"slug": "destruction-11",
+					"type": "Active",
+					"affinity": "Fire",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "15 MP",
+					"desc": "Launches a burst of fire at an enemy, inflicting Fire-based damage and Burn effect."
+				},
+				{
+					"name": "Bufula",
+					"rank": 2000,
+					"slug": "destruction-12",
+					"type": "Active",
+					"affinity": "Ice",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "15 MP",
+					"desc": "Hurls clusters of ice at an enemy, inflicting Ice-based damage and Freeze effect."
+				},
+				{
+					"name": "Zionga",
+					"rank": 2000,
+					"slug": "destruction-13",
+					"type": "Active",
+					"affinity": "Electric",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "18 MP",
+					"desc": "Launches a bullet of electrical energy at an enemy, inflicting Electric-based damage and Shock effect."
+				},
+				{
+					"name": "Zio Accel",
+					"rank": 2200,
+					"slug": "destruction-14",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "2 MP",
+					"desc": "Fire up to 2 Zio shots with only one spell cast. However, the MP cost is 1.2 times that of a normal Zio."
+				},
+				{
+					"name": "Zan Accel",
+					"rank": 2200,
+					"slug": "destruction-15",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "2 MP",
+					"desc": "Fire up to 2 Zan shots with only one spell cast. However, the MP cost is 1.2 times that of a normal Zan."
+				},
+				{
+					"name": "Zanma",
+					"rank": 2500,
+					"slug": "destruction-16",
+					"type": "Active",
+					"affinity": "Force",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "21 MP",
+					"desc": "Delivers a shockwave to an enemy, inflicting Force-based damage and Stun effect."
+				},
+				{
+					"name": "Max MP Up",
+					"rank": 2500,
+					"slug": "destruction-17",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that increases MAX MP. (MAX MP +15, MP Regeneration + 1)"
+				},
+				{
+					"name": "Maragi Accel",
+					"rank": 2700,
+					"slug": "destruction-18",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "Fire up to 2 Maragi shots with only one spell cast. However, the MP cost is 1.2 times a normal Maragi."
+				},
+				{
+					"name": "Mabufu Accel",
+					"rank": 2700,
+					"slug": "destruction-19",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "Fire up to 2 Mabufu shots with only one spell cast. However, the MP cost is 1.2 times a normal Mabufu."
+				},
+				{
+					"name": "Mabufula",
+					"rank": 3000,
+					"slug": "destruction-20",
+					"type": "Active",
+					"affinity": "Ice",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "21 MP",
+					"desc": "Pours a rain of hail at all enemies in range, inflicting Ice-based damage and Freeze effect."
+				},
+				{
+					"name": "Mazionga",
+					"rank": 3000,
+					"slug": "destruction-21",
+					"type": "Active",
+					"affinity": "Electric",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "24 MP",
+					"desc": "Discharge electricity suddenly at all enemies in range, inflicting Electric-based damage and Shock effect."
+				},
+				{
+					"name": "Mazio Accel",
+					"rank": 3200,
+					"slug": "destruction-22",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "Fire up to 2 Mazio shots with only one spell cast. However, the MP cost is 1.2 times that of a normal Mazio."
+				},
+				{
+					"name": "Mazan Accel",
+					"rank": 3200,
+					"slug": "destruction-23",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "Fire up to 2 Mazan shots with only one spell cast. However, the MP cost is 1.2 times that of a normal Mazan."
+				},
+				{
+					"name": "Mazanma",
+					"rank": 3500,
+					"slug": "destruction-24",
+					"type": "Active",
+					"affinity": "Force",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "27 MP",
+					"desc": "Delivers a huge shockwave at all enemies in range, inflicting Force-based damage and Stun effect."
+				},
+				{
+					"name": "Agilao Accel",
+					"rank": 3700,
+					"slug": "destruction-25",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "Fire up to 2 Agilao shots with only one spell cast. However, the MP cost is 1.3 times a normal Agilao."
+				},
+				{
+					"name": "Bufula Accel",
+					"rank": 3700,
+					"slug": "destruction-26",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "Fire up to 2 Bufula shots with only one spell cast. However, the MP cost is 1.3 times a normal Bufula."
+				},
+				{
+					"name": "Maragion",
+					"rank": 4000,
+					"slug": "destruction-27",
+					"type": "Active",
+					"affinity": "Fire",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "21 MP",
+					"desc": "Launches countless firebursts at all enemies in range, inflicting Fire-based damage and Burn effect."
+				},
+				{
+					"name": "Zionga Accel",
+					"rank": 4200,
+					"slug": "destruction-28",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "Fire up to 2 Zionga shots with only one spell cast. However, the MP cost is 1.3 times a normal Zionga."
+				},
+				{
+					"name": "Zanma Accel",
+					"rank": 4200,
+					"slug": "destruction-29",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "3 MP",
+					"desc": "Fire up to 2 Zanma shots with only one spell cast. However, the MP cost is 1.3 times a normal Zanma."
+				},
+				{
+					"name": "Max MP Up",
+					"rank": 4500,
+					"slug": "destruction-30",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises MAX MP. (MAX MP +15, MP Regeneration + 1)"
+				},
+				{
+					"name": "Megido",
+					"rank": 5000,
+					"slug": "destruction-31",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "20 MP",
+					"desc": "Destruction magic with apocalyptic results. Inflicts Almighty-based damage on an enemy."
+				},
+				{
+					"name": "Maragion Accel",
+					"rank": 5700,
+					"slug": "destruction-32",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "4 MP",
+					"desc": "Fire up to 2 Maragion shots with only one spell cast. However, the MP cost is 1.3 times a normal Maragion."
+				},
+				{
+					"name": "Mabufula Accel",
+					"rank": 5700,
+					"slug": "destruction-33",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "4 MP",
+					"desc": "Fire up to 2 Mabufula shots with only one spell cast. However, the MP cost is 1.3 times a normal Mabufula."
+				},
+				{
+					"name": "Ziondyne",
+					"rank": 6000,
+					"slug": "destruction-34",
+					"type": "Active",
+					"affinity": "Electric",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "22 MP, 10 Magnetite",
+					"desc": "Launches a bullet of electrical energy at an enemy, inflicting Electric-based damage and Shock effect."
+				},
+				{
+					"name": "Zandyne",
+					"rank": 6000,
+					"slug": "destruction-35",
+					"type": "Active",
+					"affinity": "Force",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "28 MP, 10 Magnetite",
+					"desc": "Magic for generating a shockwave that inflicts an enemy with Forced-based damage and Stun effect."
+				},
+				{
+					"name": "Mazionga Accel",
+					"rank": 6200,
+					"slug": "destruction-36",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "4 MP",
+					"desc": "Fire up to 2 Mazionga shots with only one spell cast. However, the MP cost is 1.3 times a normal Mazionga."
+				},
+				{
+					"name": "Mazanma Accel",
+					"rank": 6200,
+					"slug": "destruction-37",
+					"type": "Switch",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": "4 MP",
+					"desc": "Fire up to 2 Mazanma shots with only one spell cast. However, the MP cost is 1.3 times a normal Mazanma."
+				},
+				{
+					"name": "Agidyne",
+					"rank": 6500,
+					"slug": "destruction-38",
+					"type": "Active",
+					"affinity": "Fire",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "20 MP, 10 Magnetite",
+					"desc": "Launches a burst of fire at an enemy, inflicting Fire-based damage and Burn effect."
+				},
+				{
+					"name": "Bufudyne",
+					"rank": 6500,
+					"slug": "destruction-39",
+					"type": "Active",
+					"affinity": "Ice",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "20 MP, 10 Magnetite",
+					"desc": "Hurls clusters of ice at an enemy, inflicting Ice-based damage and Freeze effect."
+				},
+				{
+					"name": "Megidora",
+					"rank": 7000,
+					"slug": "destruction-40",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "50 MP, 40 Magnetite",
+					"desc": "Destructive magic with apocalyptic results. Inflicts Almighty-based damage on all enemies in range."
+				},
+				{
+					"name": "Maziodyne",
+					"rank": 8000,
+					"slug": "destruction-41",
+					"type": "Active",
+					"affinity": "Electric",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "32 MP, 20 Magnetite",
+					"desc": "A magic for generating a sudden electrical phenomenon that inflicts Electric-based damage and Shock effect on all enemies in range. Damage will not affect incantation, but knockback can."
+				},
+				{
+					"name": "Mazandyne",
+					"rank": 8000,
+					"slug": "destruction-42",
+					"type": "Active",
+					"affinity": "Force",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "35 MP, 20 Magnetite",
+					"desc": "Discharge force suddenly, inflicting Force-based damage and Stun effect on all enemies in range. Damage will not affect incantation, but knockback can."
+				},
+				{
+					"name": "Maragidyne",
+					"rank": 8500,
+					"slug": "destruction-43",
+					"type": "Active",
+					"affinity": "Fire",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "30 MP, 20 Magnetite",
+					"desc": "Launches countless firebursts at all enemies in range, inflicting Fire-based damage and Burn effect on all enemies in range. Damage will not affect incantation, but knockback can."
+				},
+				{
+					"name": "Mabufudyne",
+					"rank": 8500,
+					"slug": "destruction-44",
+					"type": "Active",
+					"affinity": "Ice",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "30 MP, 20 Magnetite",
+					"desc": "Pours a rain of hail on all enemies in range, inflicting Ice-based damage and Freeze effect on all enemies in range. Damage will not affect incantation, but knockback can."
+				},
+				{
+					"name": "Megidoraon",
+					"rank": 10000,
+					"slug": "destruction-45",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "80 MP, 200 Magnetite",
+					"desc": "Destructive magic with apocalyptic results. Inflicts Almighty-based damage on all enemies in range. Damage will not affect incantation, but knockback can. Weapons will not lose durability through usage of this skill."
+				}
+			]
 		},
 		"supportMagic": {
 			"name": "Support Magic",
@@ -1261,7 +1934,250 @@
 			"value": 0,
 			"max": 8000,
 			"tooltip": "Effects 'Enhancement' by 40%\nEffects 'Support Bullet' by 40%",
-			"skills": []
+			"skills": [
+				{
+					"name": "Traesto",
+					"rank": 0,
+					"slug": "support-01",
+					"type": "Active",
+					"affinity": "Special",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Allows the user and their partner to transcend time and distance to arrive at their Home Point. Casting time is long. Only use when you cannot return to town normally. (15 Minute)"
+				},
+				{
+					"name": "Rakukaja",
+					"rank": 100,
+					"slug": "support-02",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Raises a shield against the Assiah, temporarily increasing the Physical Defense of one ally by 5. Can be simultaneously cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Intelligence UP 1",
+					"rank": 400,
+					"slug": "support-03",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence +3)"
+				},
+				{
+					"name": "Sukukaja",
+					"rank": 700,
+					"slug": "support-04",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Raises a shield against the Atziluth, temporarily raising the resistance of an ally to critical hits and critical chance by 15. Can be simultaneously cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Makakaja",
+					"rank": 1000,
+					"slug": "support-05",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "5 MP",
+					"desc": "Heightens an ally's synchronicity with the Assiah, thereby increasing an ally's Support and Spell by 8. Can be simultaneously cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Samakaja",
+					"rank": 1500,
+					"slug": "support-06",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Creates a shield synchronous to the Atziluth, thereby increasing an ally's Magic Defense by 5. Can be simultaneously cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Tarukaja",
+					"rank": 2000,
+					"slug": "support-07",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Heightens an ally's synchronicity with the Assiah, thereby increasing an ally's Close-Range and Long-Range by 8. Can be simultaneously cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Intelligence UP 2",
+					"rank": 2500,
+					"slug": "support-08",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence +3)"
+				},
+				{
+					"name": "Tetraja",
+					"rank": 3000,
+					"slug": "support-09",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Creates a magical barrier and negates Expel-based and Death-based damage once. (Lasts 5 minutes)"
+				},
+				{
+					"name": "Estoma",
+					"rank": 3000,
+					"slug": "support-10",
+					"type": "Active",
+					"affinity": "Special",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "6 MP",
+					"desc": "Suppress your spirit and calm the hostility of all enemies in the area towards you."
+				},
+				{
+					"name": "Masukukaja",
+					"rank": 3500,
+					"slug": "support-11",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "6 MP",
+					"desc": "Raises your alignment with the Atziluth. Temporarily raises resistance to critical hits and critical chance of all allies in the area by 15. Can be simultaneously cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Dekunda",
+					"rank": 4000,
+					"slug": "support-12",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Negates all effects of -nda-based debuffs inflicted on you."
+				},
+				{
+					"name": "Intelligence UP 3",
+					"rank": 4500,
+					"slug": "support-13",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence +3)"
+				},
+				{
+					"name": "Marakukaja",
+					"rank": 5000,
+					"slug": "support-14",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "6 MP",
+					"desc": "Create a shield in synchronicity with the Assiah, thereby increasing all nearby allies' Physical Defense by 5. Can be simul-cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Masamakaja",
+					"rank": 5000,
+					"slug": "support-15",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "6 MP",
+					"desc": "Creates a shield in synchronicity with the Atziluth, thereby increasing all nearby allies' Magic Defense by 5. Can be simultaneously cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Hama",
+					"rank": 5500,
+					"slug": "support-16",
+					"type": "Active",
+					"affinity": "Expel",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Purifies the wicked and unclean. Inflicts expel-based damage on an enemy."
+				},
+				{
+					"name": "Matarukaja",
+					"rank": 6000,
+					"slug": "support-17",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Improves alignment with the Assiah, temporarily increasing the CLS-R and LNG-R ATK of all allies in the area by 8. Can be simultaneously cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Masamakaja",
+					"rank": 6000,
+					"slug": "support-18",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Improves alignment with the Atziluth, temporarily increasing the Spell and Support of all allies in the area by 8. Can be simul-cast up to 4 times. (Lasts 10 minutes)"
+				},
+				{
+					"name": "Intelligence UP 4",
+					"rank": 6500,
+					"slug": "support-19",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence +3)"
+				},
+				{
+					"name": "Manma",
+					"rank": 7000,
+					"slug": "support-20",
+					"type": "Active",
+					"affinity": "Expel",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "20 MP",
+					"desc": "Purifies the wicked and unclean. Inflicts expel-based damage on all enemies in range."
+				},
+				{
+					"name": "Intelligence UP 5",
+					"rank": 7500,
+					"slug": "support-21",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence +3)"
+				},
+				{
+					"name": "Hamaon",
+					"rank": 8000,
+					"slug": "support-22",
+					"type": "Active",
+					"affinity": "Expel",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "30 MP, 12 Magnetite",
+					"desc": "Purify the wicked and unclean and inflicts expel-based damage on an enemy, with a low probability for immediate destruction. Damage will not affect spellcast, but knockback can."
+				}
+			]
 		},
 		"curseMagic": {
 			"name": "Curse Magic",
@@ -1269,7 +2185,272 @@
 			"value": 0,
 			"max": 8000,
 			"tooltip": "Effects 'Curse of the Wretched' by 50%\nEffects 'Magic Bullet' by 10%",
-			"skills": []
+			"skills": [
+				{
+					"name": "Sukunda",
+					"rank": 100,
+					"slug": "curse-01",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "2 MP",
+					"desc": "Isolates one of target from the realm of Atziluth and temporarily lowers an enemy resistance to critical hit. Can be multiplied up to 4 times."
+				},
+				{
+					"name": "Tarunda",
+					"rank": 400,
+					"slug": "curse-02",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Isolate a single target enemy from the Assiah, temporarily lowering its physical attack power. Can be multiplied up to 4 times."
+				},
+				{
+					"name": "Makanda",
+					"rank": 400,
+					"slug": "curse-03",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Isolates one target enemy from the realm of the Atziluth temporarily lowers that target's magic attack power. Can multiplied up to 4 times."
+				},
+				{
+					"name": "Magic UP 1",
+					"rank": 700,
+					"slug": "curse-04",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Magic. (Magic +3)"
+				},
+				{
+					"name": "Pulinpa",
+					"rank": 1000,
+					"slug": "curse-05",
+					"type": "Active",
+					"affinity": "Mind",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Prevents an enemy from thinking rationally. Inflicts Panic effect on one enemy."
+				},
+				{
+					"name": "Shibaboo",
+					"rank": 1400,
+					"slug": "curse-06",
+					"type": "Active",
+					"affinity": "Nerve",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Command the enemy to remain in one spot. Inflicts bind effect on a single enemy."
+				},
+				{
+					"name": "Makajam",
+					"rank": 1700,
+					"slug": "curse-07",
+					"type": "Active",
+					"affinity": "Magic",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "4 MP",
+					"desc": "Dispells the target's magic abilities, inflicting Mute on the enemy."
+				},
+				{
+					"name": "Rakunda",
+					"rank": 2000,
+					"slug": "curse-08",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "2 MP",
+					"desc": "Disrupts a connection to the Assiah, temporarily lowering an enemy's physical defense. Can be multiplied up to 4 times."
+				},
+				{
+					"name": "Samanda",
+					"rank": 2000,
+					"slug": "curse-09",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "2 MP",
+					"desc": "Disrupts a connection to the Assiah, temporarily lowering an enemy's magical defense. Can be multiplied up to 4 times."
+				},
+				{
+					"name": "Magic UP 2",
+					"rank": 2500,
+					"slug": "curse-10",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Magic. (Magic +3)"
+				},
+				{
+					"name": "Dormina",
+					"rank": 3000,
+					"slug": "curse-11",
+					"type": "Active",
+					"affinity": "Mind",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "4 MP",
+					"desc": "Inflicts Sleep on target enemy."
+				},
+				{
+					"name": "Marin Karin",
+					"rank": 3000,
+					"slug": "curse-12",
+					"type": "Active",
+					"affinity": "Mind",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Forces an enemy to fall in love with you, inflicting Charm."
+				},
+				{
+					"name": "Masukunda",
+					"rank": 3500,
+					"slug": "curse-13",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "4 MP",
+					"desc": "Isolates all enemies near the target of this spell from the realm of Atziluth and temporarily lowers an enemy resistance to critical hit. Can be multiplied up to 4 times."
+				},
+				{
+					"name": "Liberama",
+					"rank": 4000,
+					"slug": "curse-14",
+					"type": "Active",
+					"affinity": "Special",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "4 MP",
+					"desc": "Plant seeds of hostility in their heart. Magic that forces enemies to attack you."
+				},
+				{
+					"name": "Magic UP 3",
+					"rank": 4500,
+					"slug": "curse-15",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Magic. (Magic +3)"
+				},
+				{
+					"name": "Marakunda",
+					"rank": 5000,
+					"slug": "curse-16",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "4 MP",
+					"desc": "Disrupts the Atziluth, temporarily lowering the physical defense of all enemies near the target of this spell. Can be multiplied up to 4 times."
+				},
+				{
+					"name": "Masamanda",
+					"rank": 5000,
+					"slug": "curse-17",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "4 MP",
+					"desc": "Distorts the Assiah, temporarily lowering the magical defense of all enemies near the target of this spell. Can be multiplied up to 4 times."
+				},
+				{
+					"name": "Mudo",
+					"rank": 5500,
+					"slug": "curse-18",
+					"type": "Active",
+					"affinity": "Death",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Takes the enemy's life with a curse and inflicts death-based damage."
+				},
+				{
+					"name": "Matarunda",
+					"rank": 6000,
+					"slug": "curse-19",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "6 MP",
+					"desc": "Distorts the Assiah, temporarily lowering the physical attack power of all enemies near the target of this spell. Can be multiplied up to 4 times."
+				},
+				{
+					"name": "Mamakanda",
+					"rank": 6000,
+					"slug": "curse-20",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "6 MP",
+					"desc": "Distorts the Assiah, temporarily lowering the magical attack of all enemies near the target of this spell. Can be multiplied up to 4 times."
+				},
+				{
+					"name": "Magic UP 4",
+					"rank": 6500,
+					"slug": "curse-21",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Magic. (Magic +3)"
+				},
+				{
+					"name": "Mamudo",
+					"rank": 7000,
+					"slug": "curse-22",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "20 MP",
+					"desc": "Takes enemies' lives with a curse and inflicts death-based damage on all enemies in range."
+				},
+				{
+					"name": "Magic UP 5",
+					"rank": 7500,
+					"slug": "curse-23",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Magic. (Magic +3)"
+				},
+				{
+					"name": "Mudoon",
+					"rank": 8000,
+					"slug": "curse-24",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Shot",
+					"stack": 1,
+					"cost": "30 MP, 12 Magnetite",
+					"desc": "Steals an enemy's life with a curse. Inflicts death-based damage on an enemy, with a low probability of immediate destruction. Damage will not affect spellcast, but knockback can."
+				}
+			]
 		},
 		"talk": {
 			"name": "Talk",
@@ -1277,7 +2458,74 @@
 			"value": 0,
 			"max": 2000,
 			"tooltip": null,
-			"skills": []
+			"skills": [
+				{
+					"name": "Greeting",
+					"rank": 0,
+					"slug": "talk-01",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Talk",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Start with a warm greeting."
+				},
+				{
+					"name": "1,000 Macca Contract",
+					"rank": 300,
+					"slug": "talk-02",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Talk",
+					"stack": 1,
+					"cost": "1,000 Macca",
+					"desc": "Offer a 1,000 Macca compensation for alliance."
+				},
+				{
+					"name": "1,000 Magnetite Bribe",
+					"rank": 700,
+					"slug": "talk-03",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Talk",
+					"stack": 1,
+					"cost": "1,000 Magnetite",
+					"desc": "Offer 1,000 Magnetite in compensation for alliance."
+				},
+				{
+					"name": "Gift: 1 Magic Stone",
+					"rank": 1000,
+					"slug": "talk-04",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Talk",
+					"stack": 1,
+					"cost": "1 Magic Stone",
+					"desc": "Offer 1 Magic Stone as compensation."
+				},
+				{
+					"name": "Gift: 1 Jewel",
+					"rank": 1500,
+					"slug": "talk-05",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Talk",
+					"stack": 1,
+					"cost": "1 Jewel",
+					"desc": "Offer 1 Jewel as compensation."
+				},
+				{
+					"name": "Gift: Gem",
+					"rank": 2000,
+					"slug": "talk-06",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Talk",
+					"stack": 1,
+					"cost": "1 Gem",
+					"desc": "Offer a Gem of the demon's liking. Each species has a different favorite."
+				}
+			]
 		},
 		"threaten": {
 			"name": "Threaten",
@@ -1285,7 +2533,41 @@
 			"value": 0,
 			"max": 2000,
 			"tooltip": null,
-			"skills": []
+			"skills": [
+				{
+					"name": "Threaten",
+					"rank": 0,
+					"slug": "threaten-01",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Threaten",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Sometimes you have to threaten someone to obtain what you want."
+				},
+				{
+					"name": "Shout",
+					"rank": 1000,
+					"slug": "threaten-02",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Threaten",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Shout at an unprepared conversation partner. Occasionally inflicts bind effect on the person."
+				},
+				{
+					"name": "Intimidate",
+					"rank": 2000,
+					"slug": "threaten-03",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Threaten",
+					"stack": 1,
+					"cost": "5% HP, 3 MP",
+					"desc": "Threaten a demon to obtain what you want."
+				}
+			]
 		},
 		"taunt": {
 			"name": "Taunt",
@@ -1293,15 +2575,83 @@
 			"value": 0,
 			"max": 2000,
 			"tooltip": null,
-			"skills": []
+			"skills": [
+				{
+					"name": "Taunt",
+					"rank": 0,
+					"slug": "taunt-01",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Taunt",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Taunt your target, thus gaining their attention."
+				},
+				{
+					"name": "Mischief",
+					"rank": 1000,
+					"slug": "taunt-02",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Threaten",
+					"stack": 1,
+					"cost": "3 MP",
+					"desc": "Get their attention by making mischief. Has a rare chance of inflicting confusion."
+				},
+				{
+					"name": "Instigate",
+					"rank": 2000,
+					"slug": "taunt-03",
+					"type": "Active",
+					"affinity": "Almighty",
+					"action": "Threaten",
+					"stack": 1,
+					"cost": "5% MP",
+					"desc": "Get the attention of all enemies around the target."
+				}
+			]
 		},
 		"summon": {
 			"name": "Summon",
 			"queryParam": "ep",
 			"value": 0,
-			"max": 9000,
+			"max": 2000,
 			"tooltip": null,
-			"skills": []
+			"skills": [
+				{
+					"name": "Expert Summon",
+					"rank": 500,
+					"slug": "summon-01",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "A superior summoning technique. Passive Skill that raises Summoning Speed."
+				},
+				{
+					"name": "Summon Overdrive",
+					"rank": 1000,
+					"slug": "summon-02",
+					"type": "Active",
+					"affinity": "Support",
+					"action": "Curative",
+					"stack": 1,
+					"cost": "10 MP",
+					"desc": "Send your COMP into overdrive. The ability to summon demons in succession temporarily."
+				},
+				{
+					"name": "Expert Summon",
+					"rank": 2000,
+					"slug": "summon-03",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "A superior summoning technique. Passive Skill that raises Summoning Speed. (+30 Summoning Speed, +10% HP/MP Cost)"
+				}
+			]
 		},
 		"occultism": {
 			"name": "Occultism",
@@ -1309,7 +2659,85 @@
 			"value": 0,
 			"max": 7000,
 			"tooltip": "Effects 'Synthesis' by 40%",
-			"skills": []
+			"skills": [
+				{
+					"name": "Intelligence Increase",
+					"rank": 1000,
+					"slug": "occultism-01",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence, Vitality, and Luck +1)"
+				},
+				{
+					"name": "Intelligence Increase",
+					"rank": 2000,
+					"slug": "occultism-02",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence, Vitality, and Luck +1)"
+				},
+				{
+					"name": "Intelligence Increase",
+					"rank": 3000,
+					"slug": "occultism-03",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence, Vitality, and Luck +1)"
+				},
+				{
+					"name": "Intelligence Increase",
+					"rank": 4000,
+					"slug": "occultism-04",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence, Vitality, and Luck +1)"
+				},
+				{
+					"name": "Intelligence Increase",
+					"rank": 5000,
+					"slug": "occultism-05",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence +1)"
+				},
+				{
+					"name": "Intelligence Increase",
+					"rank": 6000,
+					"slug": "occultism-06",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence, Vitality, and Luck +1)"
+				},
+				{
+					"name": "Intelligence Increase",
+					"rank": 7000,
+					"slug": "occultism-07",
+					"type": "Passive",
+					"affinity": null,
+					"action": null,
+					"stack": null,
+					"cost": null,
+					"desc": "Passive Skill that raises Intelligence. (Intelligence, Vitality, and Luck +1)"
+				}
+			]
 		},
 		"fusion": {
 			"name": "Fusion",
@@ -1317,7 +2745,368 @@
 			"value": 0,
 			"max": 10000,
 			"tooltip": null,
-			"skills": []
+			"skills": [{
+				"name": "Fairy Fusion",
+				"rank": 200,
+				"slug": "fusion-01",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Fairy Race."
+			},{
+				"name": "Earth Element Fusion",
+				"rank": 200,
+				"slug": "fusion-02",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Earth Element Race."
+			},{
+				"name": "Haunt Fusion",
+				"rank": 200,
+				"slug": "fusion-03",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Haunt Race."
+			},{
+				"name": "Wild Bird Fusion",
+				"rank": 700,
+				"slug": "fusion-04",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Wild Bird Race."
+			},{
+				"name": "Wilder Fusion",
+				"rank": 700,
+				"slug": "fusion-05",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Wilder Race."
+			},{
+				"name": "Foul Fusion",
+				"rank": 700,
+				"slug": "fusion-06",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Foul Race."
+			},{
+				"name": "Beast Fusion",
+				"rank": 1000,
+				"slug": "fusion-07",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Beast Race."
+			},{
+				"name": "Evil Demon Fusion",
+				"rank": 1000,
+				"slug": "fusion-08",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Evil Demon Race."
+			},{
+				"name": "Evil Dragon Fusion",
+				"rank": 1000,
+				"slug": "fusion-09",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Evil Dragon Race."
+			},{
+				"name": "Elemental Fusion",
+				"rank": 1500,
+				"slug": "fusion-10",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Elemental Race."
+			},{
+				"name": "Divine Fusion",
+				"rank": 2000,
+				"slug": "fusion-11",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Divine Race."
+			},{
+				"name": "Nocturne Fusion",
+				"rank": 2000,
+				"slug": "fusion-12",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Nocturne Race."
+			},{
+				"name": "Fallen Angel Fusion",
+				"rank": 2000,
+				"slug": "fusion-13",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Fallen Angel Race."
+			},{
+				"name": "Holy Beast Fusion",
+				"rank": 3000,
+				"slug": "fusion-14",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Holy Beast Race."
+			},{
+				"name": "Yoma Fusion",
+				"rank": 3000,
+				"slug": "fusion-15",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Yoma Race."
+			},{
+				"name": "Femme Fusion",
+				"rank": 3000,
+				"slug": "fusion-16",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Femme Race."
+			},{
+				"name": "Sacred Soul Fusion",
+				"rank": 3500,
+				"slug": "fusion-17",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Sacred Soul Race."
+			},{
+				"name": "Heavenly God Fusion",
+				"rank": 4000,
+				"slug": "fusion-18",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Heavenly God Race."
+			},{
+				"name": "Nation Ruler Fusion",
+				"rank": 4000,
+				"slug": "fusion-19",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Nation Ruler Race."
+			},{
+				"name": "Godly Beast Fusion",
+				"rank": 4000,
+				"slug": "fusion-20",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Godly Beast Race."
+			},{
+				"name": "Avian Fusion",
+				"rank": 5000,
+				"slug": "fusion-21",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Avian Race."
+			},{
+				"name": "Dragon King Fusion",
+				"rank": 5000,
+				"slug": "fusion-22",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Dragon King Race."
+			},{
+				"name": "Guardian Fusion",
+				"rank": 5000,
+				"slug": "fusion-23",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Guardian Race."
+			},{
+				"name": "Brute Fusion",
+				"rank": 6000,
+				"slug": "fusion-24",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Brute Race."
+			},{
+				"name": "Demigod Fusion",
+				"rank": 6000,
+				"slug": "fusion-25",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Demigod Race."
+			},{
+				"name": "Raptor Fusion",
+				"rank": 6000,
+				"slug": "fusion-26",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Raptor Race."
+			},{
+				"name": "Vile Fusion",
+				"rank": 7000,
+				"slug": "fusion-27",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Vile Race."
+			},{
+				"name": "Reaper Fusion",
+				"rank": 7000,
+				"slug": "fusion-28",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Reaper Race."
+			},{
+				"name": "Dragon Fusion",
+				"rank": 7000,
+				"slug": "fusion-29",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Dragon Race."
+			},{
+				"name": "Seraphim Fusion",
+				"rank": 8000,
+				"slug": "fusion-30",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Seraphim Race."
+			},{
+				"name": "Tyrant Fusion",
+				"rank": 8000,
+				"slug": "fusion-31",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Tyrant Race."
+			},{
+				"name": "Goddess Fusion",
+				"rank": 8000,
+				"slug": "fusion-32",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Goddess Race."
+			},{
+				"name": "Earth Mother Fusion",
+				"rank": 8000,
+				"slug": "fusion-33",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Earth Mother Race."
+			},{
+				"name": "Demon God Fusion",
+				"rank": 9500,
+				"slug": "fusion-34",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Demon God Race."
+			},{
+				"name": "Destroyer Fusion",
+				"rank": 9500,
+				"slug": "fusion-35",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Destroyer Race."
+			}
+			,{
+				"name": "Fiend Fusion",
+				"rank": 9500,
+				"slug": "fusion-36",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases the success rate by 5% when fusing a Demon of the Fiend Race."
+			}]
 		},
 		"demonology": {
 			"name": "Demonology",
@@ -1325,7 +3114,277 @@
 			"value": 0,
 			"max": 7000,
 			"tooltip": "Effects 'Miitama Demon Growth Science' by 60%\nEffects 'Sharpshooter' by 40%\nEffects 'Synthesis' by 40%",
-			"skills": []
+			"skills": [{
+				"name": "Earth Element Sympathy",
+				"rank": 500,
+				"slug": "demonology-01",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Earth Element race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Earth Element race."
+			},{
+				"name": "Foul Sympathy",
+				"rank": 500,
+				"slug": "demonology-02",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Foul race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Foul race."
+			},{
+				"name": "Yoma Sympathy",
+				"rank": 1000,
+				"slug": "demonology-03",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Yoma race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Yoma race."
+			},{
+				"name": "Brute Sympathy",
+				"rank": 1000,
+				"slug": "demonology-04",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage demons of the Brute race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Brute rac"
+			},{
+				"name": "Wild Bird Sympathy",
+				"rank": 1500,
+				"slug": "demonology-05",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Wild Bird race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Wild Bird race."
+			},{
+				"name": "Haunt Sympathy",
+				"rank": 1500,
+				"slug": "demonology-06",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Haunt race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Haunt race."
+			},{
+				"name": "Fairy Sympathy",
+				"rank": 2000,
+				"slug": "demonology-07",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Fairy race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Fairy race."
+			},{
+				"name": "Wilder Sympathy",
+				"rank": 2000,
+				"slug": "demonology-08",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Wilder race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Wilder race."
+			},{
+				"name": "Beast Sympathy",
+				"rank": 2500,
+				"slug": "demonology-09",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Beast race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Beast race."
+			},{
+				"name": "Dragon King Sympathy",
+				"rank": 2500,
+				"slug": "demonology-10",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Dragon King race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Dragon King race."
+			},{
+				"name": "Divine Sympathy",
+				"rank": 3000,
+				"slug": "demonology-11",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Divine race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Divine race."
+			},{
+				"name": "Fallen Angel Sympathy",
+				"rank": 3000,
+				"slug": "demonology-12",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Fallen Angel race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Fallen Angel race."
+			},{
+				"name": "Raptor Sympathy",
+				"rank": 3500,
+				"slug": "demonology-13",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Raptor race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Raptor race."
+			},{
+				"name": "Femme Sympathy",
+				"rank": 3500,
+				"slug": "demonology-14",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Femme race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Femme race."
+			},{
+				"name": "Holy Beast Sympathy",
+				"rank": 4000,
+				"slug": "demonology-15",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Holy Beast race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Holy Beast race."
+			},{
+				"name": "Nocturne Sympathy",
+				"rank": 4000,
+				"slug": "demonology-16",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Nocturne race by 20% and raises your Demon's XP earned when summoning demons of the Nocturne race."
+			},{
+				"name": "Avian Sympathy",
+				"rank": 4500,
+				"slug": "demonology-17",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Avian race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Avian race."
+			},{
+				"name": "Evil Dragon Sympathy",
+				"rank": 4500,
+				"slug": "demonology-18",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Evil Dragon race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Evil Dragon race."
+			},{
+				"name": "Goddess Sympathy",
+				"rank": 5000,
+				"slug": "demonology-19",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Goddess race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Goddess race."
+			},{
+				"name": "Earth Mother Sympathy",
+				"rank": 5000,
+				"slug": "demonology-20",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Earth Mother race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Earth Mother race."
+			},{
+				"name": "Evil Demon Sympathy",
+				"rank": 5500,
+				"slug": "demonology-21",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Evil Demon race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Evil Demon race."
+			},{
+				"name": "Dragon Sympathy",
+				"rank": 5500,
+				"slug": "demonology-22",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Dragon race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Dragon race."
+			},{
+				"name": "Heavenly God Sympathy",
+				"rank": 6000,
+				"slug": "demonology-23",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Heavenly God race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Heavenly God race."
+			},{
+				"name": "Nation Ruler Sympathy",
+				"rank": 6000,
+				"slug": "demonology-24",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Nation Ruler race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Nation Ruler race."
+			},{
+				"name": "Vile Sympathy",
+				"rank": 7000,
+				"slug": "demonology-25",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Vile race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Vile race."
+			},{
+				"name": "Demigod Sympathy",
+				"rank": 7000,
+				"slug": "demonology-26",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demon of the Demigod race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Demigod race."
+			},{
+				"name": "Guardian Sympathy",
+				"rank": 7000,
+				"slug": "demonology-27",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that reduces damage from demons of the Guardian race by 20% and raises your Demon's XP earned by 20% when summoning demons of the Guardian race."
+			}]
 		},
 		"weaponKnowledge": {
 			"name": "Weapon Knowledge",
@@ -1333,7 +3392,97 @@
 			"value": 0,
 			"max": 9000,
 			"tooltip": "Effects 'Retaliation' by 40%\nEffects 'Swordsmith' by 20%\nEffects 'Synthesis' by 20%\nUsed in 'Spiritual Mixing' Mechanic",
-			"skills": []
+			"skills": [{
+				"name": "Sword Mastery I",
+				"rank": 1000,
+				"slug": "weapon-knowledge-01",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive Skill. Increases Close-Range damage. (Close-Range +1)"
+			},{
+				"name": "Sword Mastery II",
+				"rank": 2000,
+				"slug": "weapon-knowledge-02",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive Skill. Increases Close-Range damage. (Close-Range +1)"
+			},{
+				"name": "Sword Mastery III",
+				"rank": 3000,
+				"slug": "weapon-knowledge-03",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive Skill. Increases Close-Range damage. (Close-Range +1)"
+			},{
+				"name": "Sword Mastery IV",
+				"rank": 4000,
+				"slug": "weapon-knowledge-04",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive Skill. Increases Close-Range damage. (Close-Range +1)"
+			},{
+				"name": "Sword Mastery V",
+				"rank": 5000,
+				"slug": "weapon-knowledge-05",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive Skill. Increases Close-Range damage. (Close-Range +1)"
+			},{
+				"name": "Sword Mastery VI",
+				"rank": 6000,
+				"slug": "weapon-knowledge-06",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive Skill. Increases Close-Range damage. (Close-Range +1)"
+			},{
+				"name": "Kamiizumi",
+				"rank": 7000,
+				"slug": "weapon-knowledge-07",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Sword skill obtained through deep scholarship. Incantation time for Counter and Guard reduced by 20%, incantation time for Rush and Spin reduced by 10%."
+			},{
+				"name": "Kojiro",
+				"rank": 8000,
+				"slug": "weapon-knowledge-08",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Truth Learned: \"A mud-wall deads a cannon-bullet\". Passive skill that raises Critical defense by 30, and Close-range by 3."
+			},{
+				"name": "Musashi",
+				"rank": 9000,
+				"slug": "weapon-knowledge-09",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Truth Learned: \"Strength is a clear mind\". Passive skill that increases Critical by 30, and Close-range by 3."
+			}]
 		},
 		"survivalTechniques": {
 			"name": "Survival Techniques",

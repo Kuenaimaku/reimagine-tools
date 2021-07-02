@@ -9,7 +9,7 @@
 				</div>
 				<div class="media-content">
 					<p class="title is-6">{{skill.name}}</p>
-					<p class="subtitle is-7">{{info}}</p>
+					<p class="subtitle is-7">{{classRank(skill.rank)}} • {{info}}</p>
 				</div>
 			</div>
 
@@ -31,6 +31,21 @@ export default {
       required: true,
     },
   },
+	methods: {
+		classRank(amount) {
+      var a = Number.parseInt(amount) / 100;
+      var b = a.toString();
+      if (a === 0) {
+        return "Default";
+      } else if (a >= 100) {
+        return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);
+      } else if (a >= 10) {
+        return "Class " + b.charAt(0) + " Rank " + b.charAt(1);
+      } else {
+        return "Class 0 Rank " + b.charAt(0);
+      }
+    },
+	},
 	computed:{
 		info(){
 			let r = this.skill.type;
@@ -38,24 +53,21 @@ export default {
 			if(this.skill.action){
 				r += ` • ${this.skill.action}`
 			}
-
 			if(this.skill.cost){
 				r += ` • ${this.skill.cost}`
 			}
-
 			if(this.skill.affinity){
 				r += ` • ${this.skill.affinity}`
 			}
-
 			if(this.skill.stack && this.skill.stack === 1){
 				r += ` • ${this.skill.stack} stack`
 			}
 			else if(this.skill.stack && this.skill.stack !== 1){
 				r += ` • ${this.skill.stack} stacks`
 			}
-
 			return r;
-		}
+		},
+	
 	}
 }
 </script>

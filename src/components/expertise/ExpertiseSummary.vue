@@ -59,5 +59,7 @@ export default {
 <style lang="scss" scoped>
 .skill-summary{
   display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 </style>
