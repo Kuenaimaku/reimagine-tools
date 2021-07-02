@@ -5,7 +5,7 @@
         <skill-tooltip :skill="skill"/>
       </template>
 		<figure class="image is-32x32">
-			<img :src="'@/assets/img/expertise/' + skill.slug +'.png'">
+			<img :src="'./img/expertise/' + skill.slug +'.png'">
 		</figure>
     </o-tooltip>
   </div>
