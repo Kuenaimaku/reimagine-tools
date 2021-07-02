@@ -3498,7 +3498,17 @@
 			"value": 0,
 			"max": 10000,
 			"tooltip": "Effects 'Miitama Demon Growth Science' by 40%",
-			"skills": []
+			"skills": [{
+				"name": "Demon Sympathy 1",
+				"rank": 1000,
+				"slug": "psychology-01",
+				"type": "Passive",
+				"affinity": null,
+				"action" : null,
+				"stack": null,
+				"cost": null,
+				"desc": "Passive skill that increases XP earned to summoned Demon(+5% XP to summoned Demon)."
+			}]
 		},
 		"medicalSciences": {
 			"name": "Medical Sciences",
