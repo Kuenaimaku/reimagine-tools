@@ -1,7 +1,7 @@
 import Levels from "@/data/levels.json"
 import Dungeons from "@/data/dungeons.json"
 import Expertise from "@/data/expertise.json"
-import ChainExpertise from "@/data/ChainExpertise.json"
+import ChainExpertise from "@/data/chain-expertise.json"
 
 
 import OptionDefaults from  "@/data/options.json"
