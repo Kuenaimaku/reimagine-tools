@@ -1,15 +1,23 @@
-import Data from "@/data/data.json"
+import Levels from "@/data/levels.json"
+import Dungeons from "@/data/dungeons.json"
+import Expertise from "@/data/expertise.json"
+import ChainExpertise from "@/data/ChainExpertise.json"
+
+
 import OptionDefaults from  "@/data/options.json"
 import _ from 'lodash'
 export default {
-    getData(){
-        var d = _.cloneDeep(Data);
-        var response = {
-            levels: d.levels,
-            dungeons: d.dungeons,
-            expertise: d.expertise,
-        }
-        return response;
+    getLevels(){
+        return _.cloneDeep(Levels);
+    },
+    getDungeons(){
+        return _.cloneDeep(Dungeons);
+    },
+    getExpertise(){
+        return _.cloneDeep(Expertise);
+    },
+    getChainExpertise(){
+        return _.cloneDeep(ChainExpertise);
     },
 
     getAppleDefaults(){

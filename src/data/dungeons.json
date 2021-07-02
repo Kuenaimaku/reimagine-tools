@@ -1,0 +1,110 @@
+[
+	{
+		"name": "Cathedral (Dungeon)",
+		"apples": 1000
+	},
+	{
+		"name": "Celu Tower Bronze",
+		"apples": 15
+	},
+	{
+		"name": "Celu Tower Silver",
+		"apples": 250
+	},
+	{
+		"name": "Celu Tower Gold",
+		"apples": 2450
+	},
+	{
+		"name": "Ichigaya Camp Bronze",
+		"apples": 5
+	},
+	{
+		"name": "Ichigaya Camp Silver",
+		"apples": 80
+	},
+	{
+		"name": "Ichigaya Camp Gold",
+		"apples": 340
+	},
+	{
+		"name": "Nakano Ruins Bronze",
+		"apples": 25
+	},
+	{
+		"name": "Nakano Ruins Silver",
+		"apples": 340
+	},
+	{
+		"name": "Nakano Ruins Gold (False)",
+		"apples": 3000
+	},
+	{
+		"name": "Nakano Ruins Gold (True Xuan Wu)",
+		"apples": 3600
+	},
+	{
+		"name": "Shibuya Quartz Bronze",
+		"apples": 20
+	},
+	{
+		"name": "Shibuya Quartz Silver",
+		"apples": 80
+	},
+	{
+		"name": "Shibuya Quartz Gold",
+		"apples": 250
+	},
+	{
+		"name": "Shinagawa Catacombs Bronze",
+		"apples": 25
+	},
+	{
+		"name": "Shinagawa Catacombs Gold",
+		"apples": 200
+	},
+	{
+		"name": "Suginami Tunnels Bronze",
+		"apples": 15
+	},
+	{
+		"name": "Suginami Tunnels Silver",
+		"apples": 210
+	},
+	{
+		"name": "Suginami Tunnels Gold",
+		"apples": 950
+	},
+	{
+		"name": "TMG Building (False)",
+		"apples": 250
+	},
+	{
+		"name": "Ueno Mirage Bronze",
+		"apples": 20
+	},
+	{
+		"name": "Ueno Mirage Silver",
+		"apples": 350
+	},
+	{
+		"name": "Ueno Mirage Gold",
+		"apples": 3000
+	},
+	{
+		"name": "Zhu Que Bronze",
+		"apples": 20
+	},
+	{
+		"name": "Zhu Que Gold (Susano-O)",
+		"apples": 1520
+	},
+	{
+		"name": "Zhu Que Gold (Amaterasu M)",
+		"apples": 1520
+	},
+	{
+		"name": "Zhu Que Gold (Amaterasu F)",
+		"apples": 2660
+	}
+]

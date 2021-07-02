@@ -106,11 +106,10 @@ export default {
     };
   },
   created() {
-    let hydratedValues = dataService.getData();
-    let hydratedOptions = dataService.getAppleDefaults();
-    this.options = hydratedOptions;
-    this.levels = hydratedValues.levels;
-    this.dungeons = hydratedValues.dungeons;
+
+    this.options =  dataService.getAppleDefaults();
+    this.levels = dataService.getLevels();
+    this.dungeons = dataService.getDungeons();
   },
   computed: {
     apples() {
@@ -148,9 +147,9 @@ export default {
       return "Apples";
     },
     tablesort() {
-      let hydratedValues = dataService.getData();
+      let dungeons = dataService.getDungeons();
       if (!this.options.sort) {
-        return hydratedValues.dungeons;
+        return dungeons;
       }
       return this.dungeons.sort((a, b) => b.apples - a.apples);
     },

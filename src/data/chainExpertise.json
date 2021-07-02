@@ -1,0 +1,70 @@
+{
+	"magic-fist": [
+		{
+			"name": "Kamaitachi",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": "Active",
+			"affinity": "Force",
+			"action": "Rush",
+			"stack": 1,
+			"cost": "HP 7%, MP 6",
+			"desc": "Surrounds yourself with a vacuum, slicing enemies you pass to bits. Inflicts Force-based damage on all enemies in range."
+		},
+		{
+			"name": "Freezing Lance",
+			"rank": 2000,
+			"slug": "magic-fist-02",
+			"type": "Active",
+			"affinity": "Ice",
+			"action": "Rush",
+			"stack": 1,
+			"cost": "HP 9%, MP 5",
+			"desc": "Clads yourself in cold, and freezes enemies' blood with a thrust. Inflicts Ice-based damage on all enemies in range."
+		},
+		{
+			"name": "Sonic Through",
+			"rank": 3000,
+			"slug": "magic-fist-03",
+			"type": "Active",
+			"affinity": "Electric",
+			"action": "Rush",
+			"stack": 1,
+			"cost": "HP 5%, MP 3",
+			"desc": "Creates an electric field and electrocutes your foes. Inflicts Electric-based damage on all enemies in range."
+		},
+		{
+			"name": "Delorean",
+			"rank": 4000,
+			"slug": "magic-fist-04",
+			"type": "Active",
+			"affinity": "Fire",
+			"action": "Rush",
+			"stack": 1,
+			"cost": "HP 11%, MP 8",
+			"desc": "A trail of fire from your feet burns all enemies in your path. Inflicts Fire-based damage on all enemies in range."
+		},
+		{
+			"name": "Spell Runner",
+			"rank": 6000,
+			"slug": "magic-fist-05",
+			"type": "Active",
+			"affinity": "Mystic",
+			"action": "Rush",
+			"stack": 1,
+			"cost": "HP 8%, MP 10",
+			"desc": "Inflicts Mystic-based damage and Mute ailment on all enemies in range."
+		},
+		{
+			"name": "Devil Heart Breaker",
+			"rank": 8000,
+			"slug": "magic-fist-06",
+			"type": "Active",
+			"affinity": "Almighty",
+			"action": "Rush",
+			"stack": 1,
+			"cost": "HP 16%, MP 50, 140 Magnetite",
+			"desc": "A deadly feat of magic that penetrates even a Demon's heart. Inflicts Almighty-based damage on all enemies in range."
+		}
+	]
+}

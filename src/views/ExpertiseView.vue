@@ -54,7 +54,14 @@
                   {{ currentExpertise }}/{{expertiseFloor + bonusExpertise}}
                 </progressbar>
               </div>
-              <expertise-summary :expertise="Object.values(this.expertise)" />
+              <div class="columns">
+                <div class="column is-one-third">
+                  <expertise-summary :expertise="Object.values(this.expertise)" />
+                </div>
+                <div class="column">
+                  <chain-expertise-summary :expertise="this.expertise" :options="this.options" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -71,6 +78,7 @@ import Options from '@/components/expertise/Options.vue'
 
 import Progressbar from '@/components/Progressbar.vue'
 import ExpertiseSummary from '@/components/expertise/ExpertiseSummary.vue'
+import ChainExpertiseSummary from '@/components/expertise/ChainExpertiseSummary.vue'
 
 export default {
   name: "App",
@@ -78,7 +86,8 @@ export default {
     ExpertiseInput,
     Options,
     Progressbar,
-    ExpertiseSummary
+    ExpertiseSummary,
+    ChainExpertiseSummary
   },
   data() {
     return {
@@ -92,9 +101,9 @@ export default {
   created(){
     let uri = window.location.search.substring(0);
     let params = new URLSearchParams(uri);
-    let hydratedValues = dataService.getData();
+    let hydratedValues = dataService.getExpertise();
     let hydratedOptions = dataService.getExpertiseDefaults();
-    this.expertise = hydratedValues.expertise;
+    this.expertise = hydratedValues;
     this.options = hydratedOptions;
 
     
@@ -131,10 +140,8 @@ export default {
   },
   methods: {
 		reset(){
-      let hydratedValues = dataService.getData();
-			let hydratedOptions = dataService.getBookDefaults();
-      this.expertise = hydratedValues.expertise;
-			this.options = hydratedOptions;
+      this.expertise = dataService.getExpertise();
+			this.options = dataService.getExpertiseDefaults();
 		}
 	}
 }

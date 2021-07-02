@@ -56,7 +56,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .skill-summary{
   display:flex;
   flex-direction: row;
