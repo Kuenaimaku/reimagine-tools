@@ -4,7 +4,7 @@
       <template v-slot:content>
         <skill-tooltip :skill="skill"/>
       </template>
-		<figure class="image is-32x32">
+		<figure class="image is-32x32 is-skill">
 			<img :src="'./img/expertise/' + skill.slug +'.png'">
 		</figure>
     </o-tooltip>
@@ -31,6 +31,11 @@ export default {
 <style lang="scss" scoped>
 .skill-wrapper{
   margin: 0px 0.2em;
+}
+
+.is-skill{
+  margin:0px;
+  padding:0px;
 }
 
 .o-tip__content{

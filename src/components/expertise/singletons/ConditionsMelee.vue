@@ -1,13 +1,13 @@
 <template>
   <chain-expertise
-      :expertise="this.expertise"
-      :options="this.options"
-      :visible="isVisible"
-      :classRank="classRank"
-      @setValues="setValues"
-      name="Magic Fist"
-    >
-      <template v-slot:content>
+    :expertise="this.expertise"
+    :options="this.options"
+    :visible="isVisible"
+    :classRank="classRank"
+    @setValues="setValues"
+    name="Conditions of Melee Combat"
+  >
+    <template v-slot:content>
         <table class="table is-hoverable is-fullwidth">
           <thead>
             <tr>
@@ -19,22 +19,22 @@
           </thead>
           <tbody>
             <tr>
-              <th>Rush</th>
-              <td>Class 1 Rank 0</td>
+              <th>Weapon Knowledge</th>
+              <td>Class 3 Rank 0</td>
               <td>30%</td>
-              <td>{{parseExpertise(expertise.rush.value * 0.3)}}</td>
+              <td>{{parseExpertise(expertise.weaponKnowledge.value * 0.4)}}</td>
             </tr>
             <tr>
-              <th>Destruction Magic</th>
-              <td>Class 1 Rank 0</td>
+              <th>Crushing Technique</th>
+              <td>Class 3 Rank 0</td>
               <td>30%</td>
-              <td>{{parseExpertise(expertise.destructionMagic.value * 0.3)}}</td>
+              <td>{{parseExpertise(expertise.crushingTechnique.value * 0.4)}}</td>
             </tr>
             <tr>
-              <th>Magic Control</th>
+              <th>Demonology</th>
               <td>Class 1 Rank 0</td>
               <td>40%</td>
-              <td>{{parseExpertise(expertise.magicControl.value * 0.4)}}</td>
+              <td>{{parseExpertise(expertise.demonology.value * 0.2)}}</td>
             </tr>
           </tbody>
         </table>
@@ -49,26 +49,23 @@
           >
           </skill>
         </div>
-      </template>
+    </template>
   </chain-expertise>
 </template>
 
 <script>
-import Skill from '@/components/expertise/Skill.vue'
-import ChainExpertise from '@/components/expertise/ChainExpertise.vue'
-
+import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
-  name: "MagicFist",
+  name: "ConditionsOfMeleeCombat",
   components: {
-    Skill,
-    ChainExpertise
+    ChainExpertise,
   },
   props: {
     expertise: {
       type: Object,
       required: true,
     },
-		skills: {
+    skills: {
       type: Object,
       required: true,
     },
@@ -97,17 +94,17 @@ export default {
     },
     setValues(to) {
       if (to === "zero") {
-        this.expertise.rush.value = 0;
-        this.expertise.destructionMagic.value = 0;
-        this.expertise.magicControl.value = 0;
+        this.expertise.weaponKnowledge.value = 0;
+        this.expertise.crushingTechnique.value = 0;
+        this.expertise.demonology.value = 0;
       } else if (to === "required") {
-        this.expertise.rush.value = 1000;
-        this.expertise.destructionMagic.value = 1000;
-        this.expertise.magicControl.value = 1000;
+        this.expertise.weaponKnowledge.value = 3000;
+        this.expertise.crushingTechnique.value = 3000;
+        this.expertise.demonology.value = 1000;
       } else if (to === "max") {
-        this.expertise.rush.value = this.expertise.rush.max;
-        this.expertise.destructionMagic.value = this.expertise.destructionMagic.max;
-        this.expertise.magicControl.value = this.expertise.magicControl.max;
+        this.expertise.weaponKnowledge.value = this.expertise.weaponKnowledge.max;
+        this.expertise.crushingTechnique.value = this.expertise.crushingTechnique.max;
+        this.expertise.demonology.value = this.expertise.demonology.max;
       }
     },
   },
@@ -115,28 +112,31 @@ export default {
     isVisible() {
       if (!this.hideLocked) return true;
       else if (
-        this.expertise.rush.value >= 1000 &&
-        this.expertise.destructionMagic.value >= 1000 &&
-        this.expertise.magicControl.value >= 1000
+        this.expertise.weaponKnowledge.value >= 3000 &&
+        this.expertise.crushingTechnique.value >= 3000 &&
+        this.expertise.demonology.value >= 1000
       )
         return true;
       else return false;
     },
     total(){
-      let rush = this.expertise.rush.value * 0.3;
-      let destructionMagic = this.expertise.destructionMagic.value * 0.3;
-      let magicControl = this.expertise.magicControl.value * 0.4;
+      let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.4;
+      let crushingTechnique = this.expertise.crushingTechnique.value * 0.4;
+      let demonology = this.expertise.demonology.value * 0.2;
 
-      return Number.parseInt(rush + destructionMagic + magicControl);
+      return Number.parseInt(Math.min(weaponKnowledge + crushingTechnique + demonology, 8800));
     },
     classRank() {
-      let rush = this.expertise.rush.value * 0.3;
-      let destructionMagic = this.expertise.destructionMagic.value * 0.3;
-      let magicControl = this.expertise.magicControl.value * 0.4;
+      let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.4;
+      let crushingTechnique = this.expertise.crushingTechnique.value * 0.4;
+      let demonology = this.expertise.demonology.value * 0.2;
 
-      var a = Number.parseInt(rush + destructionMagic + magicControl) / 100;
+      var a =
+        Number.parseInt(
+          Math.min(weaponKnowledge + crushingTechnique + demonology, 8800)
+        ) / 100;
       var b = a.toString();
-      if (a === 0 || this.expertise.rush.value < 1000 || this.expertise.destructionMagic.value < 1000 || this.expertise.magicControl.value < 1000) {
+      if (a === 0 || this.expertise.weaponKnowledge.value > 3000 || this.expertise.crushingTechnique.value > 3000 || this.expertise.demonology.value > 1000) {
         return "Class 0 Rank 0";
       } else if (a >= 100) {
         return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);
@@ -149,9 +149,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.skill-summary figure{
-  margin:0px;
-}
-</style>

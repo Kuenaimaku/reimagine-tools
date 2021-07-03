@@ -1,4 +1,108 @@
 {
+	"arms-maker": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"conditions-magic": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"conditions-melee": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"conditions-ranged": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"craftsmanship": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"curse-of-the-wretched": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"enhancement": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"magic-bullet": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
 	"magic-fist": [
 		{
 			"name": "Kamaitachi",
@@ -65,6 +169,110 @@
 			"stack": 1,
 			"cost": "HP 16%, MP 50, 140 Magnetite",
 			"desc": "A deadly feat of magic that penetrates even a Demon's heart. Inflicts Almighty-based damage on all enemies in range."
+		}
+	],
+	"three-forms": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"miitama": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"rampage": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"regal-presence": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"sharpshooter": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"support-bullet": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"swordsmith": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		}
+	],
+	"synthesis": [
+		{
+			"name": "",
+			"rank": 1000,
+			"slug": "magic-fist-01",
+			"type": null,
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
 		}
 	]
 }
