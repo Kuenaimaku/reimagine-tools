@@ -1,6 +1,6 @@
 <template>
 	<div id="expertise">
-		<section class="hero is-warning is-bold">
+		<section class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
           <div class="columns is-vcentered">
@@ -12,7 +12,7 @@
             <div class="column is-10">
               <!-- Left side -->
               <h1 class="title">Expertise Calculator</h1>
-              <p class="subtitle">This is a BETA</p>
+              <p class="subtitle">For ReIMAGINE</p>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@
                   />
                 </o-tab-item>
                 <o-tab-item value="1" label="Options">
-                  <options :options="this.options" @reset-expertise="reset"/>
+                  <options :options="this.options" @reset-expertise="reset" @open-link-modal="expertiseLinkModal"/>
                 </o-tab-item>
               </o-tabs>
             </div>
@@ -73,12 +73,13 @@
 <script>
 import dataService from "@/services/dataService";
 
+import Progressbar from '@/components/Progressbar.vue'
+
 import ExpertiseInput from '@/components/expertise/ExpertiseInput.vue'
 import Options from '@/components/expertise/Options.vue'
-
-import Progressbar from '@/components/Progressbar.vue'
 import ExpertiseSummary from '@/components/expertise/ExpertiseSummary.vue'
 import ChainExpertiseSummary from '@/components/expertise/ChainExpertiseSummary.vue'
+import ExpertiseLinkModal from '@/components/expertise/LinkModal.vue'
 
 export default {
   name: "App",
@@ -102,6 +103,18 @@ export default {
     let uri = window.location.search.substring(0);
     let params = new URLSearchParams(uri);
     this.reset();
+    if(uri != '')
+    {
+      let hydratedValues = dataService.fromExpertiseQueryParams(params);
+      this.expertise = hydratedValues.expertise;
+      this.options = hydratedValues.options;
+      this.$oruga.notification.open({
+          message: 'Build Loaded!',
+          rootClass: 'toast-notification',
+          position: 'top',
+          duration: 2000
+        })
+    }
   },
   computed:{
 		currentExpertise() {
@@ -138,6 +151,19 @@ export default {
       this.expertise = dataService.getExpertise();
 			this.options = dataService.getExpertiseDefaults();
 		},
+    expertiseLinkModal() {
+      this.$oruga.modal.open({
+        parent: this,
+        component: ExpertiseLinkModal,
+        custom: true,
+        trapFocus: true,
+        props: {
+          options: this.options,
+          expertise: this.expertise,
+        },
+        width:400
+      })
+    }
 	}
 }
 </script>
@@ -146,5 +172,16 @@ export default {
 
 .o-tabs__content{
   padding: 0px;
+}
+
+.toast-notification {
+  margin: 0.5em 0;
+  text-align: center;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 12%), 0 0 6px rgb(0 0 0 / 4%);
+  border-radius: 2em;
+  padding: 0.75em 1.5em;
+  pointer-events: auto;
+  color: #e6d6e6;
+  background: #485fc7;
 }
 </style>

@@ -35,7 +35,7 @@ export default {
         return options.expertise;
     },
 
-    toQueryParams(expertiseList, optionsList) {
+    toExpertiseQueryParams(expertiseList, optionsList) {
         var urlParams = new URLSearchParams();
         Object.keys(expertiseList).forEach(function (v) {
             let slim = Number.parseInt(expertiseList[v].value / 100);
@@ -52,8 +52,8 @@ export default {
         })
         return urlParams.toString();
     },
-    fromQueryParams(url) {
-        let ed = _.cloneDeep(ExpertiseDefaults)
+    fromExpertiseQueryParams(url) {
+        let ed = this.getExpertise();
         Object.keys(ed).forEach(function (item) {
             let queryValue = url.get(ed[item].queryParam)
             if (queryValue !== null) {
@@ -62,7 +62,7 @@ export default {
             }
         })
 
-        let od = _.cloneDeep(OptionDefaults)
+        let od = this.getExpertiseDefaults();
         Object.keys(od).forEach(function (item) {
             let queryValue = url.get(od[item].queryParam)
             if (queryValue !== null) {

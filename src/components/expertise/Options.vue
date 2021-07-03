@@ -132,7 +132,10 @@
         v-model.number="options.saintGermain.value"
       />
     </o-field>
-    <o-button @click="reset" icon-left="refresh">Reset Options</o-button>
+    <o-field grouped>
+      <o-button expanded @click="reset" icon-left="refresh">Reset Options</o-button>
+      <o-button expanded @click="link" icon-left="link">Generate Link</o-button>
+    </o-field>
   </div>
 </template>
 
@@ -158,6 +161,9 @@ export default {
   methods:{
     reset(){
       this.$emit("reset-expertise");
+    },
+    link(){
+      this.$emit("open-link-modal");
     },
   }
 };
