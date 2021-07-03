@@ -35,7 +35,7 @@
                   />
                 </o-tab-item>
                 <o-tab-item value="1" label="Options">
-                  <options :options="this.options" />
+                  <options :options="this.options" @reset-expertise="reset"/>
                 </o-tab-item>
               </o-tabs>
             </div>
@@ -59,7 +59,7 @@
                   <expertise-summary :expertise="Object.values(this.expertise)" />
                 </div>
                 <div class="column">
-                  <chain-expertise-summary :expertise="this.expertise" :options="this.options" />
+                  <chain-expertise-summary :expertise="this.expertise" :options="this.options"  />
                 </div>
               </div>
             </div>
@@ -101,12 +101,7 @@ export default {
   created(){
     let uri = window.location.search.substring(0);
     let params = new URLSearchParams(uri);
-    let hydratedValues = dataService.getExpertise();
-    let hydratedOptions = dataService.getExpertiseDefaults();
-    this.expertise = hydratedValues;
-    this.options = hydratedOptions;
-
-    
+    this.reset();
   },
   computed:{
 		currentExpertise() {
@@ -142,7 +137,7 @@ export default {
 		reset(){
       this.expertise = dataService.getExpertise();
 			this.options = dataService.getExpertiseDefaults();
-		}
+		},
 	}
 }
 </script>

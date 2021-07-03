@@ -94,8 +94,7 @@ export default {
   },
   methods: {
 		reset(){
-			let hydratedOptions = dataService.getBookDefaults();
-			this.options = hydratedOptions;
+			this.options = dataService.getBookDefaults();
 		},
 		expertiseClass(v){
 			var r = Math.floor(v/1000)

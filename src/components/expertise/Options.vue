@@ -132,17 +132,7 @@
         v-model.number="options.saintGermain.value"
       />
     </o-field>
-    <!-- <o-field>
-        <template v-slot:label>
-          <span class="option-title">Fighting Spirits</span>
-        </template>
-        <step-number-input
-          :min="0"
-          :max="4000"
-          :step="1000"
-          v-model="options.fightingSpirits.value"
-        />
-      </o-field> -->
+    <o-button @click="reset" icon-left="refresh">Reset Options</o-button>
   </div>
 </template>
 
@@ -165,6 +155,11 @@ export default {
   data() {
     return {};
   },
+  methods:{
+    reset(){
+      this.$emit("reset-expertise");
+    },
+  }
 };
 </script>
 

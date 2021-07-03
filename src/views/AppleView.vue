@@ -165,8 +165,7 @@ export default {
   },
   methods: {
     reset() {
-      let hydratedValues = dataService.getAppleDefaults();
-      this.options = hydratedValues.options;
+      this.options = dataService.getAppleDefaults();
     },
   },
 };
