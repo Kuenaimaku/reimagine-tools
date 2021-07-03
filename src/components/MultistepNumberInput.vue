@@ -17,7 +17,7 @@
         type="number"
         expanded
         :editable="editable"
-        v-model.number="modelValue"
+        v-model.number="computedValue"
       ></o-input>
       <p class="control" @click="stepRight(step1)">
         <o-button type="is-info" :disabled="disabledMax">
@@ -117,8 +117,11 @@ export default {
      * When v-model is changed:
      *   1. Set internal value.
      */
-    value(value) {
-      this.newValue = value;
+    modelValue: {
+      immediate: true,
+      handler(value) {
+        this.newValue = value
+      }
     }
   },
 };
