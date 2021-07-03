@@ -70,7 +70,7 @@
       <div class="skill-summary">
         <skill
           v-for="skill in this.skills.filter(function (e) {
-            return e.rank <= total;
+            return e.rank <= total && requirements;
           })"
           :key="skill.slug"
           :skill="skill"
@@ -82,10 +82,12 @@
 </template>
 
 <script>
+import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
   name: "MasteryOfTheThreeFormsOfLife",
   components: {
+    Skill,
     ChainExpertise,
   },
   props: {
@@ -133,16 +135,22 @@ export default {
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (this.options.level.value >= 98) return true;
+      else if (this.requirements) return true;
       else return false;
     },
-    total(){
+    requirements() {
+      if (this.options.level.value >= 98) return true;
+      else return false;
+    },
+    total() {
       let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.2;
       let gunKnowledge = this.expertise.gunKnowledge.value * 0.2;
       let magicControl = this.expertise.magicControl.value * 0.2;
       let bless = this.expertise.bless.value * 0.2;
 
-      return Number.parseInt(Math.min(weaponKnowledge + gunKnowledge + magicControl + bless, 6600));
+      return Number.parseInt(
+        Math.min(weaponKnowledge + gunKnowledge + magicControl + bless, 6600)
+      );
     },
     classRank() {
       let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.2;

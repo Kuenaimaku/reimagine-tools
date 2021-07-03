@@ -1,74 +1,76 @@
 <template>
   <chain-expertise
-      :expertise="this.expertise"
-      :options="this.options"
-      :visible="isVisible"
-      :classRank="classRank"
-      @setValues="setValues"
-      name="Magic Fist"
-    >
-      <template v-slot:content>
-        <table class="table is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th>Expertise</th>
-              <th>Minimum</th>
-              <th>Percent</th>
-              <th>Result</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Rush</th>
-              <td>Class 1 Rank 0</td>
-              <td>30%</td>
-              <td>{{parseExpertise(expertise.rush.value * 0.3)}}</td>
-            </tr>
-            <tr>
-              <th>Destruction Magic</th>
-              <td>Class 1 Rank 0</td>
-              <td>30%</td>
-              <td>{{parseExpertise(expertise.destructionMagic.value * 0.3)}}</td>
-            </tr>
-            <tr>
-              <th>Magic Control</th>
-              <td>Class 1 Rank 0</td>
-              <td>40%</td>
-              <td>{{parseExpertise(expertise.magicControl.value * 0.4)}}</td>
-            </tr>
-          </tbody>
-        </table>
-        <h5 class="title is-6">Skills Acquired</h5>
-        <div class="skill-summary">
-          <skill
-              v-for="skill in this.skills.filter(function (e) {
-                return e.rank <= total;
-              })"
-            :key="skill.slug"
-            :skill="skill"
-          >
-          </skill>
-        </div>
-      </template>
+    :expertise="this.expertise"
+    :options="this.options"
+    :visible="isVisible"
+    :classRank="classRank"
+    @setValues="setValues"
+    name="Magic Fist"
+  >
+    <template v-slot:content>
+      <table class="table is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Expertise</th>
+            <th>Minimum</th>
+            <th>Percent</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Rush</th>
+            <td>Class 1 Rank 0</td>
+            <td>30%</td>
+            <td>{{ parseExpertise(expertise.rush.value * 0.3) }}</td>
+          </tr>
+          <tr>
+            <th>Destruction Magic</th>
+            <td>Class 1 Rank 0</td>
+            <td>30%</td>
+            <td>
+              {{ parseExpertise(expertise.destructionMagic.value * 0.3) }}
+            </td>
+          </tr>
+          <tr>
+            <th>Magic Control</th>
+            <td>Class 1 Rank 0</td>
+            <td>40%</td>
+            <td>{{ parseExpertise(expertise.magicControl.value * 0.4) }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 class="title is-6">Skills Acquired</h5>
+      <div class="skill-summary">
+        <skill
+          v-for="skill in this.skills.filter(function (e) {
+            return e.rank <= total && requirements;
+          })"
+          :key="skill.slug"
+          :skill="skill"
+        >
+        </skill>
+      </div>
+    </template>
   </chain-expertise>
 </template>
 
 <script>
-import Skill from '@/components/expertise/Skill.vue'
-import ChainExpertise from '@/components/expertise/ChainExpertise.vue'
+import Skill from "@/components/expertise/Skill.vue";
+import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 
 export default {
   name: "MagicFist",
   components: {
     Skill,
-    ChainExpertise
+    ChainExpertise,
   },
   props: {
     expertise: {
       type: Object,
       required: true,
     },
-		skills: {
+    skills: {
       type: Object,
       required: true,
     },
@@ -106,7 +108,8 @@ export default {
         this.expertise.magicControl.value = 1000;
       } else if (to === "max") {
         this.expertise.rush.value = this.expertise.rush.max;
-        this.expertise.destructionMagic.value = this.expertise.destructionMagic.max;
+        this.expertise.destructionMagic.value =
+          this.expertise.destructionMagic.max;
         this.expertise.magicControl.value = this.expertise.magicControl.max;
       }
     },
@@ -114,7 +117,11 @@ export default {
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (
+      else if (this.requirements) return true;
+      else return false;
+    },
+    requirements() {
+      if (
         this.expertise.rush.value >= 1000 &&
         this.expertise.destructionMagic.value >= 1000 &&
         this.expertise.magicControl.value >= 1000
@@ -122,7 +129,7 @@ export default {
         return true;
       else return false;
     },
-    total(){
+    total() {
       let rush = this.expertise.rush.value * 0.3;
       let destructionMagic = this.expertise.destructionMagic.value * 0.3;
       let magicControl = this.expertise.magicControl.value * 0.4;
@@ -136,7 +143,12 @@ export default {
 
       var a = Number.parseInt(rush + destructionMagic + magicControl) / 100;
       var b = a.toString();
-      if (a === 0 || this.expertise.rush.value < 1000 || this.expertise.destructionMagic.value < 1000 || this.expertise.magicControl.value < 1000) {
+      if (
+        a === 0 ||
+        this.expertise.rush.value < 1000 ||
+        this.expertise.destructionMagic.value < 1000 ||
+        this.expertise.magicControl.value < 1000
+      ) {
         return "Class 0 Rank 0";
       } else if (a >= 100) {
         return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);
@@ -151,7 +163,7 @@ export default {
 </script>
 
 <style lang="scss">
-.skill-summary figure{
-  margin:0px;
+.skill-summary figure {
+  margin: 0px;
 }
 </style>

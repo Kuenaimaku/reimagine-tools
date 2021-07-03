@@ -38,7 +38,7 @@
       <div class="skill-summary">
         <skill
           v-for="skill in this.skills.filter(function (e) {
-            return e.rank <= total;
+            return e.rank <= total && requirements;
           })"
           :key="skill.slug"
           :skill="skill"
@@ -50,10 +50,12 @@
 </template>
 
 <script>
+import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
   name: "Swordsmith",
   components: {
+    Skill,
     ChainExpertise,
   },
   props: {
@@ -105,7 +107,11 @@ export default {
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (
+      else if (this.requirements) return true;
+      else return false;
+    },
+    requirements() {
+      if (
         this.expertise.blades.value >= 1000 &&
         this.expertise.weaponKnowledge.value >= 2000
       )

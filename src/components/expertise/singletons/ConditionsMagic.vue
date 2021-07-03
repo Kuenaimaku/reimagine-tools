@@ -8,56 +8,60 @@
     name="Conditions of Magic Combat"
   >
     <template v-slot:content>
-        <table class="table is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th>Expertise</th>
-              <th>Minimum</th>
-              <th>Percent</th>
-              <th>Result</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Magic Control</th>
-              <td>Class 3 Rank 0</td>
-              <td>30%</td>
-              <td>{{parseExpertise(expertise.magicControl.value * 0.4)}}</td>
-            </tr>
-            <tr>
-              <th>Crushing Technique</th>
-              <td>Class 3 Rank 0</td>
-              <td>30%</td>
-              <td>{{parseExpertise(expertise.crushingTechnique.value * 0.4)}}</td>
-            </tr>
-            <tr>
-              <th>Demonology</th>
-              <td>Class 1 Rank 0</td>
-              <td>40%</td>
-              <td>{{parseExpertise(expertise.demonology.value * 0.2)}}</td>
-            </tr>
-          </tbody>
-        </table>
-        <h5 class="title is-6">Skills Acquired</h5>
-        <div class="skill-summary">
-          <skill
-              v-for="skill in this.skills.filter(function (e) {
-                return e.rank <= total;
-              })"
-            :key="skill.slug"
-            :skill="skill"
-          >
-          </skill>
-        </div>
+      <table class="table is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Expertise</th>
+            <th>Minimum</th>
+            <th>Percent</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Magic Control</th>
+            <td>Class 3 Rank 0</td>
+            <td>30%</td>
+            <td>{{ parseExpertise(expertise.magicControl.value * 0.4) }}</td>
+          </tr>
+          <tr>
+            <th>Crushing Technique</th>
+            <td>Class 3 Rank 0</td>
+            <td>30%</td>
+            <td>
+              {{ parseExpertise(expertise.crushingTechnique.value * 0.4) }}
+            </td>
+          </tr>
+          <tr>
+            <th>Demonology</th>
+            <td>Class 1 Rank 0</td>
+            <td>40%</td>
+            <td>{{ parseExpertise(expertise.demonology.value * 0.2) }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 class="title is-6">Skills Acquired</h5>
+      <div class="skill-summary">
+        <skill
+          v-for="skill in this.skills.filter(function (e) {
+            return e.rank <= total && requirements;
+          })"
+          :key="skill.slug"
+          :skill="skill"
+        >
+        </skill>
+      </div>
     </template>
   </chain-expertise>
 </template>
 
 <script>
+import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
   name: "ConditionsOfMagicCombat",
   components: {
+    Skill,
     ChainExpertise,
   },
   props: {
@@ -103,7 +107,8 @@ export default {
         this.expertise.demonology.value = 1000;
       } else if (to === "max") {
         this.expertise.magicControl.value = this.expertise.magicControl.max;
-        this.expertise.crushingTechnique.value = this.expertise.crushingTechnique.max;
+        this.expertise.crushingTechnique.value =
+          this.expertise.crushingTechnique.max;
         this.expertise.demonology.value = this.expertise.demonology.max;
       }
     },
@@ -111,7 +116,11 @@ export default {
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (
+      else if (this.requirements) return true;
+      else return false;
+    },
+    requirements() {
+      if (
         this.expertise.magicControl.value >= 3000 &&
         this.expertise.crushingTechnique.value >= 3000 &&
         this.expertise.demonology.value >= 1000
@@ -119,12 +128,14 @@ export default {
         return true;
       else return false;
     },
-    total(){
+    total() {
       let magicControl = this.expertise.magicControl.value * 0.4;
       let crushingTechnique = this.expertise.crushingTechnique.value * 0.4;
       let demonology = this.expertise.demonology.value * 0.2;
 
-      return Number.parseInt(Math.min(magicControl + crushingTechnique + demonology, 8800));
+      return Number.parseInt(
+        Math.min(magicControl + crushingTechnique + demonology, 8800)
+      );
     },
     classRank() {
       let magicControl = this.expertise.magicControl.value * 0.4;
@@ -136,7 +147,12 @@ export default {
           Math.min(magicControl + crushingTechnique + demonology, 8800)
         ) / 100;
       var b = a.toString();
-      if (a === 0 || this.expertise.magicControl.value < 3000 || this.expertise.crushingTechnique.value < 3000 || this.expertise.demonology.value < 1000) {
+      if (
+        a === 0 ||
+        this.expertise.magicControl.value < 3000 ||
+        this.expertise.crushingTechnique.value < 3000 ||
+        this.expertise.demonology.value < 1000
+      ) {
         return "Class 0 Rank 0";
       } else if (a >= 100) {
         return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);

@@ -46,7 +46,7 @@
       <div class="skill-summary">
         <skill
           v-for="skill in this.skills.filter(function (e) {
-            return e.rank <= total;
+            return e.rank <= total && requirements;
           })"
           :key="skill.slug"
           :skill="skill"
@@ -58,10 +58,12 @@
 </template>
 
 <script>
+import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
   name: "Retaliation",
   components: {
+    Skill,
     ChainExpertise,
   },
   props: {
@@ -107,15 +109,21 @@ export default {
         this.expertise.survivalTechniques.value = 1000;
       } else if (to === "max") {
         this.expertise.attack.value = this.expertise.attack.max;
-        this.expertise.weaponKnowledge.value = this.expertise.weaponKnowledge.max;
-        this.expertise.survivalTechniques.value = this.expertise.survivalTechniques.max;
+        this.expertise.weaponKnowledge.value =
+          this.expertise.weaponKnowledge.max;
+        this.expertise.survivalTechniques.value =
+          this.expertise.survivalTechniques.max;
       }
     },
   },
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (
+      else if (this.requirements) return true;
+      else return false;
+    },
+    requirements() {
+      if (
         this.expertise.attack.value >= 2000 &&
         this.expertise.weaponKnowledge.value >= 1000 &&
         this.expertise.survivalTechniques.value >= 1000

@@ -7,8 +7,8 @@
     @setValues="setValues"
     name="Enhancement"
   >
-  <template v-slot:content>
-    <table class="table is-hoverable is-fullwidth">
+    <template v-slot:content>
+      <table class="table is-hoverable is-fullwidth">
         <thead>
           <tr>
             <th>Expertise</th>
@@ -44,7 +44,7 @@
       <div class="skill-summary">
         <skill
           v-for="skill in this.skills.filter(function (e) {
-            return e.rank <= total;
+            return e.rank <= total && requirements;
           })"
           :key="skill.slug"
           :skill="skill"
@@ -56,10 +56,12 @@
 </template>
 
 <script>
+import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
   name: "Enhancement",
   components: {
+    Skill,
     ChainExpertise,
   },
   props: {
@@ -113,7 +115,11 @@ export default {
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (
+      else if (this.requirements) return true;
+      else return false;
+    },
+    requirements() {
+      if (
         this.expertise.curativeMagic.value >= 2000 &&
         this.expertise.supportMagic.value >= 2000 &&
         this.expertise.bless.value >= 1000
@@ -121,7 +127,7 @@ export default {
         return true;
       else return false;
     },
-    total(){
+    total() {
       let curativeMagic = this.expertise.curativeMagic.value * 0.3;
       let supportMagic = this.expertise.supportMagic.value * 0.4;
       let bless = this.expertise.bless.value * 0.3;
@@ -135,7 +141,12 @@ export default {
 
       var a = Number.parseInt(curativeMagic + supportMagic + bless) / 100;
       var b = a.toString();
-      if (a === 0 || this.expertise.curativeMagic.value < 2000 || this.expertise.supportMagic.value < 2000 || this.expertise.bless.value < 1000) {
+      if (
+        a === 0 ||
+        this.expertise.curativeMagic.value < 2000 ||
+        this.expertise.supportMagic.value < 2000 ||
+        this.expertise.bless.value < 1000
+      ) {
         return "Class 0 Rank 0";
       } else if (a >= 100) {
         return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);

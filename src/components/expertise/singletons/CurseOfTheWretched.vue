@@ -22,7 +22,9 @@
             <th>Destruction Magic</th>
             <td>Class 1 Rank 0</td>
             <td>10%</td>
-            <td>{{ parseExpertise(expertise.destructionMagic.value * 0.1) }}</td>
+            <td>
+              {{ parseExpertise(expertise.destructionMagic.value * 0.1) }}
+            </td>
           </tr>
           <tr>
             <th>Curse Magic</th>
@@ -50,7 +52,7 @@
       <div class="skill-summary">
         <skill
           v-for="skill in this.skills.filter(function (e) {
-            return e.rank <= total;
+            return e.rank <= total && requirements;
           })"
           :key="skill.slug"
           :skill="skill"
@@ -62,10 +64,12 @@
 </template>
 
 <script>
+import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
   name: "CurseOfTheWretched",
   components: {
+    Skill,
     ChainExpertise,
   },
   props: {
@@ -112,7 +116,8 @@ export default {
         this.expertise.magicControl.value = 1000;
         this.expertise.bless.value = 1000;
       } else if (to === "max") {
-        this.expertise.destructionMagic.value = this.expertise.destructionMagic.max;
+        this.expertise.destructionMagic.value =
+          this.expertise.destructionMagic.max;
         this.expertise.curseMagic.value = this.expertise.curseMagic.max;
         this.expertise.magicControl.value = this.expertise.magicControl.max;
         this.expertise.bless.value = this.expertise.bless.max;
@@ -122,7 +127,11 @@ export default {
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (
+      else if (this.requirements) return true;
+      else return false;
+    },
+    requirements() {
+      if (
         this.expertise.destructionMagic.value >= 1000 &&
         this.expertise.curseMagic.value >= 2000 &&
         this.expertise.magicControl.value >= 1000 &&
@@ -131,13 +140,15 @@ export default {
         return true;
       else return false;
     },
-    total(){
+    total() {
       let destructionMagic = this.expertise.destructionMagic.value * 0.1;
       let curseMagic = this.expertise.curseMagic.value * 0.5;
       let magicControl = this.expertise.magicControl.value * 0.2;
       let bless = this.expertise.bless.value * 0.2;
 
-      return Number.parseInt(destructionMagic + curseMagic + magicControl + bless);
+      return Number.parseInt(
+        destructionMagic + curseMagic + magicControl + bless
+      );
     },
     classRank() {
       let destructionMagic = this.expertise.destructionMagic.value * 0.1;
@@ -149,7 +160,13 @@ export default {
         Number.parseInt(destructionMagic + curseMagic + magicControl + bless) /
         100;
       var b = a.toString();
-      if (a === 0 || this.expertise.destructionMagic.value < 1000|| this.expertise.curseMagic.value < 2000 || this.expertise.magicControl.value < 1000 || this.expertise.bless.value < 1000) {
+      if (
+        a === 0 ||
+        this.expertise.destructionMagic.value < 1000 ||
+        this.expertise.curseMagic.value < 2000 ||
+        this.expertise.magicControl.value < 1000 ||
+        this.expertise.bless.value < 1000
+      ) {
         return "Class 0 Rank 0";
       } else if (a >= 100) {
         return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);

@@ -54,7 +54,7 @@
       <div class="skill-summary">
         <skill
           v-for="skill in this.skills.filter(function (e) {
-            return e.rank <= total;
+            return e.rank <= total && requirements;
           })"
           :key="skill.slug"
           :skill="skill"
@@ -66,10 +66,12 @@
 </template>
 
 <script>
+import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
   name: "Synthesis",
   components: {
+    Skill,
     ChainExpertise,
   },
   props: {
@@ -115,7 +117,8 @@ export default {
       } else if (to === "max") {
         this.expertise.occultism.value = this.expertise.occultism.max;
         this.expertise.demonology.value = this.expertise.demonology.max;
-        this.expertise.weaponKnowledge.value = this.expertise.weaponKnowledge.max;
+        this.expertise.weaponKnowledge.value =
+          this.expertise.weaponKnowledge.max;
         this.expertise.mineralogy.value = this.expertise.mineralogy.max;
       }
     },
@@ -123,16 +126,22 @@ export default {
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (this.expertise.occultism.value >= 1000) return true;
+      else if (this.requirements) return true;
       else return false;
     },
-    total(){
+    requirements() {
+      if (this.expertise.occultism.value >= 1000) return true;
+      else return false;
+    },
+    total() {
       let occultism = this.expertise.occultism.value * 0.4;
       let demonology = this.expertise.demonology.value * 0.4;
       let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.1;
       let mineralogy = this.expertise.mineralogy.value * 0.1;
 
-      return Number.parseInt(occultism + demonology + weaponKnowledge + mineralogy);
+      return Number.parseInt(
+        occultism + demonology + weaponKnowledge + mineralogy
+      );
     },
     classRank() {
       let occultism = this.expertise.occultism.value * 0.4;

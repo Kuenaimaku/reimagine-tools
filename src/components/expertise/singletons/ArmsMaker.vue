@@ -8,50 +8,52 @@
     name="Arms Maker"
   >
     <template v-slot:content>
-        <table class="table is-hoverable is-fullwidth">
-          <thead>
-            <tr>
-              <th>Expertise</th>
-              <th>Minimum</th>
-              <th>Percent</th>
-              <th>Result</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Crafts</th>
-              <td>Class 1 Rank 0</td>
-              <td>80%</td>
-              <td>{{parseExpertise(expertise.crafts.value * 0.8)}}</td>
-            </tr>
-            <tr>
-              <th>Gun Knowledge</th>
-              <td>Class 2 Rank 0</td>
-              <td>20%</td>
-              <td>{{parseExpertise(expertise.gunKnowledge.value * 0.2)}}</td>
-            </tr>
-          </tbody>
-        </table>
-        <h5 class="title is-6">Skills Acquired</h5>
-        <div class="skill-summary">
-          <skill
-              v-for="skill in this.skills.filter(function (e) {
-                return e.rank <= total;
-              })"
-            :key="skill.slug"
-            :skill="skill"
-          >
-          </skill>
-        </div>
-      </template>
+      <table class="table is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Expertise</th>
+            <th>Minimum</th>
+            <th>Percent</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Crafts</th>
+            <td>Class 1 Rank 0</td>
+            <td>80%</td>
+            <td>{{ parseExpertise(expertise.crafts.value * 0.8) }}</td>
+          </tr>
+          <tr>
+            <th>Gun Knowledge</th>
+            <td>Class 2 Rank 0</td>
+            <td>20%</td>
+            <td>{{ parseExpertise(expertise.gunKnowledge.value * 0.2) }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 class="title is-6">Skills Acquired</h5>
+      <div class="skill-summary">
+        <skill
+          v-for="skill in this.skills.filter(function (e) {
+            return e.rank <= total && requirements;
+          })"
+          :key="skill.slug"
+          :skill="skill"
+        >
+        </skill>
+      </div>
+    </template>
   </chain-expertise>
 </template>
 
 <script>
+import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
   name: "ArmsMaker",
   components: {
+    Skill,
     ChainExpertise,
   },
   props: {
@@ -59,7 +61,7 @@ export default {
       type: Object,
       required: true,
     },
-		skills: {
+    skills: {
       type: Object,
       required: true,
     },
@@ -102,14 +104,18 @@ export default {
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (
+      else if (this.requirements) return true;
+      else return false;
+    },
+    requirements() {
+      if (
         this.expertise.crafts.value >= 1000 &&
         this.expertise.gunKnowledge.value >= 2000
       )
         return true;
       else return false;
     },
-    total(){
+    total() {
       let crafts = this.expertise.crafts.value * 0.8;
       let gunKnowledge = this.expertise.gunKnowledge.value * 0.2;
 
@@ -121,7 +127,11 @@ export default {
 
       var a = Number.parseInt(crafts + gunKnowledge) / 100;
       var b = a.toString();
-      if (a === 0 || this.expertise.crafts.value < 1000 || this.expertise.gunKnowledge.value < 2000) {
+      if (
+        a === 0 ||
+        this.expertise.crafts.value < 1000 ||
+        this.expertise.gunKnowledge.value < 2000
+      ) {
         return "Class 0 Rank 0";
       } else if (a >= 100) {
         return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);

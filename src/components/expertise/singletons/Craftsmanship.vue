@@ -44,7 +44,7 @@
       <div class="skill-summary">
         <skill
           v-for="skill in this.skills.filter(function (e) {
-            return e.rank <= total;
+            return e.rank <= total && requirements;
           })"
           :key="skill.slug"
           :skill="skill"
@@ -56,10 +56,12 @@
 </template>
 
 <script>
+import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
   name: "Craftsmanship",
   components: {
+    Skill,
     ChainExpertise,
   },
   props: {
@@ -113,7 +115,11 @@ export default {
   computed: {
     isVisible() {
       if (!this.hideLocked) return true;
-      else if (
+      else if (this.requirements) return true;
+      else return false;
+    },
+    requirements() {
+      if (
         this.expertise.creation.value >= 1000 &&
         this.expertise.medicalSciences.value >= 2000
       )
@@ -134,7 +140,11 @@ export default {
 
       var a = Number.parseInt(creation + medicalSciences + sketching) / 100;
       var b = a.toString();
-      if (a === 0 || this.expertise.creation.value < 1000 || this.expertise.medicalSciences.value < 2000) {
+      if (
+        a === 0 ||
+        this.expertise.creation.value < 1000 ||
+        this.expertise.medicalSciences.value < 2000
+      ) {
         return "Class 0 Rank 0";
       } else if (a >= 100) {
         return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);

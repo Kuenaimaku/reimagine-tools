@@ -1,106 +1,622 @@
 {
-	"arms-maker": [
-		{
-			"name": "",
-			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
-			"affinity": null,
-			"action": null,
-			"stack": null,
-			"cost": null,
-			"desc": ""
-		}
-	],
+	"arms-maker": [],
 	"conditions-magic": [
 		{
-			"name": "",
-			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
+			"name": "Critical Up Improvement 1",
+			"rank": 2000,
+			"slug": "conditions-magic-01",
+			"type": "Passive",
 			"affinity": null,
 			"action": null,
 			"stack": null,
 			"cost": null,
-			"desc": ""
+			"desc": "Passive skill learned by the Conditions of Magic Combat that increases critical in accordance to level (Critical + Level x 0.5)."
+		},
+		{
+			"name": "Magic Up Improvement 1",
+			"rank": 4000,
+			"slug": "conditions-magic-02",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases Magic in accordance to level(Magic + Level x 0.15)."
+		},
+		{
+			"name": "Critical Up Improvement 2",
+			"rank": 6000,
+			"slug": "conditions-magic-03",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill learned by the Conditions of Magic Combat that increases critical in accordance to level (Critical + Level x 0.5)."
+		},
+		{
+			"name": "Limit Break Chance Up Improvement 1",
+			"rank": 8000,
+			"slug": "conditions-magic-04",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill learned by the Conditions of Magic Combat that increases limit break chance in accordance to level (Limit Break Chance + Level x 0.05)."
 		}
 	],
 	"conditions-melee": [
 		{
-			"name": "",
-			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
+			"name": "Critical Up Improvement 1",
+			"rank": 2000,
+			"slug": "conditions-melee-01",
+			"type": "Passive",
 			"affinity": null,
 			"action": null,
 			"stack": null,
 			"cost": null,
-			"desc": ""
+			"desc": "Passive skill learned by the Conditions of Melee Combat that increases critical in accordance to level (Critical + Level x 0.5)."
+		},
+		{
+			"name": "Strength Up Improvement 1",
+			"rank": 4000,
+			"slug": "conditions-melee-02",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases Power in accordance to level(Power + Level x 0.15)."
+		},
+		{
+			"name": "Critical Up Improvement 2",
+			"rank": 6000,
+			"slug": "conditions-melee-03",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill learned by the Conditions of Melee Combat that increases critical in accordance to level (Critical + Level x 0.5)."
+		},
+		{
+			"name": "Limit Break Chance Up Improvement 1",
+			"rank": 8000,
+			"slug": "conditions-melee-04",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill learned by the Conditions of Melee Combat that increases limit break chance in accordance to level (Limit Break Chance + Level x 0.05)."
 		}
 	],
 	"conditions-ranged": [
 		{
-			"name": "",
-			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
+			"name": "Critical Up Improvement 1",
+			"rank": 2000,
+			"slug": "conditions-ranged-01",
+			"type": "Passive",
 			"affinity": null,
 			"action": null,
 			"stack": null,
 			"cost": null,
-			"desc": ""
+			"desc": "Passive skill learned by the Conditions of Ranged Combat that increases critical in accordance to level (Critical + Level x 0.5)."
+		},
+		{
+			"name": "Speed Up Improvement 1",
+			"rank": 4000,
+			"slug": "conditions-ranged-02",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases speed in accordance to level(Speed + Level x 0.15)."
+		},
+		{
+			"name": "Critical Up Improvement 2",
+			"rank": 6000,
+			"slug": "conditions-ranged-03",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill learned by the Conditions of Ranged Combat that increases critical in accordance to level (Critical + Level x 0.5)."
+		},
+		{
+			"name": "Limit Break Chance Up Improvement 1",
+			"rank": 8000,
+			"slug": "conditions-ranged-04",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill learned by the Conditions of Ranged Combat that increases limit break chance in accordance to level (Limit Break Chance + Level x 0.05)."
 		}
 	],
 	"craftsmanship": [
 		{
-			"name": "",
+			"name": "Manus Up",
 			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
+			"slug": "craftsmanship-01",
+			"type": "Passive",
 			"affinity": null,
 			"action": null,
 			"stack": null,
 			"cost": null,
-			"desc": ""
+			"desc": "Passive skill that will allow you to withdraw the effects of a Manus Item during cultivation."
+		},
+		{
+			"name": "Slot Chance",
+			"rank": 1000,
+			"slug": "craftsmanship-02",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases the chance of having additional Modification Slot during cultivation."
+		},
+		{
+			"name": "Manus Up",
+			"rank": 2000,
+			"slug": "craftsmanship-03",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that will allow you to withdraw the effects of a Manus Item during cultivation."
+		},
+		{
+			"name": "Slot Chance",
+			"rank": 2000,
+			"slug": "craftsmanship-04",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases the chance of having additional Modification Slot during cultivation."
+		},
+		{
+			"name": "Manus Up",
+			"rank": 3000,
+			"slug": "craftsmanship-05",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that will allow you to withdraw the effects of a Manus Item during cultivation."
+		},
+		{
+			"name": "Slot Chance",
+			"rank": 3000,
+			"slug": "craftsmanship-06",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases the chance of having additional Modification Slot during cultivation."
+		},
+		{
+			"name": "Manus Up",
+			"rank": 4000,
+			"slug": "craftsmanship-07",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that will allow you to withdraw the effects of a Manus Item during cultivation."
+		},
+		{
+			"name": "Slot Chance",
+			"rank": 4000,
+			"slug": "craftsmanship-08",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases the chance of having additional Modification Slot during cultivation."
+		},
+		{
+			"name": "Manus Up",
+			"rank": 5000,
+			"slug": "craftsmanship-09",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that will allow you to withdraw the effects of a Manus Item during cultivation."
+		},
+		{
+			"name": "Slot Chance",
+			"rank": 5000,
+			"slug": "craftsmanship-10",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases the chance of having additional Modification Slot during cultivation."
 		}
 	],
 	"curse-of-the-wretched": [
 		{
-			"name": "",
+			"name": "Erosion Hex",
 			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
-			"affinity": null,
-			"action": null,
-			"stack": null,
-			"cost": null,
-			"desc": ""
+			"slug": "curse-of-the-wretched-01",
+			"type": "Active",
+			"affinity": "Nerve",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "10 MP",
+			"desc": "A curse that eats at the body and soul of surrounding enemies, and has a low probability of inflicting various adverse effects."
+		},
+		{
+			"name": "Delay Hex Yang",
+			"rank": 2000,
+			"slug": "curse-of-the-wretched-02",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "12 MP, 1 Bead Of Heaven (South)",
+			"desc": "A curse that interferes with the target's timing. Increases enemy's incantation time by 50%."
+		},
+		{
+			"name": "Slash Hex",
+			"rank": 3000,
+			"slug": "curse-of-the-wretched-03",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "30 MP",
+			"desc": "A curse that eats at the target's spirit and mind. Increases the target's susceptibility to Close-range attacks by 100%. Effect lasts until knockback of target, or for 30 seconds."
+		},
+		{
+			"name": "Bullet Hex",
+			"rank": 3000,
+			"slug": "curse-of-the-wretched-04",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "30 MP",
+			"desc": "A curse that eats at the target's spirit and mind. Increases the target's susceptibility to Long-range attacks by 100%. Effect lasts until knockback of target, or for 30 seconds."
+		},
+		{
+			"name": "Spell Hex",
+			"rank": 3000,
+			"slug": "curse-of-the-wretched-05",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "30 MP",
+			"desc": "A curse that eats at the target's spirit and mind. Increases the target's susceptibility to Magic attacks by 100%. Effect lasts until knockback of target, or for 30 seconds."
+		},
+		{
+			"name": "Curse of the Slow Cure",
+			"rank": 3500,
+			"slug": "curse-of-the-wretched-06",
+			"type": "Active",
+			"affinity": "Nerve",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "25 MP, 1 Bead of Heaven (South)",
+			"desc": "A curse that slows down the recovery of its victim by eating away at the victim's body. Reduces the target's Curative Resistance by 100%. Effect lasts for 30 seconds."
+		},
+		{
+			"name": "Delay Hex Yin",
+			"rank": 4000,
+			"slug": "curse-of-the-wretched-07",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "12 MP, 1 Bead of Heaven (North)",
+			"desc": "A curse that interferes with the target's timing. Increases skill cooldown time by 50%."
+		},
+		{
+			"name": "Damage Hex",
+			"rank": 4500,
+			"slug": "curse-of-the-wretched-08",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "25 MP, 2 Bead of Heaven (North)",
+			"desc": "A sinister curse, that causes the target to receive attacks in succession (grants Null knockback). Effect lasts for 15 seconds."
+		},
+		{
+			"name": "Curse of the Broken Mirror",
+			"rank": 5000,
+			"slug": "curse-of-the-wretched-09",
+			"type": "Active",
+			"affinity": "Almighty",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "30 MP, 2 Bead of Heaven (South)",
+			"desc": "Spreads a curse over a wide area that nullifies Tetrakarn and Makarakarn."
+		},
+		{
+			"name": "Corrosion Hex",
+			"rank": 6000,
+			"slug": "curse-of-the-wretched-10",
+			"type": "Active",
+			"affinity": "Mystic",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "25 MP, 1 Bead of Heaven (South)",
+			"desc": "A curse that eats at the body and soul of surrounding enemies, and has a low probability of inflicting various adverse effects."
+		},
+		{
+			"name": "Curse of the Four Wounds",
+			"rank": 8000,
+			"slug": "curse-of-the-wretched-11",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "50 MP, 2 Bead of Heaven (South)",
+			"desc": "A curse that has a low probability to reduce elemental resistances of surrounding enemies by 30%."
 		}
 	],
 	"enhancement": [
 		{
-			"name": "",
+			"name": "Divine Heal",
 			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
-			"affinity": null,
-			"action": null,
-			"stack": null,
-			"cost": null,
-			"desc": ""
+			"slug": "enhancement-01",
+			"type": "Active",
+			"affinity": "Curative",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "24 MP",
+			"desc": "Through the grace of a High Spirit, all party members in the area are healed, and HP regeneration rate raised for 5 minutes."
+		},
+		{
+			"name": "Pulse of Assult",
+			"rank": 2000,
+			"slug": "enhancement-02",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "30 MP, 1 Bead of Heaven (East)",
+			"desc": "The pulsating heart of aggression exalts the party members. The user and party members in the area have their damage increased for 30 seconds. (XX% boost dependent on Intelligence level)"
+		},
+		{
+			"name": "Pulse of Solid",
+			"rank": 2000,
+			"slug": "enhancement-03",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "30 MP, 1 Bead of Heaven (West)",
+			"desc": "The pulsating heart of resistance exalts the party members. The user and party members in the area have their defense increased for 30 seconds. (XX% boost dependent on Intelligence level)"
+		},
+		{
+			"name": "Pulse of Armored",
+			"rank": 2500,
+			"slug": "enhancement-04",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "25 MP",
+			"desc": "Gives one member in the party a valiant heart that knows no surrender. Temporarily cancels knockback from received attacks for 30 seconds."
+		},
+		{
+			"name": "Clock Cut",
+			"rank": 3000,
+			"slug": "enhancement-05",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "40 MP, 1 Bead of Heaven (East)",
+			"desc": "Blessing that raises the mind of one targeted party member. The target who receives this support spell will have a reduced incantation time of 50% for one skill."
+		},
+		{
+			"name": "Divine Blessing",
+			"rank": 3500,
+			"slug": "enhancement-06",
+			"type": "Active",
+			"affinity": "Curative",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "32 MP",
+			"desc": "Through the grace of a High Spirit, all party members in the area are healed, and HP regeneration rate raised for 5 minutes. (Higher healing modifier than Divine Heal)"
+		},
+		{
+			"name": "Clock Off",
+			"rank": 4000,
+			"slug": "enhancement-07",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "50 MP, 2 Bead of Heaven (East)",
+			"desc": "Blessing that raises the mind of one targeted party member. The target who receives this support spell will have a reduced incantation time of 100% for one skill."
+		},
+		{
+			"name": "Divine Shield",
+			"rank": 5000,
+			"slug": "enhancement-08",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "50 MP, 2 Bead of Heaven (West)",
+			"desc": "Through the protection of a High Spirit, all party members in the area will repel physical attacks up to twice. Shield lasts for 5 minutes."
+		},
+		{
+			"name": "Divine Barrier",
+			"rank": 5000,
+			"slug": "enhancement-09",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "50 MP, 2 Bead of Heaven (West)",
+			"desc": "Through the protection of a High Spirit, all party members in the area will repel magical attacks up to twice. Shield lasts for 5 minutes."
+		},
+		{
+			"name": "Divine Grace",
+			"rank": 6000,
+			"slug": "enhancement-10",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "48 MP",
+			"desc": "Through the grace of a High Spirit, all party members in the area are healed, and have all of their status ailments cured. (Higher healing modifier than Divine Blessing)"
+		},
+		{
+			"name": "Impulse of Armored",
+			"rank": 8000,
+			"slug": "enhancement-11",
+			"type": "Active",
+			"affinity": "Support",
+			"action": "Curative",
+			"stack": 1,
+			"cost": "40 MP, 2 Bead of Heaven (West)",
+			"desc": "Gives all surrounding party members a valiant heart that knows no surrender. Temporarily cancels knockback from received attacks for 30 seconds."
 		}
 	],
 	"magic-bullet": [
 		{
-			"name": "",
+			"name": "Squall Bullet Hole",
 			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
-			"affinity": null,
-			"action": null,
-			"stack": null,
-			"cost": null,
-			"desc": ""
+			"slug": "magic-bullet-01",
+			"type": "Active",
+			"affinity": "Force",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "5 MP, 1 Bullet",
+			"desc": "Atavaka mantra magic shot. Changes bullet to Force-based and inflicts Stun effect at low success rate."
+		},
+		{
+			"name": "Toxic Bullet Hole",
+			"rank": 2000,
+			"slug": "magic-bullet-02",
+			"type": "Active",
+			"affinity": "Magic",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "3 MP, 1 Bullet",
+			"desc": "Mamayuri mantra magic shot. Changes bullet to Magic-based and inflicts Poison effect at low success rate."
+		},
+		{
+			"name": "Forgetful Bullet Hole",
+			"rank": 2000,
+			"slug": "magic-bullet-03",
+			"type": "Active",
+			"affinity": "Magic",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "3 MP, 1 Bullet",
+			"desc": "Mamayuri mantra magic shot. Changes bullet to Magic-based and inflicts Amnesia effect at low success rate."
+		},
+		{
+			"name": "Arm Snipe",
+			"rank": 2500,
+			"slug": "magic-bullet-04",
+			"type": "Active",
+			"affinity": "Weapon-based",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "4 MP, 1 Bullet",
+			"desc": "Through precise aim, snipe your foe's source of power. The enemy's Slash, Thrust and Blunt-based attacks are weakened."
+		},
+		{
+			"name": "Enchanting Bullet Hole",
+			"rank": 3500,
+			"slug": "magic-bullet-05",
+			"type": "Active",
+			"affinity": "Mind",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "3 MP, 1 Bullet",
+			"desc": "Ragaraja mantra magic shot. Changes bullet to Mind-based and inflicts Charm effect at low success rate."
+		},
+		{
+			"name": "Spell Mute Bullet Hole",
+			"rank": 3500,
+			"slug": "magic-bullet-06",
+			"type": "Active",
+			"affinity": "Magic",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "3 MP, 1 Bullet",
+			"desc": "Mamayuri mantra magic shot. Changes bullet to Magic-based and inflicts Mute effect at low success rate."
+		},
+		{
+			"name": "Scorching Bullet Hole",
+			"rank": 4500,
+			"slug": "magic-bullet-07",
+			"type": "Active",
+			"affinity": "Fire",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "5 MP, 1 Bullet",
+			"desc": "Ucchusama mantra magic shot. Changes bullet to Fire-based and inflicts Burn effect at high success rate."
+		},
+		{
+			"name": "Hailing Bullet Hole",
+			"rank": 5000,
+			"slug": "magic-bullet-08",
+			"type": "Active",
+			"affinity": "Ice",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "5 MP, 1 Bullet",
+			"desc": "Yamantaka mantra magic shot. Changes bullet to Ice-based and inflicts Freeze effect at a high success rate."
+		},
+		{
+			"name": "Thundering Bullet Hole",
+			"rank": 5000,
+			"slug": "magic-bullet-09",
+			"type": "Active",
+			"affinity": "Electric",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "5 MP, 1 Bullet",
+			"desc": "Vajrayaksa mantra magic shot. Changes bullet to Electric-based and inflicts Shock effect at low success rate."
+		},
+		{
+			"name": "Blinding Bullet Hole",
+			"rank": 6000,
+			"slug": "magic-bullet-10",
+			"type": "Active",
+			"affinity": "Nerve",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "3 MP, 1 Bullet",
+			"desc": "Kundali mantra magic shot. Changes bullet to Nerve-based and inflicts Blind effect at high success rate."
+		},
+		{
+			"name": "Zamiel's Magic Bullet",
+			"rank": 8000,
+			"slug": "magic-bullet-11",
+			"type": "Active",
+			"affinity": "Weapon-based",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "6 MP, 1 Bullet",
+			"desc": "Brings judgement with a bullet."
 		}
 	],
 	"magic-fist": [
@@ -173,62 +689,656 @@
 	],
 	"three-forms": [
 		{
-			"name": "",
+			"name": "White of Swords",
 			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
+			"slug": "mastery-01",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "20% HP, 1 Dragon Orb",
+			"desc": "Switch Skill. At the cost of Magic Defense, increase ones Strength (Strength +25, Magic Defense -15)."
+		},
+		{
+			"name": "White of Guns",
+			"rank": 1000,
+			"slug": "mastery-02",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "20% HP, 1 Dragon Orb",
+			"desc": "Switch Skill. At the cost of Magic Defense, increase ones Speed (Speed + 25, Magic Defense - 15)."
+		},
+		{
+			"name": "White of Magic",
+			"rank": 1000,
+			"slug": "mastery-03",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "20% MP, 1 Dragon Orb",
+			"desc": "Switch Skill. At the cost of Physical Defense, increase ones Magic (Magic +25, Physical Defense -15)."
+		},
+		{
+			"name": "White of Summons",
+			"rank": 1000,
+			"slug": "mastery-04",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "20% MP, 1 Dragon Orb",
+			"desc": "Switch Skill. At the cost of Physical Defense, increase the ability of Partners (Demon STR, SPD, & MAG +10, Physical Defense -15)."
+		},
+		{
+			"name": "White of Blades",
+			"rank": 1200,
+			"slug": "mastery-05",
+			"type": "Passive",
 			"affinity": null,
 			"action": null,
 			"stack": null,
 			"cost": null,
-			"desc": ""
+			"desc": "Passive Skill that increases Melee Attack Power (Close Range +5)."
+		},
+		{
+			"name": "White of Firing",
+			"rank": 1200,
+			"slug": "mastery-06",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive Skill that increases Long Range Attack Power (Long Range +5)."
+		},
+		{
+			"name": "White of Chants",
+			"rank": 1200,
+			"slug": "mastery-07",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive Skill that increases Spell Power (Spell +5)."
+		},
+		{
+			"name": "White of Servants",
+			"rank": 1200,
+			"slug": "mastery-08",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive Skill that increases the ability of Partners (CLS-R, LNG-R, Spell & Support +2)."
+		},
+		{
+			"name": "Red of Swords",
+			"rank": 1400,
+			"slug": "mastery-09",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "30% MP, 3 Dragon Orbs",
+			"desc": "Switch Skill. At the cost of Physical Defense, increase ones Strength (Strength +40, Physical Defense -15)."
+		},
+		{
+			"name": "Red of Guns",
+			"rank": 1400,
+			"slug": "mastery-10",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "30% HP, 3 Dragon Orbs",
+			"desc": "Switch Skill. At the cost of Physical Defense, increase ones Speed (Speed +40, Physical Defense -15)."
+		},
+		{
+			"name": "Red of Magic",
+			"rank": 1400,
+			"slug": "mastery-11",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "30% HP, 3 Dragon Orbs",
+			"desc": "Switch Skill. At the cost of Magical Defense, increase ones Magic (Magic +40, Magical Defense -15)."
+		},
+		{
+			"name": "Red of Summons",
+			"rank": 1400,
+			"slug": "mastery-12",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "30% HP, 3 Dragon Orbs",
+			"desc": "Switch Skill. At the cost of Magical Defense, increase the ability of Partners (Demon STR, SPD, & MAG +15, Magical Defense -15)."
+		},
+		{
+			"name": "Red of Blades",
+			"rank": 1600,
+			"slug": "mastery-13",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive Skill that increases Melee Attack Power (Close Range +10)."
+		},
+		{
+			"name": "Red of Firing",
+			"rank": 1600,
+			"slug": "mastery-14",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive Skill that increases Long Range Attack Power (Long Range +10)."
+		},
+		{
+			"name": "Red of Chants",
+			"rank": 1600,
+			"slug": "mastery-15",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive Skill that increases Spell Power (Spell +10)."
+		},
+		{
+			"name": "Red of Servants",
+			"rank": 1600,
+			"slug": "mastery-16",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive Skill that increases the ability of Partners (CLS-R, LNG-R, Spell & Support +4)."
 		}
 	],
 	"miitama": [
 		{
-			"name": "",
+			"name": "Mitama Demon Sympathy 1",
 			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
+			"slug": "miitama-01",
+			"type": "Passive",
 			"affinity": null,
 			"action": null,
 			"stack": null,
 			"cost": null,
-			"desc": ""
+			"desc": "Passive skill that increases the experience acquisition of your summoned sacred soul Devil (+5% experience acquisition to Mitama Demon)."
+		},
+		{
+			"name": "Mitama Demon Sympathy 2",
+			"rank": 3000,
+			"slug": "miitama-02",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases the experience acquisition of your summoned sacred soul Devil (+5% experience acquisition to Mitama Demon)."
+		},
+		{
+			"name": "Mitama Demon Sympathy 3",
+			"rank": 5000,
+			"slug": "miitama-03",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Passive skill that increases the experience acquisition of your summoned sacred soul Devil (+5% experience acquisition to Mitama Demon)."
+		},
+		{
+			"name": "Mitama Demon Enhancement - Iron Man",
+			"rank": 7000,
+			"slug": "miitama-04",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "Testimony to your Mitamas' enhancement. Ability granted by Mitama Fusion is increased."
 		}
 	],
 	"rampage": [
 		{
-			"name": "",
+			"name": "Attack Cool-down Time -25%",
 			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
+			"slug": "rampage-01",
+			"type": "Passive",
 			"affinity": null,
 			"action": null,
 			"stack": null,
 			"cost": null,
-			"desc": ""
+			"desc": "One of the ultimate rampage skills known by roughnecks. Cool-down time of attack is reduced by 25% (No effect takes place, attack has no cool-down time)."
+		},
+		{
+			"name": "Rush Cool-down Time -25%",
+			"rank": 1000,
+			"slug": "rampage-02",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Cooldown time of rush is reduced by 25%."
+		},
+		{
+			"name": "Counter Cool-down Time -25%",
+			"rank": 2000,
+			"slug": "rampage-03",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Cool-down time of counter is reduced by 25%."
+		},
+		{
+			"name": "Spin Cool-down Time -25%",
+			"rank": 2000,
+			"slug": "rampage-04",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Cool-down time of spin is reduced by 25%."
+		},
+		{
+			"name": "Attack Stack +1",
+			"rank": 3000,
+			"slug": "rampage-05",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Attack stack is increased by 1."
+		},
+		{
+			"name": "Rush Stack +1",
+			"rank": 3000,
+			"slug": "rampage-06",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Rush stack is increased by 1."
+		},
+		{
+			"name": "Counter Stack +1",
+			"rank": 4000,
+			"slug": "rampage-07",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Counter stack is increased by 1."
+		},
+		{
+			"name": "Spin Stack +1",
+			"rank": 4000,
+			"slug": "rampage-08",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Spin stack is increased by 1"
+		},
+		{
+			"name": "Attack Power +20%",
+			"rank": 5000,
+			"slug": "rampage-09",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Attack power is increased by 20%."
+		},
+		{
+			"name": "Rush Power +20%",
+			"rank": 5000,
+			"slug": "rampage-10",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Rush power is increased by 20%."
+		},
+		{
+			"name": "Counter Power +20%",
+			"rank": 6000,
+			"slug": "rampage-11",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Counter power is increased by 20%."
+		},
+		{
+			"name": "Spin Power +20%",
+			"rank": 6000,
+			"slug": "rampage-12",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Spin power is increased by 20%."
+		},
+		{
+			"name": "HP Cost - 25%",
+			"rank": 7000,
+			"slug": "rampage-13",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. HP Cost for all skills is reduced by 25%."
+		},
+		{
+			"name": "Weapon-affinity up",
+			"rank": 7000,
+			"slug": "rampage-14",
+			"type": "Passive",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": "One of the ultimate rampage skills known by roughnecks. Damage for all weapon-based skills +25%."
 		}
 	],
 	"regal-presence": [
 		{
-			"name": "",
+			"name": "Lord of Serfs",
 			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
+			"slug": "regal-presence-01",
+			"type": "Switch",
+			"affinity": "All Weapons",
+			"action": null,
+			"stack": null,
+			"cost": "20% HP, 10 Magnetite",
+			"desc": "Reduces demon's LNG-R, ClS-R, and Spell by 5. Increases Cls-R by 10 and Critical by 40"
+		},
+		{
+			"name": "Lord of Soldiers",
+			"rank": 2000,
+			"slug": "regal-presence-02",
+			"type": "Switch",
+			"affinity": "1-Handed Swords",
+			"action": null,
+			"stack": null,
+			"cost": "10% HP, 10 Magnetite",
+			"desc": "Decreases Spin cool-down and incantation time by 50%. Increases Critical by 160. Decreases Spin damage by 20%."
+		},
+		{
+			"name": "Lord of Martyrs",
+			"rank": 2000,
+			"slug": "regal-presence-03",
+			"type": "Switch",
+			"affinity": "Primitive Weapons",
+			"action": null,
+			"stack": null,
+			"cost": "10% HP, 10 Magnetite",
+			"desc": "Increases Attack damage by 60%. Reduces Critical by 30 and Spin damage by 20%"
+		},
+		{
+			"name": "Lord of the Blood Axe",
+			"rank": 3000,
+			"slug": "regal-presence-04",
+			"type": "Switch",
+			"affinity": "Axes",
+			"action": null,
+			"stack": null,
+			"cost": "10% HP, 10 Magnetite",
+			"desc": "Increases Attack damage by 50%. Increases Critical by 40. Increases Rush and Spin incantation time by 15%."
+		},
+		{
+			"name": "Lord of Knights",
+			"rank": 3000,
+			"slug": "regal-presence-05",
+			"type": "Switch",
+			"affinity": "Thrusting Swords",
+			"action": null,
+			"stack": null,
+			"cost": "10% HP, 10 Magnetite",
+			"desc": "Increases Rush damage by 25% and Critical by 100. Increases Rush incantation time by 15%."
+		},
+		{
+			"name": "Lord of the Beasts",
+			"rank": 3000,
+			"slug": "regal-presence-06",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "30% HP, 15 Magnetite",
+			"desc": "Increases Spin damage by 40%. Increases Spin cool-down time by 50%."
+		},
+		{
+			"name": "Lord of Armor",
+			"rank": 4000,
+			"slug": "regal-presence-07",
+			"type": "Switch",
+			"affinity": "Spears",
+			"action": null,
+			"stack": null,
+			"cost": "10% HP, 10 Magnetite",
+			"desc": "Null Knockback, Null Incapacitate (damage does not interrupt incantation). Decreases General-Damage dealt by 100%. Decreases damage received by 50%."
+		},
+		{
+			"name": "Lord of Fighters",
+			"rank": 5000,
+			"slug": "regal-presence-08",
+			"type": "Switch",
+			"affinity": "Martial Arts",
+			"action": null,
+			"stack": null,
+			"cost": "10% HP, 20 Magnetite",
+			"desc": "Increases Close-Range damage by 40%. Increases damage received by 20%."
+		},
+		{
+			"name": "Lord of Courage",
+			"rank": 5000,
+			"slug": "regal-presence-09",
+			"type": "Switch",
+			"affinity": "2-Handed Swords",
+			"action": null,
+			"stack": null,
+			"cost": "10% HP, 10 Magnetite",
+			"desc": "Increases Rush damage by 50%. Increases Rush incantation and cool-down time by 10%."
+		},
+		{
+			"name": "Lord of Courage",
+			"rank": 6000,
+			"slug": "regal-presence-10",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "30% HP, 35 Magnetite",
+			"desc": "Increases Close-Range damage by 25%, and +100 critical. Increases damage received by 30%."
+		},
+		{
+			"name": "Lord of Courage",
+			"rank": 8000,
+			"slug": "regal-presence-11",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": "30% HP, 35 Magnetite",
+			"desc": "Increases Critical Defense by 150, and enables you to survive lethal blows with a 10% chance. Increases cool-down time for all skills by 20%."
+		}
+	],
+	"sharpshooter": [
+		{
+			"name": "Disturbed Purgation",
+			"rank": 1000,
+			"slug": "sharpshooter-01",
+			"type": "Switch",
 			"affinity": null,
 			"action": null,
 			"stack": null,
 			"cost": null,
 			"desc": ""
-		}
-	],
-	"sharpshooter": [
+		},
 		{
-			"name": "",
-			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
+			"name": "Cruel Chase",
+			"rank": 1500,
+			"slug": "sharpshooter-02",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Ether Tear",
+			"rank": 2000,
+			"slug": "sharpshooter-03",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Phony Amnesty",
+			"rank": 2500,
+			"slug": "sharpshooter-04",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Brith Exorcism",
+			"rank": 2500,
+			"slug": "sharpshooter-05",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Fire Revolution",
+			"rank": 3000,
+			"slug": "sharpshooter-06",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Dread Distinction",
+			"rank": 3000,
+			"slug": "sharpshooter-07",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Joint Break",
+			"rank": 3500,
+			"slug": "sharpshooter-08",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Guilty Pierce",
+			"rank": 4500,
+			"slug": "sharpshooter-09",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "San Cles Exile",
+			"rank": 4500,
+			"slug": "sharpshooter-10",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Epic Daze",
+			"rank": 5000,
+			"slug": "sharpshooter-11",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Criminal Bullet",
+			"rank": 6000,
+			"slug": "sharpshooter-12",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Blaspheme",
+			"rank": 6000,
+			"slug": "sharpshooter-13",
+			"type": "Switch",
+			"affinity": null,
+			"action": null,
+			"stack": null,
+			"cost": null,
+			"desc": ""
+		},
+		{
+			"name": "Barrett Friends",
+			"rank": 8000,
+			"slug": "sharpshooter-14",
+			"type": "Switch",
 			"affinity": null,
 			"action": null,
 			"stack": null,
@@ -238,41 +1348,84 @@
 	],
 	"support-bullet": [
 		{
-			"name": "",
-			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
-			"affinity": null,
-			"action": null,
-			"stack": null,
-			"cost": null,
-			"desc": ""
-		}
-	],
-	"swordsmith": [
+			"name": "Enchant Tuner",
+			"rank": 2000,
+			"slug": "support-bullet-01",
+			"type": "Active",
+			"affinity": "Auxiliary",
+			"action": "Rapid",
+			"stack": 3,
+			"cost": "1 Bullet, 5 Magnetite",
+			"desc": "Skill to shoot bullets of biological magnetite energy. It is possible to use on yourself and other players (Grants status Element Up (Increases damage of four attribute affinity skills))."
+		},
 		{
-			"name": "",
-			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
-			"affinity": null,
-			"action": null,
-			"stack": null,
-			"cost": null,
-			"desc": ""
+			"name": "Critical Tuner",
+			"rank": 4000,
+			"slug": "support-bullet-02",
+			"type": "Active",
+			"affinity": "Auxiliary",
+			"action": "Rapid",
+			"stack": 3,
+			"cost": "1 Bullet, 5 Magnetite",
+			"desc": "Skill to shoot bullets of biological magnetite energy. It is possible to use on yourself and other players (Grants status Critical Up (Increases chance of critical))."
+		},
+		{
+			"name": "Assault Tuner",
+			"rank": 6000,
+			"slug": "support-bullet-03",
+			"type": "Active",
+			"affinity": "Auxiliary",
+			"action": "Rapid",
+			"stack": 3,
+			"cost": "1 Bullet, 5 Magnetite",
+			"desc": "Skill to shoot bullets of biological magnetite energy. It is possible to use on yourself and other players (Grants status Assault Up (Increases damage dealt))."
+		},
+		{
+			"name": "Ability Tuner",
+			"rank": 8000,
+			"slug": "support-bullet-04",
+			"type": "Active",
+			"affinity": "Auxiliary",
+			"action": "Rapid",
+			"stack": 3,
+			"cost": "1 Bullet, 5 Magnetite",
+			"desc": "Skill to shoot bullets of biological magnetite energy. It is possible to use on yourself and other players (Grants status Ability Up (Increases all stats by 1))."
 		}
 	],
+	"swordsmith": [],
 	"synthesis": [
 		{
-			"name": "",
-			"rank": 1000,
-			"slug": "magic-fist-01",
-			"type": null,
-			"affinity": null,
-			"action": null,
+			"name": "Tarot Fusion",
+			"rank": 400,
+			"slug": "synthesis-01",
+			"type": "Active",
+			"affinity": "Special",
+			"action": "Curative",
 			"stack": null,
 			"cost": null,
-			"desc": ""
+			"desc": "A secret art that fuses the power contained within Demon Crystals and Tarot Cards with equipment. When successful, the crystal or card is lost, but the equipment acquires special powers. When unsuccessful, the equipment's Durability decreases."
+		},
+		{
+			"name": "Crystallize Demon",
+			"rank": 1000,
+			"slug": "synthesis-02",
+			"type": "Active",
+			"affinity": "Special",
+			"action": "Curative",
+			"stack": null,
+			"cost": null,
+			"desc": "A secret art that fuses summoned demons with certain jewels to create Demon Crystals. When successful, the demon is lost, but a Demon Crystal is acquired in its stead. When unsuccessful, the jewel is lost and Friendship level with the demon drops."
+		},
+		{
+			"name": "Soul Stone Fusion",
+			"rank": 2000,
+			"slug": "synthesis-03",
+			"type": "Active",
+			"affinity": "Special",
+			"action": "Curative",
+			"stack": null,
+			"cost": null,
+			"desc": "With this secret art, you can fuse Demon Crystals and Soul Stones together with Equipment. When successful, both the crystal and stone is lost but a special power is added to the Equipment. When unsuccessful, the Equipment's durability is decreased and both the crystal and stone is lost."
 		}
 	]
 }
