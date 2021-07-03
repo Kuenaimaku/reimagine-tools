@@ -30,7 +30,7 @@
     <o-field label="Sort Table by Apples">
       <o-switch v-model="options.sort"></o-switch>
     </o-field>
-    <o-button @click="reset" icon-left="refresh">Reset Options</o-button>
+    <o-button @click.prevent="reset" icon-left="refresh">Reset Options</o-button>
   </div>
 </template>
 
