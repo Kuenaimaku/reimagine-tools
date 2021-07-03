@@ -12,19 +12,19 @@
     </multistep-number-input>
 		</o-field>
     <o-field label="Golden Arc Casino">
-      <StepNumberInput
+      <step-number-input
         :min="0"
         :max="4000"
         :step="1000"
-        v-model="options.casino.value"
+        v-model.number="options.casino.value"
       />
     </o-field>
     <o-field label="Special Training">
-      <StepNumberInput
+      <step-number-input
         :min="0"
         :max="3000"
         :step="1000"
-        v-model="options.specialTraining.value"
+        v-model.number="options.specialTraining.value"
       />
     </o-field>
     <o-field>
@@ -34,11 +34,11 @@
 					<o-icon  size="small" icon="help-circle-outline" />
 				</o-tooltip>
       </template>
-      <StepNumberInput
+      <step-number-input
         :min="0"
         :max="3000"
         :step="1000"
-        v-model="options.tierOneDDS.value"
+        v-model.number="options.tierOneDDS.value"
       />
     </o-field>
     <o-field>
@@ -48,11 +48,11 @@
 					<o-icon  size="small" icon="help-circle-outline" />
 				</o-tooltip>
       </template>
-      <StepNumberInput
+      <step-number-input
         :min="0"
         :max="3000"
         :step="1000"
-        v-model="options.tierTwoDDS.value"
+        v-model.number="options.tierTwoDDS.value"
       />
     </o-field>
     <o-field>
@@ -62,7 +62,7 @@
 					<o-icon  size="small" icon="help-circle-outline" />
 				</o-tooltip>
       </template>
-      <StepNumberInput
+      <step-number-input
         :min="0"
         :max="3000"
         :step="1000"
@@ -114,29 +114,29 @@
       <template v-slot:label>
         <span class="option-title">Diaspora</span>
       </template>
-      <StepNumberInput
+      <step-number-input
         :min="0"
         :max="16000"
         :step="1000"
-        v-model="options.diaspora.value"
+        v-model.number="options.diaspora.value"
       />
     </o-field>
     <o-field>
       <template v-slot:label>
         <span class="option-title">St. Germain Quests</span>
       </template>
-      <StepNumberInput
+      <step-number-input
         :min="0"
         :max="2000"
         :step="1000"
-        v-model="options.saintGermain.value"
+        v-model.number="options.saintGermain.value"
       />
     </o-field>
     <!-- <o-field>
         <template v-slot:label>
           <span class="option-title">Fighting Spirits</span>
         </template>
-        <StepNumberInput
+        <step-number-input
           :min="0"
           :max="4000"
           :step="1000"

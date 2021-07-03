@@ -17,7 +17,7 @@
         type="number"
         expanded
         :editable="editable"
-        v-model.number="computedValue"
+        v-model.number="modelValue"
       ></o-input>
       <p class="control" @click="stepRight(step1)">
         <o-button type="is-info" :disabled="disabledMax">
@@ -60,7 +60,7 @@ export default {
       type: Number,
       required: false,
     },
-    value: {
+    modelValue: {
       type: Number,
       required: false,
     },
@@ -119,7 +119,7 @@ export default {
      */
     value(value) {
       this.newValue = value;
-    },
+    }
   },
 };
 </script>
