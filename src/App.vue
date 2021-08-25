@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <a href="dfci:testing">test</a>
     <Navbar></Navbar>
     <router-view></router-view>
     <Footer></Footer>

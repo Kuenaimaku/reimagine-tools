@@ -1,6 +1,6 @@
 <template>
-	<div id="expertise">
-		<section class="hero is-primary is-bold">
+  <div id="expertise">
+    <section class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
           <div class="columns is-vcentered">
@@ -35,7 +35,11 @@
                   />
                 </o-tab-item>
                 <o-tab-item value="1" label="Options">
-                  <options :options="this.options" @reset-expertise="reset" @open-link-modal="expertiseLinkModal"/>
+                  <options
+                    :options="this.options"
+                    @reset-expertise="reset"
+                    @open-link-modal="expertiseLinkModal"
+                  />
                 </o-tab-item>
               </o-tabs>
             </div>
@@ -50,16 +54,22 @@
                   size="is-large"
                   :value="this.currentExpertise"
                   :max="expertiseFloor + bonusExpertise"
-                  show-value>
-                  {{ currentExpertise }}/{{expertiseFloor + bonusExpertise}}
+                  show-value
+                >
+                  {{ currentExpertise }}/{{ expertiseFloor + bonusExpertise }}
                 </progressbar>
               </div>
               <div class="columns">
                 <div class="column is-one-third">
-                  <expertise-summary :expertise="Object.values(this.expertise)" />
+                  <expertise-summary
+                    :expertise="Object.values(this.expertise)"
+                  />
                 </div>
                 <div class="column">
-                  <chain-expertise-summary :expertise="this.expertise" :options="this.options"  />
+                  <chain-expertise-summary
+                    :expertise="this.expertise"
+                    :options="this.options"
+                  />
                 </div>
               </div>
             </div>
@@ -67,19 +77,19 @@
         </div>
       </div>
     </section>
-	</div>
+  </div>
 </template>
 
 <script>
 import dataService from "@/services/dataService";
 
-import Progressbar from '@/components/Progressbar.vue'
+import Progressbar from "@/components/Progressbar.vue";
 
-import ExpertiseInput from '@/components/expertise/ExpertiseInput.vue'
-import Options from '@/components/expertise/Options.vue'
-import ExpertiseSummary from '@/components/expertise/ExpertiseSummary.vue'
-import ChainExpertiseSummary from '@/components/expertise/ChainExpertiseSummary.vue'
-import ExpertiseLinkModal from '@/components/expertise/LinkModal.vue'
+import ExpertiseInput from "@/components/expertise/ExpertiseInput.vue";
+import Options from "@/components/expertise/Options.vue";
+import ExpertiseSummary from "@/components/expertise/ExpertiseSummary.vue";
+import ChainExpertiseSummary from "@/components/expertise/ChainExpertiseSummary.vue";
+import ExpertiseLinkModal from "@/components/expertise/LinkModal.vue";
 
 export default {
   name: "App",
@@ -88,7 +98,7 @@ export default {
     Options,
     Progressbar,
     ExpertiseSummary,
-    ChainExpertiseSummary
+    ChainExpertiseSummary,
   },
   data() {
     return {
@@ -99,25 +109,24 @@ export default {
       options: {},
     };
   },
-  created(){
+  created() {
     let uri = window.location.search.substring(0);
     let params = new URLSearchParams(uri);
     this.reset();
-    if(uri != '')
-    {
+    if (uri != "") {
       let hydratedValues = dataService.fromExpertiseQueryParams(params);
       this.expertise = hydratedValues.expertise;
       this.options = hydratedValues.options;
       this.$oruga.notification.open({
-          message: 'Build Loaded!',
-          rootClass: 'toast-notification',
-          position: 'top',
-          duration: 2000
-        })
+        message: "Build Loaded!",
+        rootClass: "toast-notification",
+        position: "top",
+        duration: 2000,
+      });
     }
   },
-  computed:{
-		currentExpertise() {
+  computed: {
+    currentExpertise() {
       const values = Object.values(this.expertise);
       let e = 0;
       values.forEach(function (v) {
@@ -147,10 +156,10 @@ export default {
     },
   },
   methods: {
-		reset(){
+    reset() {
       this.expertise = dataService.getExpertise();
-			this.options = dataService.getExpertiseDefaults();
-		},
+      this.options = dataService.getExpertiseDefaults();
+    },
     expertiseLinkModal() {
       this.$oruga.modal.open({
         parent: this,
@@ -161,16 +170,15 @@ export default {
           options: this.options,
           expertise: this.expertise,
         },
-        width:400
-      })
-    }
-	}
-}
+        width: 400,
+      });
+    },
+  },
+};
 </script>
 
 <style lang="scss">
-
-.o-tabs__content{
+.o-tabs__content {
   padding: 0px;
 }
 
