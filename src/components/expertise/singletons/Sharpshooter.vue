@@ -35,7 +35,7 @@
           <tr>
             <th>Gun Knowledge</th>
             <td>Class 1 Rank 0</td>
-            <td>40%</td>
+            <td>20%</td>
             <td>
               {{ parseExpertise(expertise.gunKnowledge.value * 0.2) }}
             </td>
