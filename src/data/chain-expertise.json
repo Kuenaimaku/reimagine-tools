@@ -1057,7 +1057,7 @@
 		},
 		{
 			"name": "Weapon-affinity up",
-			"rank": 7000,
+			"rank": 8000,
 			"slug": "rampage-14",
 			"type": "Passive",
 			"affinity": null,
