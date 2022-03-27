@@ -61,6 +61,10 @@
                 v-for="item in fields"
                 :key="item.name"
                 :field="item"
+                :mttime="imagineTime"
+                :mtphase="this.imaginePhase"
+                :japan="this.japan"
+                :options="options"
               />
             </div>
           </div>

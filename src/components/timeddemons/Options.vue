@@ -1,6 +1,6 @@
 <template>
   <div id="options" class="container">
-    <o-switch v-model.number="options.allMoonPhases" :leftLabel="true">
+    <o-switch v-model.number="options.hideUnavailableDemons" :leftLabel="true">
       Hide Unavailable Demons
       <o-tooltip label="Hide all demons that are currently unavailable." position="right" multiline>
         <o-icon size="small" icon="help-circle-outline" />

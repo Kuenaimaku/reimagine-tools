@@ -12,6 +12,10 @@
           v-for="demon in field.demons"
           :key="demon.name"
           :demon="demon"
+          :mttime="mttime"
+          :mtphase="mtphase"
+          :japan="japan"
+          :options="options"
         />
       </tbody>
     </table>
@@ -32,6 +36,19 @@ export default {
       type: Object,
       required: true,
     },
+    mttime: {
+      type: String,
+    },
+    mtphase: {
+      type: Number,
+    },
+    japan: {
+      type: Date,
+      required: true,
+    },
+    options: {
+      type: Object,
+    }
   },
 };
 </script>

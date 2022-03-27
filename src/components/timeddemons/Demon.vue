@@ -1,11 +1,14 @@
 <template>
-  <tr class="demon">
+  <tr class="demon" v-if="displayRow()">
     <th><a :href="demon.link">{{demon.name}}</a></th>
     <td><span v-html="appearance()"></span></td>
   </tr>
 </template>
 
 <script>
+
+import { format } from 'date-fns-tz';
+
 export default {
   name: "Demon",
   components: {
@@ -15,17 +18,100 @@ export default {
       type: Object,
       required: true,
     },
+    mttime: {
+      type: String,
+      required: true,
+    },
+    mtphase: {
+      type: Number,
+      required:true,
+    },
+    japan: {
+      type: Date,
+      required: true,
+    },
+    options: {
+      type: Object,
+      required: true,
+    }
   },
   methods:{
     appearance(){
+      var response = "";
       if (this.demon.startHour){
-        return `From ${this.demon.startHour}:00 to ${this.demon.endHour}:00`
+        response = `From ${this.demon.startHour}:00 to ${this.demon.endHour}:00</br>`
       }
       if(this.demon.phases.length != 0){
-        var response = "";
         this.demon.phases.forEach(e => response += `During ${this.formatMoonPhase(e)}</br>`)
-        return response;
       }
+      if(this.demon.days.length != 0){
+        this.demon.days.forEach(e => {
+          switch (e){
+            case 1:
+              response += "Available on Mondays</br>"
+              break;
+            case 2:
+              response += "Available on Tuesdays</br>"
+              break;
+            case 3:
+              response += "Available on Wednesdays</br>"
+              break;
+            case 4:
+              response += "Available on Thursdays</br>"
+              break;
+            case 5:
+              response += "Available on Fridays</br>"
+              break;
+            case 6:
+              response += "Available on Saturdays</br>"
+              break;
+            case 7:
+              response += "Available on Sundays</br>"
+              break;
+            default:
+              break;
+          }
+        })
+      }
+      return response;
+    },
+    displayRow(){
+      if(!this.options.hideUnavailableDemons){
+        return true
+      }
+      if(this.demon.startHour){
+        let hour = parseInt(this.mttime.substring(0,2))
+        let min = parseInt(this.mttime.substring(4,2))
+
+        if (this.demon.startHour > this.demon.endHour){
+          if (hour >= this.demon.startHour){
+            return true;
+          }
+          if(hour <= this.demon.endHour && min == 0){
+            return true;
+          }
+          return false;
+        }
+        if (this.demon.startHour < this.demon.endHour){
+          if (this.demon.startHour <= hour > this.demon.endHour){
+            return true;
+          }
+          if (hour == this.demon.endHour && min == 0){
+            return true;
+          }
+          return false;
+        }
+      }
+      if(this.demon.phases.length != 0){
+        let phase = this.mtphase;
+        return this.demon.phases.includes(phase)
+      }
+      if(this.demon.days.length != 0){
+        let dayOfWeek = format(this.japan, "i");
+        return this.demon.days.incluses(dayOfWeek)
+      }
+
+      return false
     },
     formatMoonPhase(phase){
       let icon = "";
