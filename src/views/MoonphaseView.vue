@@ -235,14 +235,17 @@ export default {
         case 2:
         case 3:
           icon = 'moon-waxing-crescent'
+          color="info"
           break;
         case 4:
           icon = 'moon-first-quarter'
+          color="info"
           break;
         case 5:
         case 6:
         case 7:
           icon = 'moon-waxing-gibbous'
+          color="info"
           break;
         case 8:
           icon = 'moon-full'
@@ -251,14 +254,17 @@ export default {
         case 10:
         case 11:
           icon= 'moon-waning-gibbous'
+          color="danger"
           break;
         case 12:
           icon= 'moon-last-quarter'
+          color="danger"
           break;
         case 13:
         case 14:
         case 15:
           icon = 'moon-waning-crescent'
+          color="danger"
           break;
         default:
           icon = 'weather-night'

@@ -11,7 +11,7 @@
             </div>
             <div class="column is-10">
               <!-- Left side -->
-              <h1 class="title">Timed Demon Scheduler</h1>
+              <h1 class="title">Timed Demon Schedule</h1>
               <p class="subtitle">Proof of Concept</p>
             </div>
           </div>
@@ -42,12 +42,12 @@
                   </tr>
                 </tbody>
               </table>
-              <!-- <div class="container">
+              <div class="container">
                 <div class="content">
                   <h1>Options</h1>
                 </div>
                 <Options :options="this.options"></Options>
-              </div> -->
+              </div> 
             </div>
           </div>
           <div class="column is-two-thirds">
@@ -73,7 +73,7 @@
 <script>
 import dataService from "@/services/dataService";
 
-import Options from "@/components/moonphase/Options.vue";
+import Options from "@/components/timeddemons/Options.vue";
 import Field from "@/components/timeddemons/Field.vue";
 
 import { utcToZonedTime, format } from 'date-fns-tz';
@@ -98,7 +98,7 @@ export default {
   },
   created() {
     // load static data
-    this.options  = dataService.getMoonphaseDefaults();
+    this.options  = dataService.getTimedDemonDefaults();
     this.fields = dataService.getFields();
 
     //set initial datetimes
@@ -159,14 +159,17 @@ export default {
         case 2:
         case 3:
           icon = 'moon-waxing-crescent'
+          color="info"
           break;
         case 4:
           icon = 'moon-first-quarter'
+          color="info"
           break;
         case 5:
         case 6:
         case 7:
           icon = 'moon-waxing-gibbous'
+          color="info"
           break;
         case 8:
           icon = 'moon-full'
@@ -175,14 +178,17 @@ export default {
         case 10:
         case 11:
           icon= 'moon-waning-gibbous'
+          color="danger"
           break;
         case 12:
           icon= 'moon-last-quarter'
+          color="danger"
           break;
         case 13:
         case 14:
         case 15:
           icon = 'moon-waning-crescent'
+          color="danger"
           break;
         default:
           icon = 'weather-night'

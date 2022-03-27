@@ -42,7 +42,7 @@ const routes = [
 		path: "/timed-demons",
 		name: "Timed Demons",
 		component: TimedDemons,
-		meta: { title: "Timed Demons Scheduler" }
+		meta: { title: "Timed Demons Schedule" }
 	}
 ];
 

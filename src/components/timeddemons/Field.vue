@@ -1,13 +1,20 @@
 <template>
-  <div class="container">
-		<div class="content">
-			<h2>{{field.name}}</h2>
-		</div>
-    <Demon
-      v-for="demon in field.demons"
-      :key="demon.name"
-      :demon="demon"
-    />
+  <div class="container field">
+		<table class="table is-striped">
+      <thead>
+        <tr>
+          <th>{{field.name}}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <Demon
+          v-for="demon in field.demons"
+          :key="demon.name"
+          :demon="demon"
+        />
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -30,7 +37,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-input:invalid {
-  border: 2px dashed red;
+.field table thead tr th{
+  font-size:22px;
+  background-color: #1a181b;
 }
 </style>

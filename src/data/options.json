@@ -85,5 +85,8 @@
 	"moonphase": {
 		"allMoonPhases": false,
 		"bonusDungeonsOnly": false
+	},
+	"timeddemons": {
+		"hideUnavailableDemons" : false
 	}
 }

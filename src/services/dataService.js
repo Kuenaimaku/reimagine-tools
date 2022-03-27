@@ -44,6 +44,11 @@ export default {
         return options.moonphase;
     },
 
+    getTimedDemonDefaults(){
+        var options = _.cloneDeep(OptionDefaults)
+        return options.timeddemons;
+    },
+
     toExpertiseQueryParams(expertiseList, optionsList) {
         var urlParams = new URLSearchParams();
         Object.keys(expertiseList).forEach(function (v) {
