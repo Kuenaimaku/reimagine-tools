@@ -3,6 +3,7 @@ import Home from "@/views/HomeView.vue";
 import Apples from "@/views/AppleView.vue";
 import Books from "@/views/BookView.vue";
 import Expertise from "@/views/ExpertiseView.vue";
+import Moonphase from "@/views/MoonphaseView.vue";
 
 const DEFAULT_TITLE = 'ReIMAGINE Tools';
 const routes = [
@@ -29,6 +30,12 @@ const routes = [
 		name: "Expertise",
 		component: Expertise,
 		meta: { title: "Expertise Calculator" }
+	},
+	{
+		path: "/moonphase",
+		name: "Moonphase",
+		component: Moonphase,
+		meta: { title: "Moonphase Calculator" }
 	}
 ];
 

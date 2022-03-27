@@ -92,7 +92,7 @@ import ChainExpertiseSummary from "@/components/expertise/ChainExpertiseSummary.
 import ExpertiseLinkModal from "@/components/expertise/LinkModal.vue";
 
 export default {
-  name: "App",
+  name: "Expertise",
   components: {
     ExpertiseInput,
     Options,

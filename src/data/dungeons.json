@@ -1,110 +1,344 @@
 [
 	{
 		"name": "Cathedral (Dungeon)",
-		"apples": 1000
+		"apples": 1000,
+		"cavePoints": 0,
+		"cavePointsBonus": 0,
+		"bonusDay": -1,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Celu Tower Bronze",
-		"apples": 15
+		"apples": 15,
+		"cavePoints": 5,
+		"cavePointsBonus": 13,
+		"bonusDay": 3,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Celu Tower Silver",
-		"apples": 250
+		"apples": 250,
+		"cavePoints": 10,
+		"cavePointsBonus": 18,
+		"bonusDay": 3,
+		"levelRequirement": 35,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Celu Tower Gold",
-		"apples": 2450
+		"apples": 2450,
+		"cavePoints": 28,
+		"cavePointsBonus": 22,
+		"bonusDay": 3,
+		"levelRequirement": 60,
+		"licenseRequirement": "B"
 	},
 	{
 		"name": "Ichigaya Camp Bronze",
-		"apples": 5
+		"apples": 5,
+		"cavePoints": 4,
+		"cavePointsBonus": 8,
+		"bonusDay": 1,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Ichigaya Camp Silver",
-		"apples": 80
+		"apples": 80,
+		"cavePoints": 4,
+		"cavePointsBonus": 8,
+		"bonusDay": 1,
+		"levelRequirement": 30,
+		"licenseRequirement": "-"
 	},
 	{
-		"name": "Ichigaya Camp Gold",
-		"apples": 340
+		"name": "Ichigaya Camp Gold (Normal)",
+		"apples": 340,
+		"cavePoints": 6,
+		"cavePointsBonus": 24,
+		"bonusDay": 1,
+		"levelRequirement": 55,
+		"licenseRequirement": "C"
+	},
+	{
+		"name": "Ichigaya Camp Gold (2 Kings)",
+		"apples": 340,
+		"cavePoints": 10,
+		"cavePointsBonus": 24,
+		"bonusDay": 1,
+		"levelRequirement": 55,
+		"licenseRequirement": "C"
+	},
+	{
+		"name": "Ichigaya Camp Gold (3 Kings)",
+		"apples": 340,
+		"cavePoints": 12,
+		"cavePointsBonus": 24,
+		"bonusDay": 1,
+		"levelRequirement": 55,
+		"licenseRequirement": "C"
+	},
+	{
+		"name": "Ichigaya Camp Gold (4 Kings)",
+		"apples": 340,
+		"cavePoints": 12,
+		"cavePointsBonus": 24,
+		"bonusDay": 1,
+		"levelRequirement": 55,
+		"licenseRequirement": "C"
+	},
+	{
+		"name": "Ichigaya Camp Gold (Assassins)",
+		"apples": 340,
+		"cavePoints": 10,
+		"cavePointsBonus": 24,
+		"bonusDay": 1,
+		"levelRequirement": 55,
+		"licenseRequirement": "C"
+	},
+	{
+		"name": "Ichigaya Camp Gold (Tokisada)",
+		"apples": 340,
+		"cavePoints": 15,
+		"cavePointsBonus": 24,
+		"bonusDay": 1,
+		"levelRequirement": 55,
+		"licenseRequirement": "C"
 	},
 	{
 		"name": "Nakano Ruins Bronze",
-		"apples": 25
+		"apples": 25,
+		"cavePoints": 8,
+		"cavePointsBonus": 5,
+		"bonusDay": 2,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Nakano Ruins Silver",
-		"apples": 340
+		"apples": 340,
+		"cavePoints": 15,
+		"cavePointsBonus": 5,
+		"bonusDay": 2,
+		"levelRequirement": 25,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Nakano Ruins Gold (False)",
-		"apples": 3000
+		"apples": 3000,
+		"cavePoints": 40,
+		"cavePointsBonus": 5,
+		"bonusDay": 2,
+		"levelRequirement": 50,
+		"licenseRequirement": "C"
 	},
 	{
 		"name": "Nakano Ruins Gold (True Xuan Wu)",
-		"apples": 3600
+		"apples": 3600,
+		"cavePoints": 50,
+		"cavePointsBonus": 5,
+		"bonusDay": 2,
+		"levelRequirement": 50,
+		"licenseRequirement": "C"
 	},
 	{
 		"name": "Shibuya Quartz Bronze",
-		"apples": 20
+		"apples": 20,
+		"cavePoints": 3,
+		"cavePointsBonus": 9,
+		"bonusDay": 7,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Shibuya Quartz Silver",
-		"apples": 80
+		"apples": 80,
+		"cavePoints": 5,
+		"cavePointsBonus": 15,
+		"bonusDay": 7,
+		"levelRequirement": 30,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Shibuya Quartz Gold",
-		"apples": 250
+		"apples": 250,
+		"cavePoints": 6,
+		"cavePointsBonus": 9,
+		"bonusDay": 7,
+		"levelRequirement": 55,
+		"licenseRequirement": "C"
 	},
 	{
 		"name": "Shinagawa Catacombs Bronze",
-		"apples": 25
+		"apples": 25,
+		"cavePoints": 0,
+		"cavePointsBonus": 0,
+		"bonusDay": 5,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Shinagawa Catacombs Gold",
-		"apples": 200
+		"apples": 200,
+		"cavePoints": 30,
+		"cavePointsBonus": 15,
+		"bonusDay": 5,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
+	},
+	{
+		"name": "Shinagawa Catacombs Gold (True Byakko)",
+		"apples": 200,
+		"cavePoints": 50,
+		"cavePointsBonus": 30,
+		"bonusDay": 5,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
+	},
+	{
+		"name": "Shinagawa Catacombs Gold (Samael)",
+		"apples": 200,
+		"cavePoints": 70,
+		"cavePointsBonus": 40,
+		"bonusDay": 5,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
 	},
 	{
 		"name": "Suginami Tunnels Bronze",
-		"apples": 15
+		"apples": 15,
+		"cavePoints": 3,
+		"cavePointsBonus": 12,
+		"bonusDay": 4,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Suginami Tunnels Silver",
-		"apples": 210
+		"apples": 210,
+		"cavePoints": 6,
+		"cavePointsBonus": 18,
+		"bonusDay": 4,
+		"levelRequirement": 20,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Suginami Tunnels Gold",
-		"apples": 950
+		"apples": 950,
+		"cavePoints": 12,
+		"cavePointsBonus": 24,
+		"bonusDay": 4,
+		"levelRequirement": 45,
+		"licenseRequirement": "C"
+	},
+	{
+		"name": "Suginami Tunnels Unknown",
+		"apples": 0,
+		"cavePoints": "2,5",
+		"cavePointsBonus": 0,
+		"bonusDay": -1,
+		"levelRequirement": 70,
+		"licenseRequirement": "B"
 	},
 	{
 		"name": "TMG Building (False)",
-		"apples": 250
+		"apples": 250,
+		"cavePoints": 0,
+		"cavePointsBonus": 0,
+		"bonusDay": -1,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Ueno Mirage Bronze",
-		"apples": 20
+		"apples": 20,
+		"cavePoints": 5,
+		"cavePointsBonus": 13,
+		"bonusDay": 6,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
 		"name": "Ueno Mirage Silver",
-		"apples": 350
+		"apples": 350,
+		"cavePoints": 11,
+		"cavePointsBonus": 16,
+		"bonusDay": 6,
+		"levelRequirement": 40,
+		"licenseRequirement": "-"
 	},
 	{
-		"name": "Ueno Mirage Gold",
-		"apples": 3000
+		"name": "Ueno Mirage Gold (False)",
+		"apples": 3000,
+		"cavePoints": 30,
+		"cavePointsBonus": 20,
+		"bonusDay": 6,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
+	},
+	{
+		"name": "Ueno Mirage Gold (True Ishtar)",
+		"apples": 3000,
+		"cavePoints": 50,
+		"cavePointsBonus": 20,
+		"bonusDay": 6,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
+	},
+	{
+		"name": "Ueno Mirage Gold (Astaroth)",
+		"apples": 3000,
+		"cavePoints": 35,
+		"cavePointsBonus": 20,
+		"bonusDay": 6,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
 	},
 	{
 		"name": "Zhu Que Bronze",
-		"apples": 20
+		"apples": 20,
+		"cavePoints": 4,
+		"cavePointsBonus": 5,
+		"bonusDay": 2,
+		"levelRequirement": 0,
+		"licenseRequirement": "-"
 	},
 	{
-		"name": "Zhu Que Gold (Susano-O)",
-		"apples": 1520
+		"name": "Zhu Que Gold (False Susano-O)",
+		"apples": 1520,
+		"cavePoints": 40,
+		"cavePointsBonus": 5,
+		"bonusDay": 2,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
+	},
+	{
+		"name": "Zhu Que Gold (True Susano-O)",
+		"apples": 1520,
+		"cavePoints": 5,
+		"cavePointsBonus": 50,
+		"bonusDay": 2,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
 	},
 	{
 		"name": "Zhu Que Gold (Amaterasu M)",
-		"apples": 1520
+		"apples": 1520,
+		"cavePoints": 5,
+		"cavePointsBonus": 40,
+		"bonusDay": 2,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
 	},
 	{
 		"name": "Zhu Que Gold (Amaterasu F)",
-		"apples": 2660
+		"apples": 2660,
+		"cavePoints": 5,
+		"cavePointsBonus": 43,
+		"bonusDay": 2,
+		"levelRequirement": 65,
+		"licenseRequirement": "B"
 	}
 ]

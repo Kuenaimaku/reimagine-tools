@@ -63,6 +63,19 @@
           Plan out your expertise build, from Chain Expertise down to specific
           skill unlocks. Supports loading data from saved urls.
         </p>
+         <h2>
+          Moon Phase Simulator
+          <router-link to="/moonphase"
+            ><o-icon
+              pack="mdi"
+              class="icon has-text-info"
+              icon="link"
+            />Link</router-link
+          >
+        </h2>
+        <p>
+          Find out the current time in ReIMAGINE and upcoming moon phases.
+        </p>
         <hr />
         <p>
           I am not affiliated with the ReIMAGINE team. I just want to make

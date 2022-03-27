@@ -92,7 +92,7 @@ import Options from "@/components/apple/Options.vue";
 import Dungeon from "@/components/apple/Dungeon.vue";
 
 export default {
-  name: "App",
+  name: "Apple",
   components: {
     Options,
     Dungeon,
@@ -106,7 +106,6 @@ export default {
     };
   },
   created() {
-
     this.options =  dataService.getAppleDefaults();
     this.levels = dataService.getLevels();
     this.dungeons = dataService.getDungeons();

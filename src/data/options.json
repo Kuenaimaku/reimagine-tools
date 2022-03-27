@@ -81,5 +81,9 @@
 			"queryParam": "om",
 			"value": 0
 		}
+	},
+	"moonphase": {
+		"allMoonPhases": false,
+		"bonusDungeonsOnly": false
 	}
 }

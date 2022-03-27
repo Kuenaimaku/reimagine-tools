@@ -35,6 +35,11 @@ export default {
         return options.expertise;
     },
 
+    getMoonphaseDefaults(){
+        var options = _.cloneDeep(OptionDefaults)
+        return options.moonphase;
+    },
+
     toExpertiseQueryParams(expertiseList, optionsList) {
         var urlParams = new URLSearchParams();
         Object.keys(expertiseList).forEach(function (v) {

@@ -62,7 +62,7 @@ import dataService from "@/services/dataService";
 import Options from "@/components/book/Options.vue";
 
 export default {
-  name: "App",
+  name: "Book",
   components: {
     Options,
   },
