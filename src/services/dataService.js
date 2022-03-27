@@ -2,6 +2,7 @@ import Levels from "@/data/levels.json"
 import Dungeons from "@/data/dungeons.json"
 import Expertise from "@/data/expertise.json"
 import ChainExpertise from "@/data/chain-expertise.json"
+import Fields from "@/data/fields.json"
 
 
 import OptionDefaults from  "@/data/options.json"
@@ -18,6 +19,9 @@ export default {
     },
     getChainExpertise(){
         return _.cloneDeep(ChainExpertise);
+    },
+    getFields(){
+        return _.cloneDeep(Fields);
     },
 
     getAppleDefaults(){

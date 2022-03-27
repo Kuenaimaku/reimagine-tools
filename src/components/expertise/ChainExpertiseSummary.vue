@@ -134,10 +134,6 @@ import Swordsmith from "@/components/expertise/singletons/Swordsmith.vue";
 import Synthesis from "@/components/expertise/singletons/Synthesis.vue";
 import ThreeForms from "@/components/expertise/singletons/ThreeForms.vue";
 
-
-
-
-
 export default {
   name: "ChainExpertiseSummary",
 	components:{

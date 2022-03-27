@@ -4,6 +4,7 @@ import Apples from "@/views/AppleView.vue";
 import Books from "@/views/BookView.vue";
 import Expertise from "@/views/ExpertiseView.vue";
 import Moonphase from "@/views/MoonphaseView.vue";
+import TimedDemons from "@/views/TimedDemonView.vue";
 
 const DEFAULT_TITLE = 'ReIMAGINE Tools';
 const routes = [
@@ -36,6 +37,12 @@ const routes = [
 		name: "Moonphase",
 		component: Moonphase,
 		meta: { title: "Moonphase Calculator" }
+	},
+	{
+		path: "/timed-demons",
+		name: "Timed Demons",
+		component: TimedDemons,
+		meta: { title: "Timed Demons Scheduler" }
 	}
 ];
 

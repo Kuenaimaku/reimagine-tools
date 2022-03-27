@@ -1,0 +1,47 @@
+[
+	{
+		"name" : "Suginami",
+		"demons": [
+			{
+				"name" : "Gaki",
+				"link" : "https://wiki.reimagine.online/Gaki",
+				"startHour": 21,
+				"endHour" : 6,
+				"phases": [],
+				"days": []
+			},
+			{
+				"name" : "Alp",
+				"link" : "https://wiki.reimagine.online/Alp",
+				"startHour": 21,
+				"endHour" : 6,
+				"phases": [],
+				"days": []
+			},
+			{
+				"name" : "Onmoraki",
+				"link" : "https://wiki.reimagine.online/Onmoraki",
+				"startHour": 21,
+				"endHour" : 6,
+				"phases": [],
+				"days": []
+			},
+			{
+				"name" : "Poltergeist",
+				"link" : "https://wiki.reimagine.online/Poltergeist",
+				"startHour": 21,
+				"endHour" : 6,
+				"phases": [],
+				"days": []
+			},
+			{
+				"name" : "Demonic Aria Sarasvati",
+				"link" : "https://wiki.reimagine.online/Demonic_Aria_Sarasvati",
+				"startHour": null,
+				"endHour" : null,
+				"phases": [6, 10],
+				"days": []
+			}
+		]
+	}
+]

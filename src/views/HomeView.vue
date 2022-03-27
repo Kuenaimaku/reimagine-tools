@@ -78,8 +78,9 @@
         </p>
         <hr />
         <p>
-          I am not affiliated with the ReIMAGINE team. I just want to make
-          planning easier.
+          Find an issue? Have a suggestion for a new feature or tool? <a href="https://github.com/Kuenaimaku/reimagine-tools/issues/new">Create an issue on GitHub</a> and I'll see what I can do. <br/>
+          And for anything else not covered, check out the 
+          <a href="https://wiki.reimagine.online/Main_Page">ReIMAGINE Wiki</a>.
         </p>
       </div>
     </section>
