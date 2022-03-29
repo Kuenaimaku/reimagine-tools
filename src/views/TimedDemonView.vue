@@ -1,6 +1,6 @@
 <template>
   <div id="apples">
-    <section class="hero is-dark is-bold">
+    <section class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
           <div class="columns is-vcentered">
@@ -12,7 +12,7 @@
             <div class="column is-10">
               <!-- Left side -->
               <h1 class="title">Timed Demon Schedule</h1>
-              <p class="subtitle">Proof of Concept</p>
+              <p class="subtitle">For ReIMAGINE</p>
             </div>
           </div>
         </div>
@@ -30,11 +30,11 @@
                 <tbody>
                   <tr>
                     <th>Tokyo</th>
-                    <td>{{format(this.japan, "yyyy/MM/dd hh:mm:ss aa")}}</td>
+                    <td>{{format(this.japan, "EEEE, yyyy/MM/dd hh:mm:ss aa")}}</td>
                   </tr>
                   <tr>
                     <th>Local</th>
-                    <td>{{format(this.local, "yyyy/MM/dd hh:mm:ss aa")}}</td>
+                    <td>{{format(this.local, "EEEE, yyyy/MM/dd hh:mm:ss aa")}}</td>
                   </tr>
                   <tr>
                     <th>IMAGINE</th>
@@ -48,6 +48,30 @@
                 </div>
                 <Options :options="this.options"></Options>
               </div> 
+              <div class="content">
+                <h1>
+                  Moon Phases
+                  <o-tooltip label="Phase Changes are in Local Time Zone" position="right" multiline>
+                    <o-icon  icon="help-circle-outline" />
+                  </o-tooltip>
+                </h1>
+              </div>
+              <table class="table is-hoverable is-striped is-fullwidth">
+                <thead>
+                  <tr>
+                    <th>Phase Change</th>
+                    <th>Moon Phase</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <FuturePhase
+                    v-for="future in this.futurePhases"
+                    :key="future.dateTime"
+                    :futurePhase="future"
+                    :options="this.options"
+                  />
+                </tbody>
+              </table>
             </div>
           </div>
           <div class="column is-two-thirds">
@@ -55,6 +79,9 @@
               <div class="content">
                 <h1>
                   Fields
+                  <o-tooltip label="Day Rotates at 12:00 AM JST" position="right" multiline>
+                    <o-icon  icon="help-circle-outline" />
+                  </o-tooltip>
                 </h1>
               </div>
               <Field
@@ -79,6 +106,7 @@ import dataService from "@/services/dataService";
 
 import Options from "@/components/timeddemons/Options.vue";
 import Field from "@/components/timeddemons/Field.vue";
+import FuturePhase from "@/components/timeddemons/FuturePhase.vue";
 
 import { utcToZonedTime, format } from 'date-fns-tz';
 
@@ -87,7 +115,8 @@ export default {
   name: "Timed Demon Schedule",
   components: {
     Options,
-    Field
+    Field,
+    FuturePhase
   },
   data() {
     return {
@@ -98,6 +127,7 @@ export default {
       local: "",
       imagineTime: "",
       imaginePhase: 0,
+      futurePhases: [{newDate: new Date(Date.now()), moonPhase: 0}]
     };
   },
   created() {
@@ -127,6 +157,36 @@ export default {
       this.local = date;
       this.imagineTime = this.getMegatenTime();
       this.imaginePhase = this.getMoonPhase();
+      this.updateMoonPhaseList();
+    },
+    updateMoonPhaseList(){
+      const baseUTCTime = 1201633907855
+      const baseMoonPhase = 4
+
+      let nowUTCDate  = new Date();
+      let nowUTCTime  = nowUTCDate.getTime();
+      let stepMinute, stepSecond;
+
+      stepMinute = 24 - Math.floor((nowUTCTime - baseUTCTime ) / 1000 / 60) % 24;   
+      stepSecond = 60 - Math.floor((nowUTCTime - baseUTCTime ) / 1000     ) % 60;
+
+      let phases = [];
+
+      for (let i = 0; i < 60; i++) {
+        let d = new Date(
+          nowUTCDate.getFullYear(), 
+          nowUTCDate.getMonth(), 
+          nowUTCDate.getDate(), 
+          nowUTCDate.getHours(), 
+          nowUTCDate.getMinutes() + stepMinute + (24 * i), 
+          nowUTCDate.getSeconds() + stepSecond
+        );
+        let time = d.getTime();
+        let moon = Math.floor(baseMoonPhase + (time - baseUTCTime) / 24 / 60 / 1000) % 16;
+        phases.push({newDate: d, moonPhase: moon})
+      }
+
+      this.futurePhases = phases;
     },
     getMegatenTime(){
       const baseUTCTime = 1201633907855
@@ -220,3 +280,16 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+</style>

@@ -44,34 +44,42 @@ export default {
       if(this.demon.phases.length != 0){
         this.demon.phases.forEach(e => response += `During ${this.formatMoonPhase(e)}</br>`)
       }
-      if(this.demon.days.length != 0){
-        this.demon.days.forEach(e => {
-          switch (e){
-            case 1:
-              response += "Available on Mondays</br>"
-              break;
-            case 2:
-              response += "Available on Tuesdays</br>"
-              break;
-            case 3:
-              response += "Available on Wednesdays</br>"
-              break;
-            case 4:
-              response += "Available on Thursdays</br>"
-              break;
-            case 5:
-              response += "Available on Fridays</br>"
-              break;
-            case 6:
-              response += "Available on Saturdays</br>"
-              break;
-            case 7:
-              response += "Available on Sundays</br>"
-              break;
-            default:
-              break;
-          }
-        })
+      if(this.demon.days.length != 0){       
+        if (this.demon.days.every(item => [1,2,3,4,5].includes(item)) && [1,2,3,4,5].every(item => this.demon.days.includes(item))){
+          response += "Available on Weekdays </br>"
+        }
+        else if(this.demon.days.every(item => [6,7].includes(item))&& [6,7].every(item => this.demon.days.includes(item))){
+          response += "Available on Weekends </br>"
+        }
+        else {
+          this.demon.days.forEach(e => {
+            switch (e){
+              case 1:
+                response += "Available on Mondays</br>"
+                break;
+              case 2:
+                response += "Available on Tuesdays</br>"
+                break;
+              case 3:
+                response += "Available on Wednesdays</br>"
+                break;
+              case 4:
+                response += "Available on Thursdays</br>"
+                break;
+              case 5:
+                response += "Available on Fridays</br>"
+                break;
+              case 6:
+                response += "Available on Saturdays</br>"
+                break;
+              case 7:
+                response += "Available on Sundays</br>"
+                break;
+              default:
+                break;
+            }
+          })
+        }
       }
       return response;
     },
@@ -81,7 +89,7 @@ export default {
       }
       if(this.demon.startHour){
         let hour = parseInt(this.mttime.substring(0,2))
-        let min = parseInt(this.mttime.substring(4,2))
+        let min = parseInt(this.mttime.substring(5,3))
 
         if (this.demon.startHour > this.demon.endHour){
           if (hour >= this.demon.startHour){
@@ -107,8 +115,8 @@ export default {
         return this.demon.phases.includes(phase)
       }
       if(this.demon.days.length != 0){
-        let dayOfWeek = format(this.japan, "i");
-        return this.demon.days.incluses(dayOfWeek)
+        let dayOfWeek = parseInt(format(this.japan, "i"));
+        return this.demon.days.includes(dayOfWeek)
       }
 
       return false

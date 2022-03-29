@@ -1,10 +1,10 @@
 <template>
-  <div class="container field">
-		<table class="table is-striped">
+  <div class="box field">
+		<table class="table is-striped is-fullwidth">
       <thead>
         <tr>
-          <th>{{field.name}}</th>
-          <th></th>
+          <th style="width:50%">{{field.name}}</th>
+          <th style="width:50%"></th>
         </tr>
       </thead>
       <tbody>
@@ -56,6 +56,5 @@ export default {
 <style lang="scss" scoped>
 .field table thead tr th{
   font-size:22px;
-  background-color: #1a181b;
 }
 </style>
