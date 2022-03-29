@@ -79,7 +79,7 @@
               <div class="content">
                 <h1>
                   Fields
-                  <o-tooltip label="Day Rotates at 12:00 AM JST" position="right" multiline>
+                  <o-tooltip label="Day Rotates at 12:00 AM JST, All times listed are IMAGINE time" position="right" multiline>
                     <o-icon  icon="help-circle-outline" />
                   </o-tooltip>
                 </h1>
