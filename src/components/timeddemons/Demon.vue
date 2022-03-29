@@ -95,7 +95,10 @@ export default {
           if (hour >= this.demon.startHour){
             return true;
           }
-          if(hour <= this.demon.endHour && min == 0){
+          if(hour <= this.demon.endHour){
+            return true;
+          }
+          if(hour == this.demon.endHour && min == 0){
             return true;
           }
           return false;
