@@ -20,7 +20,6 @@
     </section>
     <section class="section">
       <div class="container content">
-        <h1>Click a link in the navbar up above to get started.</h1>
         <h2>
           Golden Apple Calculator
           <router-link to="/apples"
@@ -63,7 +62,7 @@
           Plan out your expertise build, from Chain Expertise down to specific
           skill unlocks. Supports loading data from saved urls.
         </p>
-         <h2>
+        <h2>
           Moon Phase Simulator
           <router-link to="/moonphase"
             ><o-icon
@@ -75,6 +74,19 @@
         </h2>
         <p>
           Find out the current time in ReIMAGINE and upcoming moon phases.
+        </p>
+        <h2>
+          Timed Demon Schedule
+          <router-link to="/timed-demons"
+            ><o-icon
+              pack="mdi"
+              class="icon has-text-info"
+              icon="link"
+            />Link</router-link
+          >
+        </h2>
+        <p>
+          Find out what time-sensitive demons are currently available in all fields.
         </p>
         <hr />
         <p>
