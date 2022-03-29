@@ -104,7 +104,7 @@ export default {
           return false;
         }
         if (this.demon.startHour < this.demon.endHour){
-          if (this.demon.startHour <= hour > this.demon.endHour){
+          if (this.demon.startHour <= hour && hour < this.demon.endHour){
             return true;
           }
           if (hour == this.demon.endHour && min == 0){
