@@ -3,6 +3,7 @@ import Home from "@/views/HomeView.vue";
 import Apples from "@/views/AppleView.vue";
 import Books from "@/views/BookView.vue";
 import Expertise from "@/views/ExpertiseView.vue";
+import Damage from "@/views/DamageView.vue";
 import Moonphase from "@/views/MoonphaseView.vue";
 import TimedDemons from "@/views/TimedDemonView.vue";
 
@@ -25,6 +26,12 @@ const routes = [
 		name: "Books",
 		component: Books,
 		meta: { title: "Expertise Textbook Calculator" }
+	},
+	{
+		path: "/damage",
+		name: "Damage",
+		component: Damage,
+		meta: { title: "Damage Calculator" }
 	},
 	{
 		path: "/expertise",
