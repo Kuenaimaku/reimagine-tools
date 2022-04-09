@@ -24,37 +24,11 @@
 			</div>
 
 			<div class="navbar-end">
+				<router-link to="/character" class="navbar-item"><o-icon pack="mdi" class="icon has-text-danger" icon="card-account-details"/><span>Character Builder</span></router-link>
 				<a href="https://wiki.reimagine.online/Main_Page" class="navbar-item"><o-icon pack="mdi" class="icon" icon="wikipedia"/><span>ReIMAGINE Wiki</span></a>
 			</div>
 		</div>
 	</nav>
-	<!-- 
-	<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-		<input type="checkbox" id="toggler" role="button" class="toggler" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" />
-		<div class="navbar-brand">
-			<router-link to="/" class="navbar-item">
-				<img id="brand" src="/brand.png" alt="ReIMAGINE Tools" width="123" height="28">
-			</router-link>
-
-			<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-			</a>
-		</div>
-		<div class="navbar-menu" id="navMenu">
-			<div class="navbar-start">
-				<router-link to="/apples" class="navbar-item"><o-icon pack="mdi" class="icon has-text-warning" icon="food-apple"/><span class="is-hidden-touch">Golden Apples</span><span class="is-hidden-widescreen is-hidden-desktop-only">Apples</span></router-link>
-				<router-link to="/books" class="navbar-item"><o-icon pack="mdi" class="icon has-text-info" icon="book-open-page-variant"/><span class="is-hidden-touch">Expertise Textbooks</span><span class="is-hidden-widescreen is-hidden-desktop-only">Books</span></router-link>
-				<router-link to="/expertise" class="navbar-item"><o-icon pack="mdi" class="icon has-text-success" icon="arm-flex"/><span>Expertise</span></router-link>
-				<router-link to="/moonphase" class="navbar-item"><o-icon pack="mdi" class="icon has-text-warning" icon="moon-waning-crescent"/><span>Moonphase</span></router-link>
-				<router-link to="/timed-demons" class="navbar-item"><o-icon pack="mdi" class="icon has-text-danger" icon="emoticon-devil-outline"/><span>Demon Schedule</span></router-link>
-			</div>
-			<div class="navbar-end">
-				<a href="https://wiki.reimagine.online/Main_Page" class="navbar-item"><o-icon pack="mdi" class="icon" icon="wikipedia"/><span>ReIMAGINE Wiki</span></a>
-			</div>
-		</div>
-	</nav> -->
 </template>
 
 <style lang="scss" scoped>

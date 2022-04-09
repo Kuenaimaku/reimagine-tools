@@ -6,6 +6,7 @@ import Expertise from "@/views/ExpertiseView.vue";
 import Damage from "@/views/DamageView.vue";
 import Moonphase from "@/views/MoonphaseView.vue";
 import TimedDemons from "@/views/TimedDemonView.vue";
+import Character from "@/views/CharacterView.vue";
 
 const DEFAULT_TITLE = 'ReIMAGINE Tools';
 const routes = [
@@ -50,6 +51,12 @@ const routes = [
 		name: "Timed Demons",
 		component: TimedDemons,
 		meta: { title: "Timed Demons Schedule" }
+	},
+	{
+		path: "/character",
+		name: "Character",
+		component: Character,
+		meta: { title: "Character Builder" }
 	}
 ];
 
