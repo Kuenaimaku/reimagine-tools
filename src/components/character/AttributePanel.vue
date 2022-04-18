@@ -1,54 +1,62 @@
 <template>
-	<div class="draggable-panel">
-		<header class="panel-header">
-			<o-icon pack="mdi" class="icon" icon="card-account-details"/>
-			<h1>Player Attributes</h1>
-			<o-button variant="danger" class="danger" size="small" @click="onClose">x</o-button>
-		</header>
-		<div class="columns">
-			<div class="column">
-				<table class="table is-fullwidth">
-					<tbody>
-						<tr>
-							<th>Lv</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table is-fullwidth">
-					<tbody>
-						<tr>
-							<th>Strength</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Magic</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Vitality</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Intelligence</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Speed</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Luck</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="column">
-				Fields go here
+	<Vue3DraggableResizable 
+	:w=400 :h=600
+	:x="panel.x"
+	:y="panel.y" 
+	:handles="[]" :parent="true"
+	:class="{ hidden: !panel.isActive}"
+	:classNameHandle="'panel-header'">
+		<div class="draggable-panel">
+			<header class="panel-header">
+				<o-icon pack="mdi" class="icon" icon="card-account-details"/>
+				<h1>Player Attributes</h1>
+				<o-button variant="danger" class="danger" size="small" @click="onClose">x</o-button>
+			</header>
+			<div class="columns">
+				<div class="column">
+					<table class="table is-fullwidth">
+						<tbody>
+							<tr>
+								<th>Lv</th>
+								<td><o-input size="small"></o-input></td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table is-fullwidth">
+						<tbody>
+							<tr>
+								<th>Strength</th>
+								<td><o-input size="small"></o-input></td>
+							</tr>
+							<tr>
+								<th>Magic</th>
+								<td><o-input size="small"></o-input></td>
+							</tr>
+							<tr>
+								<th>Vitality</th>
+								<td><o-input size="small"></o-input></td>
+							</tr>
+							<tr>
+								<th>Intelligence</th>
+								<td><o-input size="small"></o-input></td>
+							</tr>
+							<tr>
+								<th>Speed</th>
+								<td><o-input size="small"></o-input></td>
+							</tr>
+							<tr>
+								<th>Luck</th>
+								<td><o-input size="small"></o-input></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="column">
+					Fields go here
+				</div>
 			</div>
 		</div>
-	</div>
+	</Vue3DraggableResizable>
 
 </template>
 

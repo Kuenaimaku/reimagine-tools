@@ -13,7 +13,7 @@
 		"apples": 15,
 		"cavePoints": 5,
 		"cavePointsBonus": 13,
-		"bonusDay": 3,
+		"bonusDay": 4,
 		"levelRequirement": 0,
 		"licenseRequirement": "-"
 	},
@@ -22,7 +22,7 @@
 		"apples": 250,
 		"cavePoints": 10,
 		"cavePointsBonus": 18,
-		"bonusDay": 3,
+		"bonusDay": 4,
 		"levelRequirement": 35,
 		"licenseRequirement": "-"
 	},
@@ -31,7 +31,7 @@
 		"apples": 2450,
 		"cavePoints": 28,
 		"cavePointsBonus": 22,
-		"bonusDay": 3,
+		"bonusDay": 4,
 		"levelRequirement": 60,
 		"licenseRequirement": "B"
 	},
@@ -40,7 +40,7 @@
 		"apples": 5,
 		"cavePoints": 4,
 		"cavePointsBonus": 8,
-		"bonusDay": 1,
+		"bonusDay": 2,
 		"levelRequirement": 0,
 		"licenseRequirement": "-"
 	},
@@ -49,7 +49,7 @@
 		"apples": 80,
 		"cavePoints": 4,
 		"cavePointsBonus": 8,
-		"bonusDay": 1,
+		"bonusDay": 2,
 		"levelRequirement": 30,
 		"licenseRequirement": "-"
 	},
@@ -58,7 +58,7 @@
 		"apples": 340,
 		"cavePoints": 6,
 		"cavePointsBonus": 24,
-		"bonusDay": 1,
+		"bonusDay": 2,
 		"levelRequirement": 55,
 		"licenseRequirement": "C"
 	},
@@ -67,7 +67,7 @@
 		"apples": 340,
 		"cavePoints": 10,
 		"cavePointsBonus": 24,
-		"bonusDay": 1,
+		"bonusDay": 2,
 		"levelRequirement": 55,
 		"licenseRequirement": "C"
 	},
@@ -76,7 +76,7 @@
 		"apples": 340,
 		"cavePoints": 12,
 		"cavePointsBonus": 24,
-		"bonusDay": 1,
+		"bonusDay": 2,
 		"levelRequirement": 55,
 		"licenseRequirement": "C"
 	},
@@ -85,7 +85,7 @@
 		"apples": 340,
 		"cavePoints": 12,
 		"cavePointsBonus": 24,
-		"bonusDay": 1,
+		"bonusDay": 2,
 		"levelRequirement": 55,
 		"licenseRequirement": "C"
 	},
@@ -94,7 +94,7 @@
 		"apples": 340,
 		"cavePoints": 10,
 		"cavePointsBonus": 24,
-		"bonusDay": 1,
+		"bonusDay": 2,
 		"levelRequirement": 55,
 		"licenseRequirement": "C"
 	},
@@ -103,7 +103,7 @@
 		"apples": 340,
 		"cavePoints": 15,
 		"cavePointsBonus": 24,
-		"bonusDay": 1,
+		"bonusDay": 2,
 		"levelRequirement": 55,
 		"licenseRequirement": "C"
 	},
@@ -112,7 +112,7 @@
 		"apples": 25,
 		"cavePoints": 8,
 		"cavePointsBonus": 5,
-		"bonusDay": 2,
+		"bonusDay": 3,
 		"levelRequirement": 0,
 		"licenseRequirement": "-"
 	},
@@ -121,7 +121,7 @@
 		"apples": 340,
 		"cavePoints": 15,
 		"cavePointsBonus": 5,
-		"bonusDay": 2,
+		"bonusDay": 3,
 		"levelRequirement": 25,
 		"licenseRequirement": "-"
 	},
@@ -130,7 +130,7 @@
 		"apples": 3000,
 		"cavePoints": 40,
 		"cavePointsBonus": 5,
-		"bonusDay": 2,
+		"bonusDay": 3,
 		"levelRequirement": 50,
 		"licenseRequirement": "C"
 	},
@@ -139,7 +139,7 @@
 		"apples": 3600,
 		"cavePoints": 50,
 		"cavePointsBonus": 5,
-		"bonusDay": 2,
+		"bonusDay": 3,
 		"levelRequirement": 50,
 		"licenseRequirement": "C"
 	},
@@ -148,7 +148,7 @@
 		"apples": 20,
 		"cavePoints": 3,
 		"cavePointsBonus": 9,
-		"bonusDay": 7,
+		"bonusDay": 1,
 		"levelRequirement": 0,
 		"licenseRequirement": "-"
 	},
@@ -157,7 +157,7 @@
 		"apples": 80,
 		"cavePoints": 5,
 		"cavePointsBonus": 15,
-		"bonusDay": 7,
+		"bonusDay": 1,
 		"levelRequirement": 30,
 		"licenseRequirement": "-"
 	},
@@ -166,7 +166,7 @@
 		"apples": 250,
 		"cavePoints": 6,
 		"cavePointsBonus": 9,
-		"bonusDay": 7,
+		"bonusDay": 1,
 		"levelRequirement": 55,
 		"licenseRequirement": "C"
 	},
@@ -175,7 +175,7 @@
 		"apples": 25,
 		"cavePoints": 0,
 		"cavePointsBonus": 0,
-		"bonusDay": 5,
+		"bonusDay": 6,
 		"levelRequirement": 0,
 		"licenseRequirement": "-"
 	},
@@ -184,7 +184,7 @@
 		"apples": 200,
 		"cavePoints": 30,
 		"cavePointsBonus": 15,
-		"bonusDay": 5,
+		"bonusDay": 6,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	},
@@ -193,7 +193,7 @@
 		"apples": 200,
 		"cavePoints": 50,
 		"cavePointsBonus": 30,
-		"bonusDay": 5,
+		"bonusDay": 6,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	},
@@ -202,7 +202,7 @@
 		"apples": 200,
 		"cavePoints": 70,
 		"cavePointsBonus": 40,
-		"bonusDay": 5,
+		"bonusDay": 6,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	},
@@ -211,7 +211,7 @@
 		"apples": 15,
 		"cavePoints": 3,
 		"cavePointsBonus": 12,
-		"bonusDay": 4,
+		"bonusDay": 5,
 		"levelRequirement": 0,
 		"licenseRequirement": "-"
 	},
@@ -220,7 +220,7 @@
 		"apples": 210,
 		"cavePoints": 6,
 		"cavePointsBonus": 18,
-		"bonusDay": 4,
+		"bonusDay": 5,
 		"levelRequirement": 20,
 		"licenseRequirement": "-"
 	},
@@ -229,7 +229,7 @@
 		"apples": 950,
 		"cavePoints": 12,
 		"cavePointsBonus": 24,
-		"bonusDay": 4,
+		"bonusDay": 5,
 		"levelRequirement": 45,
 		"licenseRequirement": "C"
 	},
@@ -256,7 +256,7 @@
 		"apples": 20,
 		"cavePoints": 5,
 		"cavePointsBonus": 13,
-		"bonusDay": 6,
+		"bonusDay": 7,
 		"levelRequirement": 0,
 		"licenseRequirement": "-"
 	},
@@ -265,7 +265,7 @@
 		"apples": 350,
 		"cavePoints": 11,
 		"cavePointsBonus": 16,
-		"bonusDay": 6,
+		"bonusDay": 7,
 		"levelRequirement": 40,
 		"licenseRequirement": "-"
 	},
@@ -274,7 +274,7 @@
 		"apples": 3000,
 		"cavePoints": 30,
 		"cavePointsBonus": 20,
-		"bonusDay": 6,
+		"bonusDay": 7,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	},
@@ -283,7 +283,7 @@
 		"apples": 3000,
 		"cavePoints": 50,
 		"cavePointsBonus": 20,
-		"bonusDay": 6,
+		"bonusDay": 7,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	},
@@ -292,7 +292,7 @@
 		"apples": 3000,
 		"cavePoints": 35,
 		"cavePointsBonus": 20,
-		"bonusDay": 6,
+		"bonusDay": 7,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	},
@@ -301,7 +301,7 @@
 		"apples": 20,
 		"cavePoints": 4,
 		"cavePointsBonus": 5,
-		"bonusDay": 2,
+		"bonusDay": 3,
 		"levelRequirement": 0,
 		"licenseRequirement": "-"
 	},
@@ -310,7 +310,7 @@
 		"apples": 1520,
 		"cavePoints": 40,
 		"cavePointsBonus": 5,
-		"bonusDay": 2,
+		"bonusDay": 3,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	},
@@ -319,7 +319,7 @@
 		"apples": 1520,
 		"cavePoints": 5,
 		"cavePointsBonus": 50,
-		"bonusDay": 2,
+		"bonusDay": 3,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	},
@@ -328,7 +328,7 @@
 		"apples": 1520,
 		"cavePoints": 5,
 		"cavePointsBonus": 40,
-		"bonusDay": 2,
+		"bonusDay": 3,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	},
@@ -337,7 +337,7 @@
 		"apples": 2660,
 		"cavePoints": 5,
 		"cavePointsBonus": 43,
-		"bonusDay": 2,
+		"bonusDay": 3,
 		"levelRequirement": 65,
 		"licenseRequirement": "B"
 	}

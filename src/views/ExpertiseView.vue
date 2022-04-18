@@ -68,7 +68,6 @@
                 <div class="column">
                   <chain-expertise-summary
                     :expertise="this.expertise"
-                    :options="this.options"
                   />
                 </div>
               </div>

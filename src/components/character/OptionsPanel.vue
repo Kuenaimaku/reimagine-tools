@@ -1,4 +1,10 @@
 <template>
+	<Vue3DraggableResizable 
+				:w=400 :h=600 
+				:x="panel.x"
+				:y="panel.y" 
+				:handles="[]" :parent="true"
+				:class="{ hidden: !panel.isActive}">
 	<div class="draggable-panel">
 		<header class="panel-header">
 			<o-icon pack="mdi" class="icon" icon="cog"/>
@@ -49,6 +55,7 @@
 			</div>
 		</div>
 	</div>
+	</Vue3DraggableResizable>
 
 </template>
 

@@ -15,62 +15,13 @@
     </section>
 		
     <section class="section" id="drag-container">
-			<Vue3DraggableResizable 
-			:w=400 :h=600
-			:x="this.panels.player.x"
-			:y="this.panels.player.y" 
-			:handles="[]" :parent="true"
-			:class="{ hidden: !this.panels.player.isActive}">
-				<AttributePanel :attributes="this.attributes" :panel="this.panels.player"/>
-			</Vue3DraggableResizable>
-			<Vue3DraggableResizable 
-			:w=400 :h=600 
-			:x="this.panels.expertise.x"
-			:y="this.panels.expertise.y" 
-			:handles="[]" :parent="true"
-			:class="{ hidden: !this.panels.expertise.isActive}">
-				<ExpertisePanel :expertise="this.expertise" :panel="this.panels.expertise"/>
-			</Vue3DraggableResizable>
-			<Vue3DraggableResizable 
-			:w=400 :h=600 
-			:x="this.panels.skills.x"
-			:y="this.panels.skills.y" 
-			:handles="[]" :parent="true"
-			:class="{ hidden: !this.panels.skills.isActive}">
-				<SkillsPanel :expertise="this.skills" :panel="this.panels.skills"/>
-			</Vue3DraggableResizable>
-			<Vue3DraggableResizable 
-			:w=400 :h=600 
-			:x="this.panels.buffs.x"
-			:y="this.panels.buffs.y" 
-			:handles="[]" :parent="true"
-			:class="{ hidden: !this.panels.buffs.isActive}">
-				<BuffsPanel :buffs="this.buffs" :panel="this.panels.buffs"/>
-			</Vue3DraggableResizable>
-			<Vue3DraggableResizable 
-			:w=400 :h=600 
-			:x="this.panels.demons.x"
-			:y="this.panels.demons.y" 
-			:handles="[]" :parent="true"
-			:class="{ hidden: !this.panels.demons.isActive}">
-				<DemonTargetPanel :buffs="this.demons" :panel="this.panels.demons"/>
-			</Vue3DraggableResizable>
-			<Vue3DraggableResizable 
-			:w=400 :h=600 
-			:x="this.panels.technical.x"
-			:y="this.panels.technical.y" 
-			:handles="[]" :parent="true"
-			:class="{ hidden: !this.panels.technical.isActive}">
-				<TechnicalPanel :technical="this.technical" :panel="this.panels.technical"/>
-			</Vue3DraggableResizable>
-			<Vue3DraggableResizable 
-			:w=400 :h=600 
-			:x="this.panels.options.x"
-			:y="this.panels.options.y" 
-			:handles="[]" :parent="true"
-			:class="{ hidden: !this.panels.options.isActive}">
-				<OptionsPanel :options="this.options" :panel="this.panels.options"/>
-			</Vue3DraggableResizable>
+			<AttributePanel :attributes="this.attributes" :panel="this.panels.player"/>
+			<ExpertisePanel :expertise="this.expertise" :panel="this.panels.expertise"/>
+			<SkillsPanel :expertise="this.expertise" :panel="this.panels.skills"/>
+			<BuffsPanel :buffs="this.buffs" :panel="this.panels.buffs"/>
+			<DemonTargetPanel :buffs="this.demons" :panel="this.panels.demons"/>
+			<TechnicalPanel :technical="this.technical" :panel="this.panels.technical"/>
+			<OptionsPanel :options="this.options" :panel="this.panels.options"/>
 			<div id="menu">
 				<o-tooltip label="Player Attributes"><a @click="togglePlayerPanel"><o-icon pack="mdi" class="icon" icon="card-account-details"/></a></o-tooltip>
 				<o-tooltip label="Expertise"><a @click="toggleExpertisePanel"><o-icon pack="mdi" class="icon" icon="arm-flex"/></a></o-tooltip>
@@ -79,7 +30,6 @@
 				<o-tooltip label="Demon (Target)"><a @click="toggleDemonTargetPanel"><o-icon pack="mdi" class="icon" icon="emoticon-devil-outline"/></a></o-tooltip>
 				<o-tooltip label="Technical Data"><a @click="toggleTechnicalPanel"><o-icon pack="mdi" class="icon" icon="calculator-variant"/></a></o-tooltip>
 				<o-tooltip label="Options"><a @click="toggleOptionsPanel"><o-icon pack="mdi" class="icon" icon="cog"/></a></o-tooltip>
-
 			</div>
     </section>
   </div>

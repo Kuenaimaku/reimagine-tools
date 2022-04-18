@@ -89,5 +89,72 @@
 	"timeddemons": {
 		"allMoonPhases": false,
 		"hideUnavailableDemons" : false
+	},
+	"character":{
+		"level": {
+			"name": "Level",
+			"queryParam": "oa",
+			"value": 1
+		},
+		"casino": {
+			"name": "Golden Arc Casino",
+			"queryParam": "ob",
+			"value": 0
+		},
+		"specialTraining": {
+			"name": "Special Training",
+			"queryParam": "oc",
+			"value": 0
+		},
+		"tierOneDDS": {
+			"name": "Demon Digitalize: Tier 1",
+			"queryParam": "od",
+			"value": 0
+		},
+		"tierTwoDDS": {
+			"name": "Demon Digitalize: Tier 2",
+			"queryParam": "oe",
+			"value": 0
+		},
+		"tierThreeDDS": {
+			"name": "Demon Digitalize: Tier 3",
+			"queryParam": "of",
+			"value": 0
+		},
+		"levelTenDDS1": {
+			"name": "Level 10 Demon Digitalize: Group 1",
+			"queryParam": "og",
+			"value": 0
+		},
+		"levelTenDDS2": {
+			"name": "Level 10 Demon Digitalize: Group 2",
+			"queryParam": "oh",
+			"value": 0
+		},
+		"levelTenDDS3": {
+			"name": "Level 10 Demon Digitalize: Group 3",
+			"queryParam": "oi",
+			"value": 0
+		},
+		"levelTenDDS4": {
+			"name": "Level 10 Demon Digitalize: Group 4",
+			"queryParam": "oj",
+			"value": 0
+		},
+		"levelTenDDS5": {
+			"name": "Level 10 Demon Digitalize: Group 5",
+			"queryParam": "ok",
+			"value": 0
+		},
+		"diaspora": {
+			"name": "Diaspora",
+			"queryParam": "ol",
+			"value": 0
+		},
+		"saintGermain": {
+			"name": "St. Germain Quests",
+			"queryParam": "om",
+			"value": 0
+		}
 	}
 }

@@ -1,62 +1,33 @@
 <template>
-	<div class="draggable-panel">
-		<header class="panel-header">
-			<o-icon pack="mdi" class="icon" icon="fire"/>
-			<h1>Skills</h1>
-			<o-button variant="danger" class="danger" size="small" @click="onClose">x</o-button>
-		</header>
-		<div class="columns">
-			<div class="column">
-				<table class="table is-fullwidth">
-					<tbody>
-						<tr>
-							<th>Lv</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table is-fullwidth">
-					<tbody>
-						<tr>
-							<th>Strength</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Magic</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Vitality</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Intelligence</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Speed</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-						<tr>
-							<th>Luck</th>
-							<td><o-input size="small"></o-input></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="column">
-				Fields go here
+	<Vue3DraggableResizable 
+		:w=400 :h=600 
+		:x="panel.x"
+		:y="panel.y" 
+		:handles="[]" :parent="true"
+		:class="{ hidden: !panel.isActive}">
+		<div class="draggable-panel">
+			<header class="panel-header">
+				<o-icon pack="mdi" class="icon" icon="fire"/>
+				<h1>Skills</h1>
+				<o-button variant="danger" class="danger" size="small" @click="onClose">x</o-button>
+			</header>
+			<div class="panel-body">
+				<expertise-summary
+					:expertise="Object.values(expertise)"
+				/>
 			</div>
 		</div>
-	</div>
-
+	</Vue3DraggableResizable>
 </template>
 
 <script>
+
+import ExpertiseSummary from "@/components/character/ExpertiseSummary.vue";
+
 export default {
   name: "SkillsPanel",
   components: {
-
+		ExpertiseSummary
   },
 		props: {
     expertise: {
@@ -88,7 +59,6 @@ export default {
 	height:100%;
 	width:100%;
 	font-size:0.8em;
-	overflow: hidden;
 }
 
 .panel-header {
@@ -115,6 +85,27 @@ export default {
 
 .panel-header button.danger{
 	background-color: #b60000;
+}
+
+.panel-body{
+	padding: 0.5em;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	height:545px;
+}
+
+.panel-body::-webkit-scrollbar {
+    width: 12px;
+}
+.panel-body::-webkit-scrollbar-thumb {
+    background-color: #7dbbbb;
+    border-radius: 20px;
+    border: 3px solid rgba(23,29,30,.8);
+    margin: 3px;
+}
+
+.panel-body::-webkit-scrollbar-track {
+    background: none;
 }
 
 </style>

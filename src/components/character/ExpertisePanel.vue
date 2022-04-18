@@ -1,45 +1,56 @@
 <template>
-	<div class="draggable-panel">
-		<header class="panel-header">
-			<o-icon pack="mdi" class="icon" icon="arm-flex"/>
-			<h1>Expertise</h1>
-			<o-button variant="danger" class="danger" size="small" @click="onClose">x</o-button>
-		</header>
-		<div class="panel-body">
-			<o-tabs v-model="activeTab" :expanded="true">
-				<o-tab-item value="0" label="Expertise" class="tabcontent">
-					<h2>Expertise Limit</h2>
-					<progressbar
-						:type="progressType"
-						size="is-large"
-						:value="currentExpertise"
-						:max="expertiseFloor + bonusExpertise"
-						show-value>
-						{{ currentExpertise }}/{{ expertiseFloor + bonusExpertise }}
-					</progressbar>
-					<ExpertiseInput
-						v-for="item in expertise"
-						:key="item.queryParam"
-						:expertise="item"
-					/>
-				</o-tab-item>
-				<o-tab-item value="1" label="Chain Expertise" class="tabcontent">
-					test
-				</o-tab-item>
-			</o-tabs>
+	<Vue3DraggableResizable 
+  :w=400 :h=600 
+  :x="panel.x"
+  :y="panel.y" 
+  :handles="[]" :parent="true"
+  :class="{ hidden: !panel.isActive}">
+		<div class="draggable-panel">
+			<header class="panel-header">
+				<o-icon pack="mdi" class="icon" icon="arm-flex"/>
+				<h1>Expertise</h1>
+				<o-button variant="danger" class="danger" size="small" @click="onClose">x</o-button>
+			</header>
+			<div class="panel-body">
+				<o-tabs v-model="activeTab" :expanded="true">
+					<o-tab-item value="0" label="Expertise" class="tabcontent">
+						<h2>Expertise Limit</h2>
+						<progressbar
+							:type="progressType"
+							size="is-large"
+							:value="currentExpertise"
+							:max="expertiseFloor + bonusExpertise"
+							show-value>
+							{{ currentExpertise }}/{{ expertiseFloor + bonusExpertise }}
+						</progressbar>
+						<ExpertiseInput
+							v-for="item in expertise"
+							:key="item.queryParam"
+							:expertise="item"
+						/>
+					</o-tab-item>
+					<o-tab-item value="1" label="Chain Expertise" class="tabcontent">
+						<chain-expertise-summary
+							:expertise="expertise"
+						/>
+					</o-tab-item>
+				</o-tabs>
+			</div>
 		</div>
-	</div>
+	</Vue3DraggableResizable>
 
 </template>
 
 <script>
 
+import ChainExpertiseSummary from "@/components/expertise/ChainExpertiseSummary.vue"
 import ExpertiseInput from "@/components/expertise/ExpertiseInput.vue";
 import Progressbar from "@/components/Progressbar.vue";
 
 export default {
   name: "ExpertisePanel",
   components: {
+		ChainExpertiseSummary,
 		ExpertiseInput,
 		Progressbar
   },
@@ -48,7 +59,6 @@ export default {
       type: Object,
       required: true,
     },
-
 		panel: {
 			type: Object,
 			required: true,
